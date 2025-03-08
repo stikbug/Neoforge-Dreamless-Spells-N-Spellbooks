@@ -1,6 +1,7 @@
 package net.Iceforkkk.DreamlessAditions;
 
 import net.Iceforkkk.DreamlessAditions.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -51,6 +52,10 @@ public class DreamelssSpellsAndSpellbooks
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.SLEEPLESSCHAIN);
+            event.accept(ModItems.SLEEPLESSCLOTH);
+        }
 
     }
 

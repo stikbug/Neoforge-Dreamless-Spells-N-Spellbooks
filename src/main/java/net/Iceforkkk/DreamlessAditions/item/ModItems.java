@@ -10,7 +10,9 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(DreamelssSpellsAndSpellbooks.MOD_ID);
 
-    public static final DeferredItem<Item> SLEEPLESSCHAIN = ITEMS.register("sleeplesschain",
+    public static final DeferredItem<Item> SLEEPLESSCHAIN = ITEMS.register("sleepless_chain",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SLEEPLESSCLOTH = ITEMS.register("sleepless_cloth",
             ()-> new Item(new Item.Properties()));
 
     public static void register (IEventBus eventBus) {
