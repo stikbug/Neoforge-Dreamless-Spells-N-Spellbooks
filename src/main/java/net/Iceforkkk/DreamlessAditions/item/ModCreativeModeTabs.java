@@ -16,7 +16,7 @@ public class ModCreativeModeTabs {
 
     public static final Supplier<CreativeModeTab> DREAMLESS_SPELLS_TAB = CREATIVE_MODE_TAB.register("dreamless_items_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SLEEPLESSCLOTH.get()))
-                    .title(Component.translatable("creative.dreamless_spells.dreamelss_items"))
+                    .title(Component.translatable("creative.dreamless_spells.dreamless_items"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.SLEEPLESSCLOTH);
                         output.accept(ModItems.SLEEPLESSCHAIN);
