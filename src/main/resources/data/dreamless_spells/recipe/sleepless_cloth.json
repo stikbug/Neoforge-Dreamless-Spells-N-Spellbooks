@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key":{
+    "W":{
+      "item": "minecraft:white_wool"
+    },
+    "P": {
+      "item": "minecraft:phantom_membrane"
+    }
+  },
+  "pattern": [
+    " P ",
+    "PWP",
+    " P "
+  ],
+  "result": {
+    "count": 4,
+    "id": "dreamless_spells:sleepless_cloth"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key":{
+    "C":{
+      "item": "minecraft:chain"
+    },
+    "P": {
+      "item": "minecraft:phantom_membrane"
+    }
+  },
+  "pattern": [
+    "CPC",
+    "P P",
+    "CPC"
+  ],
+  "result": {
+    "count": 2,
+    "id": "dreamless_spells:sleepless_chain"
+  }
+}
