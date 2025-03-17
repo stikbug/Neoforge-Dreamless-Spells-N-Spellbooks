@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key":{
+    "C":{
+      "item": "dreamless_spells:sleepless_chain"
+    },
+    "W": {
+      "item": "dreamless_spells:sleepless_cloth"
+    }
+  },
+  "pattern": [
+    "C C",
+    "WCW",
+    "WWW"
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:sleepless_chestplate"
+  }
+}

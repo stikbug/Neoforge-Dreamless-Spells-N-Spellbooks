@@ -20,6 +20,10 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.SLEEPLESSCLOTH);
                         output.accept(ModItems.SLEEPLESSCHAIN);
+                        output.accept(ModItems.SLEEPLESSBOOTS);
+                        output.accept(ModItems.SLEEPLESSLEGGINGS);
+                        output.accept(ModItems.SLEEPLESSCHESTPLATE);
+                        output.accept(ModItems.SLEEPLESSHELMET);
                     }).build());
 
     public static void register(IEventBus eventBus) {
