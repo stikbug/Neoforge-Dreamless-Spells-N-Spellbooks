@@ -26,6 +26,9 @@ public class ModItems {
     public static final DeferredItem<ArmorItem> SLEEPLESSBOOTS = ITEMS.register("sleepless_boots",
             ()-> new ArmorItem(ModArmorMaterials.SLEEPLESS_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(39))));
+    public static final DeferredItem<ArmorItem> FASTBOOTS = ITEMS.register("fastboots",
+            ()-> new ArmorItem(ModArmorMaterials.FASTBOOTS_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(39))));
 
 
     public static void register (IEventBus eventBus) {

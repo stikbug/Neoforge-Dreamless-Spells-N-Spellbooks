@@ -24,6 +24,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SLEEPLESSLEGGINGS);
                         output.accept(ModItems.SLEEPLESSCHESTPLATE);
                         output.accept(ModItems.SLEEPLESSHELMET);
+                        output.accept(ModItems.FASTBOOTS);
                     }).build());
 
     public static void register(IEventBus eventBus) {
