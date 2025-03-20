@@ -19,42 +19,6 @@ group = mod_group_id
 
 repositories {
     mavenLocal()
-    maven {
-        url "https://cursemaven.com"
-    }
-
-    maven {
-        url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
-    }
-
-}
-repositories {
-    flatDir {
-        dir 'libs'
-    }
-
-    maven {
-        name = "Iron's Maven - Release"
-        url = "https://code.redspace.io/releases"
-    }
-
-    maven {
-        name = "Iron's Maven - Snapshots"
-        url = "https://code.redspace.io/snapshots"
-    }
-
-    maven { url = "https://maven.enginehub.org/repo/" }
-    maven {
-        url = "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/"
-        content {
-            includeGroup("software.bernie.geckolib")
-        }
-    }
-    maven { url = "https://maven.theillusivec4.top" }
-    maven { url = "https://cursemaven.com" }
-    maven { url = "https://maven.blamejared.com" }
-    maven { url = "https://maven.kosmx.dev/" }
-    maven { url = 'https://maven.azuredoom.com/mods'}
 }
 
 
@@ -149,6 +113,39 @@ configurations {
     runtimeClasspath.extendsFrom localRuntime
 }
 
+repositories {
+    flatDir {
+        dir 'libs'
+    }
+
+    maven {
+        name = "Iron's Maven - Release"
+        url = "https://code.redspace.io/releases"
+    }
+
+    maven {
+        name = "Iron's Maven - Snapshots"
+        url = "https://code.redspace.io/snapshots"
+    }
+
+    maven { url = "https://maven.enginehub.org/repo/" }
+    maven {
+        url = "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/"
+        content {
+            includeGroup("software.bernie.geckolib")
+        }
+    }
+    maven {
+        name "KosmX's maven"
+        url 'https://maven.kosmx.dev/'
+    }
+    maven { url = "https://maven.theillusivec4.top" }
+    maven { url = "https://cursemaven.com" }
+    maven { url = "https://maven.blamejared.com" }
+    maven { url = "https://maven.kosmx.dev/" }
+    maven { url = 'https://maven.azuredoom.com/mods'}
+}
+
 
 dependencies {
     implementation 'curse.maven:irons-spells-n-spellbooks-855414:6308743'
@@ -157,6 +154,9 @@ dependencies {
     implementation "curse.maven:curios-309927:6274154"
     // Spell Collector Lib
     implementation "curse.maven:spell-collector-lib-1149858:6174572"
+    // PLAYER ANIMATOR ********************************************************************************************
+    //compileOnly "dev.kosmx.player-anim:player-animation-lib-forge:${player_animator_version}"
+    //jarJar(group: "dev.kosmx.player-anim", name: "player-animation-lib-forge", version: "[${player_animator_version},${player_animator_version}]
 
 
 }

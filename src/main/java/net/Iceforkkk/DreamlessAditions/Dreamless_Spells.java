@@ -1,5 +1,6 @@
 package net.Iceforkkk.DreamlessAditions;
 
+import net.Iceforkkk.DreamlessAditions.block.ModBlocks;
 import net.Iceforkkk.DreamlessAditions.item.ModCreativeModeTabs;
 import net.Iceforkkk.DreamlessAditions.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -35,6 +36,7 @@ public class Dreamless_Spells
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
 

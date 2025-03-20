@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key":{
+    "W": {
+      "item": "dreamless_spells:sleepless_cloth"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "WWW",
+    "WWW"
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:sleepless_cloth_block"
+  }
+}
