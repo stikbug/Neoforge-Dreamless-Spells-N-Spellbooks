@@ -1,8 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "key":{
-    "C":{
+  "key": {
+    "S": {
       "item": "dreamless_spells:sleepless_chain"
     },
     "W": {
@@ -10,12 +10,12 @@
     }
   },
   "pattern": [
-    "C C",
-    "W W",
-    "   "
+    "WWW",
+    "S S",
+    "S S"
   ],
   "result": {
     "count": 1,
-    "id": "dreamless_spells:sleepless_boots"
+    "id": "dreamless_spells:sleepless_leggings"
   }
 }
