@@ -1,6 +1,9 @@
 package net.Iceforkkk.DreamlessAditions.item;
 
+import io.redspace.ironsspellbooks.util.ItemPropertiesHelper;
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
+import net.Iceforkkk.DreamlessAditions.item.armor.FastBootsArmorItem;
+import net.Iceforkkk.DreamlessAditions.item.armor.SleeplessArmorArmorItem;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
@@ -15,20 +18,16 @@ public class ModItems {
     public static final DeferredItem<Item> SLEEPLESSCLOTH = ITEMS.register("sleepless_cloth",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<ArmorItem> SLEEPLESSHELMET = ITEMS.register("sleepless_helmet",
-            ()-> new ArmorItem(ModArmorMaterials.SLEEPLESS_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
-            new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(39))));
+            ()-> new SleeplessArmorArmorItem(ArmorItem.Type.HELMET, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(39))));
     public static final DeferredItem<ArmorItem> SLEEPLESSCHESTPLATE = ITEMS.register("sleepless_chestplate",
-            ()-> new ArmorItem(ModArmorMaterials.SLEEPLESS_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
-                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(39))));
+            ()-> new SleeplessArmorArmorItem(ArmorItem.Type.CHESTPLATE, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.CHESTPLATE.getDurability(39))));
     public static final DeferredItem<ArmorItem> SLEEPLESSLEGGINGS = ITEMS.register("sleepless_leggings",
-            ()-> new ArmorItem(ModArmorMaterials.SLEEPLESS_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
-                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(39))));
+            ()-> new SleeplessArmorArmorItem(ArmorItem.Type.LEGGINGS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.LEGGINGS.getDurability(39))));
     public static final DeferredItem<ArmorItem> SLEEPLESSBOOTS = ITEMS.register("sleepless_boots",
-            ()-> new ArmorItem(ModArmorMaterials.SLEEPLESS_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
-                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(39))));
+            ()-> new SleeplessArmorArmorItem(ArmorItem.Type.BOOTS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(39))));
     public static final DeferredItem<ArmorItem> FASTBOOTS = ITEMS.register("fastboots",
-            ()-> new ArmorItem(ModArmorMaterials.FASTBOOTS_MATERIAL, ArmorItem.Type.BOOTS,
-                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(39))));
+            ()-> new FastBootsArmorItem(ArmorItem.Type.BOOTS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(39))));
+
 
 
     public static void register (IEventBus eventBus) {
