@@ -1,5 +1,7 @@
 package net.Iceforkkk.DreamlessAditions.item;
 
+import io.redspace.ironsspellbooks.api.item.weapons.ExtendedSwordItem;
+import io.redspace.ironsspellbooks.api.item.weapons.MagicSwordItem;
 import io.redspace.ironsspellbooks.util.ItemPropertiesHelper;
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
 import net.Iceforkkk.DreamlessAditions.item.armor.FastBootsArmorItem;
@@ -16,6 +18,12 @@ public class ModItems {
     public static final DeferredItem<Item> SLEEPLESSCHAIN = ITEMS.register("sleepless_chain",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SLEEPLESSCLOTH = ITEMS.register("sleepless_cloth",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> NITROGLAND = ITEMS.register("nitro_gland",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> NITROCORE = ITEMS.register("nitro_core",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> MYSTERIOUSCIRCUITRY = ITEMS.register("mysterious_circuitry",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<ArmorItem> SLEEPLESSHELMET = ITEMS.register("sleepless_helmet",
             ()-> new SleeplessArmorArmorItem(ArmorItem.Type.HELMET, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(39))));

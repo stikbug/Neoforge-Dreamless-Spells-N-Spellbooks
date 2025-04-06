@@ -15,6 +15,9 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         basicItem(ModItems.SLEEPLESSCLOTH.get());
         basicItem(ModItems.SLEEPLESSCHAIN.get());
+        basicItem(ModItems.NITROGLAND.get());
+        basicItem(ModItems.NITROCORE.get());
+        basicItem(ModItems.MYSTERIOUSCIRCUITRY.get());
 
         basicItem(ModItems.SLEEPLESSHELMET.get());
         basicItem(ModItems.SLEEPLESSCHESTPLATE.get());

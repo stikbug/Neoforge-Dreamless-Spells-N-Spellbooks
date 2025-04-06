@@ -6,6 +6,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.ItemLike;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -22,12 +23,15 @@ public class ModCreativeModeTabs {
                         //Normal items with no data
                         output.accept(ModItems.SLEEPLESSCLOTH);
                         output.accept(ModItems.SLEEPLESSCHAIN);
-                        //Items that have metadata
+                        //Items that have durrability
                         output.accept(ModItems.SLEEPLESSBOOTS);
                         output.accept(ModItems.SLEEPLESSLEGGINGS);
                         output.accept(ModItems.SLEEPLESSCHESTPLATE);
                         output.accept(ModItems.SLEEPLESSHELMET);
                         output.accept(ModItems.FASTBOOTS);
+                        output.accept(ModItems.NITROCORE);
+                        output.accept(ModItems.NITROGLAND);
+                        output.accept(ModItems.MYSTERIOUSCIRCUITRY);
                         //Blocks from this point on
                         output.accept(ModBlocks.SLEEPLESSCLOTHBLOCK);
                     }).build());
