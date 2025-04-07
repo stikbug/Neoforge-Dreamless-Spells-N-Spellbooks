@@ -1,4 +1,4 @@
-package net.Iceforkkk.DreamlessAditions.item;
+package net.Iceforkkk.DreamlessAditions.registries;
 
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
 import net.Iceforkkk.DreamlessAditions.block.ModBlocks;
@@ -32,6 +32,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.NITROCORE);
                         output.accept(ModItems.NITROGLAND);
                         output.accept(ModItems.MYSTERIOUSCIRCUITRY);
+                        output.accept(ModItems.JADE);
+                        output.accept((ItemLike) ModItems.OLD_BOOTS);
                         //Blocks from this point on
                         output.accept(ModBlocks.SLEEPLESSCLOTHBLOCK);
                     }).build());

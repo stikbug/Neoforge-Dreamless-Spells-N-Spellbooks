@@ -4,7 +4,7 @@ import io.redspace.ironsspellbooks.entity.armor.GenericCustomArmorRenderer;
 import io.redspace.ironsspellbooks.item.armor.ImbuableChestplateArmorItem;
 import io.redspace.ironsspellbooks.item.weapons.AttributeContainer;
 import net.Iceforkkk.DreamlessAditions.entity.armor.FastBootsArmorModel;
-import net.Iceforkkk.DreamlessAditions.item.ModArmorMaterials;
+import net.Iceforkkk.DreamlessAditions.registries.ModArmorMaterials;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;

@@ -1,4 +1,4 @@
-package net.Iceforkkk.DreamlessAditions.item;
+package net.Iceforkkk.DreamlessAditions.registries;
 
 import com.google.common.base.Suppliers;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;

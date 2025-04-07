@@ -1,11 +1,10 @@
 package net.Iceforkkk.DreamlessAditions.datagen;
 
 import net.Iceforkkk.DreamlessAditions.block.ModBlocks;
-import net.Iceforkkk.DreamlessAditions.item.ModItems;
+import net.Iceforkkk.DreamlessAditions.registries.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 

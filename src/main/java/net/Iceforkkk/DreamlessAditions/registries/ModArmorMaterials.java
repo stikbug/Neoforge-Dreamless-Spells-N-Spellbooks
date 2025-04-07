@@ -1,4 +1,4 @@
-package net.Iceforkkk.DreamlessAditions.item;
+package net.Iceforkkk.DreamlessAditions.registries;
 
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
 import net.minecraft.Util;

@@ -1,7 +1,7 @@
 package net.Iceforkkk.DreamlessAditions.datagen;
 
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
-import net.Iceforkkk.DreamlessAditions.item.ModItems;
+import net.Iceforkkk.DreamlessAditions.registries.ModItems;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -18,6 +18,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.NITROGLAND.get());
         basicItem(ModItems.NITROCORE.get());
         basicItem(ModItems.MYSTERIOUSCIRCUITRY.get());
+        basicItem(ModItems.JADE.get());
+        basicItem(ModItems.OLD_BOOTS.get());
 
         basicItem(ModItems.SLEEPLESSHELMET.get());
         basicItem(ModItems.SLEEPLESSCHESTPLATE.get());

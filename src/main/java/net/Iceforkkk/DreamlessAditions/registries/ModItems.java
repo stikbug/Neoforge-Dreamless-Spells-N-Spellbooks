@@ -1,11 +1,10 @@
-package net.Iceforkkk.DreamlessAditions.item;
+package net.Iceforkkk.DreamlessAditions.registries;
 
-import io.redspace.ironsspellbooks.api.item.weapons.ExtendedSwordItem;
-import io.redspace.ironsspellbooks.api.item.weapons.MagicSwordItem;
 import io.redspace.ironsspellbooks.util.ItemPropertiesHelper;
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
 import net.Iceforkkk.DreamlessAditions.item.armor.FastBootsArmorItem;
 import net.Iceforkkk.DreamlessAditions.item.armor.SleeplessArmorArmorItem;
+import net.Iceforkkk.DreamlessAditions.item.curios.OldBootsCurio;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
@@ -14,7 +13,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Dreamless_Spells.MOD_ID);
-
+    //Normal Materials
     public static final DeferredItem<Item> SLEEPLESSCHAIN = ITEMS.register("sleepless_chain",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SLEEPLESSCLOTH = ITEMS.register("sleepless_cloth",
@@ -25,6 +24,9 @@ public class ModItems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> MYSTERIOUSCIRCUITRY = ITEMS.register("mysterious_circuitry",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> JADE = ITEMS.register("jade",
+            ()-> new Item(new Item.Properties()));
+    //Armor
     public static final DeferredItem<ArmorItem> SLEEPLESSHELMET = ITEMS.register("sleepless_helmet",
             ()-> new SleeplessArmorArmorItem(ArmorItem.Type.HELMET, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(39))));
     public static final DeferredItem<ArmorItem> SLEEPLESSCHESTPLATE = ITEMS.register("sleepless_chestplate",
@@ -35,6 +37,8 @@ public class ModItems {
             ()-> new SleeplessArmorArmorItem(ArmorItem.Type.BOOTS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(39))));
     public static final DeferredItem<ArmorItem> FASTBOOTS = ITEMS.register("fastboots",
             ()-> new FastBootsArmorItem(ArmorItem.Type.BOOTS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(39))));
+    //Curios
+    public static final DeferredItem<OldBootsCurio> OLD_BOOTS = ITEMS.register("old_boots", OldBootsCurio::new);
 
 
 

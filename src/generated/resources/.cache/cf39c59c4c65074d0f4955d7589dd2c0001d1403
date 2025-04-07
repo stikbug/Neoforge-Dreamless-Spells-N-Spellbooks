@@ -1,8 +1,10 @@
-// 1.21.1	2025-04-05T13:19:11.0144235	Item Models: dreamless_spells
+// 1.21.1	2025-04-07T09:01:19.6305069	Item Models: dreamless_spells
 51f8b9793cf3f1f88a24c4608bdd880557847728 assets/dreamless_spells/models/item/fastboots.json
+bb48689948194bf15b50b1b63793cd90d17ec4c9 assets/dreamless_spells/models/item/jade.json
 374d7596536b1ac86c51216cf1c2638c1a596e57 assets/dreamless_spells/models/item/mysterious_circuitry.json
 3d99fbf8cfde6d484a03ba690af228f32adeb1b5 assets/dreamless_spells/models/item/nitro_core.json
 159c76a93a4ebd90ed00730548b4544ce90d604a assets/dreamless_spells/models/item/nitro_gland.json
+f43aaaad400d61519563c765d828638db435c98a assets/dreamless_spells/models/item/old_boots.json
 846dc5ddc67c137f8811b19433c8b773672293a3 assets/dreamless_spells/models/item/sleepless_boots.json
 076f215f85a3ef1fc92a41acfa42be73f3db025e assets/dreamless_spells/models/item/sleepless_chain.json
 163315fed98641702e1e78d59883014636f3a0f9 assets/dreamless_spells/models/item/sleepless_chestplate.json

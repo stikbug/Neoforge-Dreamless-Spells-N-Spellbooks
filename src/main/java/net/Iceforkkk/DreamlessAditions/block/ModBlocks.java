@@ -1,7 +1,7 @@
 package net.Iceforkkk.DreamlessAditions.block;
 
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
-import net.Iceforkkk.DreamlessAditions.item.ModItems;
+import net.Iceforkkk.DreamlessAditions.registries.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;

@@ -1,8 +1,8 @@
 package net.Iceforkkk.DreamlessAditions;
 
 import net.Iceforkkk.DreamlessAditions.block.ModBlocks;
-import net.Iceforkkk.DreamlessAditions.item.ModCreativeModeTabs;
-import net.Iceforkkk.DreamlessAditions.item.ModItems;
+import net.Iceforkkk.DreamlessAditions.registries.ModCreativeModeTabs;
+import net.Iceforkkk.DreamlessAditions.registries.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
