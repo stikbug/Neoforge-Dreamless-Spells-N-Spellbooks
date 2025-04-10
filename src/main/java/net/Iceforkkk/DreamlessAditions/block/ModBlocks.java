@@ -21,6 +21,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).sound(SoundType.WOOL)));
 
+    public static final DeferredBlock<Block> JADEORE = registerBlock("jade_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(5f).sound(SoundType.STONE)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

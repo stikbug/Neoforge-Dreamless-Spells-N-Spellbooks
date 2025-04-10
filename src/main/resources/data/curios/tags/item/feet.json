@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values" :[
-    "dreamless_spells:old_boots"
+    "dreamless_spells:old_boots",
+    "dreamless_spells:copper_boots",
+    "dreamless_spells:iron_socks",
+    "dreamless_spells:tank_boots",
+    "dreamless_spells:deep_divers"
+
   ]
 }

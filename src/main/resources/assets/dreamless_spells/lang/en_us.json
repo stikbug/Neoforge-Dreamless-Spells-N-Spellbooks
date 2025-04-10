@@ -9,10 +9,20 @@
   "item.dreamless_spells.nitro_core": "Nitro Core",
   "item.dreamless_spells.nitro_gland": "Nitro Gland",
   "item.dreamless_spells.mysterious_circuitry": "Mysterious Circuitry",
-  "item.dreamless_spells.old_boots": "Old Boots",
   "item.dreamless_spells.jade": "Jade",
 
   "block.dreamless_spells.sleepless_cloth_block": "Sleepless Cloth Block",
+  "block.dreamless_spells.jade_ore": "Jade Ore",
 
-  "creativetab.dreamless_spells.dreamless_items": "Dreamless Items"
+  "curios.identifier.feet": "Feet",
+
+  "creativetab.dreamless_spells.dreamless_items": "Dreamless Items",
+
+  //Curios
+  "item.dreamless_spells.old_boots": "Old Boots",
+  "item.dreamless_spells.iron_socks": "Iron Socks",
+  "item.dreamless_spells.copper_boots": "Copper Boots",
+  "item.dreamless_spells.deep_divers": "Deep Divers",
+  "item.dreamless_spells.tank_boots": "Tank Boots"
+
 }

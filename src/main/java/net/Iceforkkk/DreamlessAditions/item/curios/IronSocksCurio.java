@@ -13,15 +13,17 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 import top.theillusivec4.curios.api.SlotContext;
 
-public class OldBootsCurio extends CurioBaseItem {
-    public OldBootsCurio() {
+public class IronSocksCurio extends CurioBaseItem {
+    public IronSocksCurio() {
         super(ItemPropertiesHelper.equipment().stacksTo(1).fireResistant().rarity(Rarity.COMMON));
     }
 
     @Override
     public Multimap<Holder<Attribute>, AttributeModifier> getAttributeModifiers(SlotContext slotContext, ResourceLocation id, ItemStack stack) {
         Multimap<Holder<Attribute>, AttributeModifier> attr = LinkedHashMultimap.create();
-        attr.put(Attributes.MOVEMENT_SPEED, new AttributeModifier(id, 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        attr.put(Attributes.ARMOR, new AttributeModifier(id, 2, AttributeModifier.Operation.ADD_VALUE));
+        attr.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(id, 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        attr.put(Attributes.MOVEMENT_SPEED, new AttributeModifier(id, -0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
 
         return attr;
     }

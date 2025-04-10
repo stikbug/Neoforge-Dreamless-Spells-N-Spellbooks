@@ -4,7 +4,7 @@ import io.redspace.ironsspellbooks.util.ItemPropertiesHelper;
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
 import net.Iceforkkk.DreamlessAditions.item.armor.FastBootsArmorItem;
 import net.Iceforkkk.DreamlessAditions.item.armor.SleeplessArmorArmorItem;
-import net.Iceforkkk.DreamlessAditions.item.curios.OldBootsCurio;
+import net.Iceforkkk.DreamlessAditions.item.curios.*;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
@@ -39,6 +39,10 @@ public class ModItems {
             ()-> new FastBootsArmorItem(ArmorItem.Type.BOOTS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(39))));
     //Curios
     public static final DeferredItem<OldBootsCurio> OLD_BOOTS = ITEMS.register("old_boots", OldBootsCurio::new);
+    public static final DeferredItem<IronSocksCurio> IRON_SOCKS = ITEMS.register("iron_socks", IronSocksCurio::new);
+    public static final DeferredItem<CopperBootsCurio> COPPER_BOOTS = ITEMS.register("copper_boots", CopperBootsCurio::new);
+    public static final DeferredItem<TankBootsCurio> TANK_BOOTS = ITEMS.register("tank_boots", TankBootsCurio::new);
+    public static final DeferredItem<DeepDiversCurio> DEEP_DIVERS = ITEMS.register("deep_divers", DeepDiversCurio::new);
 
 
 

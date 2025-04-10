@@ -19,6 +19,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(ModBlocks.SLEEPLESSCLOTHBLOCK.get());
+        dropSelf(ModBlocks.JADEORE.get());
     }
 
     @Override

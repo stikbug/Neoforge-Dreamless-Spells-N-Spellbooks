@@ -15,6 +15,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.SLEEPLESSCLOTHBLOCK);
+        blockWithItem(ModBlocks.JADEORE);
     }
     //Helper method for simple blocks
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

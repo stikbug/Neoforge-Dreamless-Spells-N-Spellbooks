@@ -34,6 +34,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MYSTERIOUSCIRCUITRY);
                         output.accept(ModItems.JADE);
                         output.accept((ItemLike) ModItems.OLD_BOOTS);
+                        output.accept((ItemLike) ModItems.IRON_SOCKS);
+                        output.accept((ItemLike) ModItems.COPPER_BOOTS);
+                        output.accept((ItemLike) ModItems.DEEP_DIVERS);
+                        output.accept((ItemLike) ModItems.TANK_BOOTS);
                         //Blocks from this point on
                         output.accept(ModBlocks.SLEEPLESSCLOTHBLOCK);
                     }).build());
