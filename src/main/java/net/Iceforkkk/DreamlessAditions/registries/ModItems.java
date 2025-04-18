@@ -26,6 +26,8 @@ public class ModItems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> JADE = ITEMS.register("jade",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ARCANEGEM = ITEMS.register("arcane_gem",
+            ()-> new Item(new Item.Properties()));
     //Armor
     public static final DeferredItem<ArmorItem> SLEEPLESSHELMET = ITEMS.register("sleepless_helmet",
             ()-> new SleeplessArmorArmorItem(ArmorItem.Type.HELMET, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(39))));

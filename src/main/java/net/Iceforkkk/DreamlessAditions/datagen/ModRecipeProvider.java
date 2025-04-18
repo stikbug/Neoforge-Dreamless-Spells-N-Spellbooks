@@ -1,5 +1,7 @@
 package net.Iceforkkk.DreamlessAditions.datagen;
 
+import io.redspace.ironsspellbooks.IronsSpellbooks;
+import io.redspace.ironsspellbooks.registries.ItemRegistry;
 import net.Iceforkkk.DreamlessAditions.block.ModBlocks;
 import net.Iceforkkk.DreamlessAditions.registries.ModItems;
 import net.minecraft.core.HolderLookup;
@@ -72,10 +74,47 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', ModItems.SLEEPLESSCHAIN.get())
                 .define('W', ModItems.SLEEPLESSCLOTH.get())
                 .unlockedBy("has_sleepless_chain", has(ModItems.SLEEPLESSCHAIN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COPPER_BOOTS.get())
+                .pattern("COC")
+                .pattern("C C")
+                .pattern("   ")
+                .define('C', Items.COPPER_INGOT)
+                .define('O', ModItems.OLD_BOOTS.get())
+                .unlockedBy("has_old_boots", has(ModItems.OLD_BOOTS)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.IRON_SOCKS.get())
+                .pattern("ICI")
+                .pattern("I I")
+                .pattern("   ")
+                .define('I', Items.IRON_INGOT)
+                .define('C', ModItems.COPPER_BOOTS.get())
+                .unlockedBy("has_copper_boots", has(ModItems.COPPER_BOOTS)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TANK_BOOTS.get())
+                .pattern("IDI")
+                .pattern("I I")
+                .pattern("   ")
+                .define('I', Items.IRON_BLOCK)
+                .define('D', ModItems.DEEP_DIVERS.get())
+                .unlockedBy("has_deep_diver", has(ModItems.DEEP_DIVERS)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.DEEP_DIVERS.get())
+                .pattern("SIS")
+                .pattern("B B")
+                .pattern("   ")
+                .define('S', Items.SPONGE)
+                .define('I', ModItems.IRON_SOCKS.get())
+                .define('B', Items.BLUE_ICE)
+                .unlockedBy("has_iron_socks", has(ModItems.IRON_SOCKS)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ARCANEGEM.get(), 2)
+                .pattern(" A ")
+                .pattern("ADA")
+                .pattern(" A ")
+                .define('D', Items.DIAMOND)
+                .define('A', ItemRegistry.ARCANE_ESSENCE.get())
+                .unlockedBy("has_diamons", has(Items.DIAMOND)).save(recipeOutput);
 // Start of the shapeless recipes
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SLEEPLESSCLOTH.get(), 9)
                 .requires(ModBlocks.SLEEPLESSCLOTHBLOCK)
                 .unlockedBy("has_sleepless_cloth_block", has(ModBlocks.SLEEPLESSCLOTHBLOCK))
                 .save(recipeOutput,"dreamless_spells:sleepless_cloth_from_sleepless_cloth_block");
+
     }
 }

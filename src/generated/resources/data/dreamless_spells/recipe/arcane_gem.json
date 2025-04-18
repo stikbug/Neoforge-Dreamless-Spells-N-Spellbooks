@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    " A ",
+    "ADA",
+    " A "
+  ],
+  "result": {
+    "count": 2,
+    "id": "dreamless_spells:arcane_gem"
+  }
+}
