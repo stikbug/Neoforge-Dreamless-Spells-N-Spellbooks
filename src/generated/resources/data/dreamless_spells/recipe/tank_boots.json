@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "dreamless_spells:deep_divers"
+    },
+    "I": {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "pattern": [
+    "IDI",
+    "I I",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:tank_boots"
+  }
+}

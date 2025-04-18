@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:blue_ice"
+    },
+    "I": {
+      "item": "dreamless_spells:iron_socks"
+    },
+    "S": {
+      "item": "minecraft:sponge"
+    }
+  },
+  "pattern": [
+    "SIS",
+    "B B",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:deep_divers"
+  }
+}

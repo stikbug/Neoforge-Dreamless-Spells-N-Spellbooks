@@ -19,6 +19,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.NITROCORE.get());
         basicItem(ModItems.MYSTERIOUSCIRCUITRY.get());
         basicItem(ModItems.JADE.get());
+        basicItem(ModItems.ARCANEGEM.get());
 
         basicItem(ModItems.OLD_BOOTS.get());
         basicItem(ModItems.COPPER_BOOTS.get());

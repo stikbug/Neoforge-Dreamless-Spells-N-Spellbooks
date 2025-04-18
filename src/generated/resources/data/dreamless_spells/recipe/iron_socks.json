@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "dreamless_spells:copper_boots"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "ICI",
+    "I I",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:iron_socks"
+  }
+}
