@@ -26,8 +26,16 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.IRON_SOCKS.get());
         basicItem(ModItems.TANK_BOOTS.get());
         basicItem(ModItems.DEEP_DIVERS.get());
-
-
+        basicItem(ModItems.PAGMAS_BOOTS.get());
+        basicItem(ModItems.PYRIUM_BOOTS.get());
+        basicItem(ModItems.NETHERITE_GREAVES.get());
+        basicItem(ModItems.GOLDEN_GREAVES.get());
+        basicItem(ModItems.CLOTH_BOOTS.get());
+        basicItem(ModItems.ARCANE_CLOTH_BOOTS.get());
+        basicItem(ModItems.MAGE_BOOTS.get());
+        basicItem(ModItems.ARCHMAGE_BOOTS.get());
+        basicItem(ModItems.MAGI_BOOTS.get());
+        basicItem(ModItems.SCRAPPED_BOOTS.get());
 
         basicItem(ModItems.SLEEPLESSHELMET.get());
         basicItem(ModItems.SLEEPLESSCHESTPLATE.get());

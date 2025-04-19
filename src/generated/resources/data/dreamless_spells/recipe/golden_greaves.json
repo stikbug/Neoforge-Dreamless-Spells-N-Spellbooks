@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:gold_block"
+    },
+    "C": {
+      "item": "dreamless_spells:copper_boots"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "GCG",
+    "B B",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:golden_greaves"
+  }
+}

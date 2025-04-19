@@ -10,6 +10,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
+import top.theillusivec4.curios.server.command.CurioArgumentType;
 
 import java.util.concurrent.CompletableFuture;
 
