@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "irons_spellbooks:magic_cloth"
+    },
+    "C": {
+      "item": "dreamless_spells:cloth_boots"
+    }
+  },
+  "pattern": [
+    "ACA",
+    "A A",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:arcane_cloth_boots"
+  }
+}

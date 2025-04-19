@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "dreamless_spells:golden_greaves"
+    },
+    "S": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "pattern": [
+    "SGS",
+    "S S",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:scrapped_boots"
+  }
+}

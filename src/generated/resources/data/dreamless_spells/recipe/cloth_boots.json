@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "dreamless_spells:old_boots"
+    },
+    "W": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "pattern": [
+    "WOW",
+    "W W",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:cloth_boots"
+  }
+}

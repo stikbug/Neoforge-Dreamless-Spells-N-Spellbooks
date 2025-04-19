@@ -45,8 +45,16 @@ public class ModItems {
     public static final DeferredItem<CopperBootsCurio> COPPER_BOOTS = ITEMS.register("copper_boots", CopperBootsCurio::new);
     public static final DeferredItem<TankBootsCurio> TANK_BOOTS = ITEMS.register("tank_boots", TankBootsCurio::new);
     public static final DeferredItem<DeepDiversCurio> DEEP_DIVERS = ITEMS.register("deep_divers", DeepDiversCurio::new);
-
-
+    public static final DeferredItem<PagmasBootsCurio> PAGMAS_BOOTS = ITEMS.register("pagmas_boots", PagmasBootsCurio::new);
+    public static final DeferredItem<PyriumBootsCurio> PYRIUM_BOOTS = ITEMS.register("pyrium_boots", PyriumBootsCurio::new);
+    public static final DeferredItem<NetheriteGreavesCurio> NETHERITE_GREAVES = ITEMS.register("netherite_greaves", NetheriteGreavesCurio::new);
+    public static final DeferredItem<GoldenGreavesCurio> GOLDEN_GREAVES = ITEMS.register("golden_greaves", GoldenGreavesCurio::new);
+    public static final DeferredItem<ClothBootsCurio> CLOTH_BOOTS = ITEMS.register("cloth_boots", ClothBootsCurio::new);
+    public static final DeferredItem<ArcaneClothBootsCurio> ARCANE_CLOTH_BOOTS = ITEMS.register("arcane_cloth_boots", ArcaneClothBootsCurio::new);
+    public static final DeferredItem<MageBootsCurio> MAGE_BOOTS = ITEMS.register("mage_boots", MageBootsCurio::new);
+    public static final DeferredItem<ArchmageBootsCurio> ARCHMAGE_BOOTS = ITEMS.register("archmage_boots", ArchmageBootsCurio::new);
+    public static final DeferredItem<MagiBootsCurio> MAGI_BOOTS = ITEMS.register("magi_boots", MagiBootsCurio::new);
+    public static final DeferredItem<ScrappedBootsCurio> SCRAPPED_BOOTS = ITEMS.register("scrapped_boots", ScrappedBootsCurio::new);
 
     public static void register (IEventBus eventBus) {
         ITEMS.register(eventBus);

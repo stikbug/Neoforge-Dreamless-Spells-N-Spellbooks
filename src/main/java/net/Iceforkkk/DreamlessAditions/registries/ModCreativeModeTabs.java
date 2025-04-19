@@ -20,25 +20,36 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SLEEPLESSCLOTH.get()))
                     .title(Component.translatable("creativetab.dreamless_spells.dreamless_items"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        //Normal items with no data
+                        //Basic items
                         output.accept(ModItems.SLEEPLESSCLOTH);
                         output.accept(ModItems.SLEEPLESSCHAIN);
+                        output.accept(ModItems.ARCANEGEM);
+                        output.accept(ModItems.NITROCORE);
+                        output.accept(ModItems.NITROGLAND);
+                        output.accept(ModItems.MYSTERIOUSCIRCUITRY);
+                        output.accept(ModItems.JADE);
                         //Items that have durrability
                         output.accept(ModItems.SLEEPLESSBOOTS);
                         output.accept(ModItems.SLEEPLESSLEGGINGS);
                         output.accept(ModItems.SLEEPLESSCHESTPLATE);
                         output.accept(ModItems.SLEEPLESSHELMET);
                         output.accept(ModItems.FASTBOOTS);
-                        output.accept(ModItems.NITROCORE);
-                        output.accept(ModItems.NITROGLAND);
-                        output.accept(ModItems.MYSTERIOUSCIRCUITRY);
-                        output.accept(ModItems.JADE);
+                        //Curios
                         output.accept((ItemLike) ModItems.OLD_BOOTS);
                         output.accept((ItemLike) ModItems.IRON_SOCKS);
                         output.accept((ItemLike) ModItems.COPPER_BOOTS);
                         output.accept((ItemLike) ModItems.DEEP_DIVERS);
                         output.accept((ItemLike) ModItems.TANK_BOOTS);
-                        //Blocks from this point on
+                        output.accept((ItemLike) ModItems.PYRIUM_BOOTS);
+                        output.accept((ItemLike) ModItems.PAGMAS_BOOTS);
+                        output.accept((ItemLike) ModItems.NETHERITE_GREAVES);
+                        output.accept((ItemLike) ModItems.GOLDEN_GREAVES);
+                        output.accept((ItemLike) ModItems.CLOTH_BOOTS);
+                        output.accept((ItemLike) ModItems.ARCANE_CLOTH_BOOTS);
+                        output.accept((ItemLike) ModItems.MAGE_BOOTS);
+                        output.accept((ItemLike) ModItems.ARCHMAGE_BOOTS);
+                        output.accept((ItemLike) ModItems.MAGI_BOOTS);
+                        //Blocks
                         output.accept(ModBlocks.SLEEPLESSCLOTHBLOCK);
                     }).build());
 
