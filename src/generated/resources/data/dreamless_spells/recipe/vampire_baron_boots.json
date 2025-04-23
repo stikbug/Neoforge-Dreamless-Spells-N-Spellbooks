@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "irons_spellbooks:blood_vial"
+    },
+    "H": {
+      "item": "dreamless_spells:hunter_boots"
+    },
+    "I": {
+      "item": "irons_spellbooks:rare_ink"
+    }
+  },
+  "pattern": [
+    "BHB",
+    "I I",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:vampire_baron_boots"
+  }
+}

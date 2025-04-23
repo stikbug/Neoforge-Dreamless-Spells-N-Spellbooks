@@ -49,8 +49,24 @@ public class ModCreativeModeTabs {
                         output.accept((ItemLike) ModItems.MAGE_BOOTS);
                         output.accept((ItemLike) ModItems.ARCHMAGE_BOOTS);
                         output.accept((ItemLike) ModItems.MAGI_BOOTS);
+                        output.accept((ItemLike) ModItems.GLASS_BOOTS);
+                        output.accept((ItemLike) ModItems.TEMPERED_GLASS_BOOTS);
+                        output.accept((ItemLike) ModItems.AMETHYST_BOOTS);
+                        output.accept((ItemLike) ModItems.ARCANE_CRYSTAL_BOOTS);
+                        output.accept((ItemLike) ModItems.EMERALD_BOOTS);
+                        output.accept((ItemLike) ModItems.JADE_BOOTS);
+                        output.accept((ItemLike) ModItems.UNDEFEATED_BOOTS);
+                        output.accept((ItemLike) ModItems.HUNTER_BOOTS);
+                        output.accept((ItemLike) ModItems.VAMPIRE_BARON_BOOTS);
+                        output.accept((ItemLike) ModItems.VAMPIRE_EARL_BOOTS);
+                        output.accept((ItemLike) ModItems.VAMPIRE_KING_BOOTS);
+                        output.accept((ItemLike) ModItems.BRAHAMS_BOOTS);
+                        output.accept((ItemLike) ModItems.LEGEND_BOOTS);
+
                         //Blocks
-                        output.accept(ModBlocks.SLEEPLESSCLOTHBLOCK);
+                        output.accept(ModBlocks.TUNGSTENORE);
+                        output.accept(ModBlocks.TUNGSTENBLOCK);
+                        output.accept(ModBlocks.JADEORE);
                     }).build());
 
     public static void register(IEventBus eventBus) {

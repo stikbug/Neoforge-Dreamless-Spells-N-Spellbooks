@@ -16,6 +16,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.SLEEPLESSCLOTHBLOCK);
         blockWithItem(ModBlocks.JADEORE);
+        blockWithItem(ModBlocks.TUNGSTENORE);
+        blockWithItem(ModBlocks.TUNGSTENBLOCK);
     }
     //Helper method for simple blocks
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

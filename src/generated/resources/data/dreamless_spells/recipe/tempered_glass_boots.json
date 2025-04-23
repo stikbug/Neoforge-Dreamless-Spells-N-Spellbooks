@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "dreamless_spells:glass_boots"
+    },
+    "T": {
+      "item": "minecraft:tinted_glass"
+    }
+  },
+  "pattern": [
+    "TGT",
+    "T T",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:tempered_glass_boots"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "dreamless_spells:arcane_crystal_boots"
+    },
+    "E": {
+      "item": "minecraft:emerald_block"
+    }
+  },
+  "pattern": [
+    "EAE",
+    "E E",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:emerald_boots"
+  }
+}

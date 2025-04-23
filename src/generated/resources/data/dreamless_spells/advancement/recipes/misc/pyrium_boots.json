@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_netherite_greaves": {
+      "conditions": {
+        "items": [
+          {
+            "items": "dreamless_spells:netherite_greaves"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dreamless_spells:pyrium_boots"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_netherite_greaves"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dreamless_spells:pyrium_boots"
+    ]
+  }
+}

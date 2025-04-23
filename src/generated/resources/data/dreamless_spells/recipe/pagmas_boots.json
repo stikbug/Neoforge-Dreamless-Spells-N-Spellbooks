@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "irons_spellbooks:pyrium_ingot"
+    },
+    "P": {
+      "item": "dreamless_spells:pyrium_boots"
+    },
+    "S": {
+      "item": "irons_spellbooks:divine_soulshard"
+    },
+    "T": {
+      "item": "dreamless_spells:tungsten_boots"
+    }
+  },
+  "pattern": [
+    "PST",
+    "I I",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:pagmas_boots"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "dreamless_spells:scrapped_boots"
+  },
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:netherite_greaves"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

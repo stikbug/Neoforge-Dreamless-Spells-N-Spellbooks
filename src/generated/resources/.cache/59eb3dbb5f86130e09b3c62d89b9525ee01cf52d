@@ -1,3 +1,5 @@
-// 1.21.1	2025-04-09T16:34:31.8737077	Loot Tables
-7d5ece0c6f5560bdda72f8980aaf7bbb7fa7c46e data/dreamless_spells/loot_table/blocks/jade_ore.json
+// 1.21.1	2025-04-22T17:58:41.95967	Loot Tables
+51b531713674881a92612119085e81b916fa20a5 data/dreamless_spells/loot_table/blocks/jade_ore.json
 f580527bb5489018fd3fa9f4f618282f7f54e450 data/dreamless_spells/loot_table/blocks/sleepless_cloth_block.json
+a51a5f6f9d7fa188d545dfafb4a52ae93f0382ac data/dreamless_spells/loot_table/blocks/tungsten_block.json
+7d2e25467dd1e4e3a94dedb8721d6f2484a73cee data/dreamless_spells/loot_table/blocks/tungsten_ore.json

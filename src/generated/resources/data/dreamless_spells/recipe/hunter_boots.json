@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "dreamless_spells:cloth_boots"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    }
+  },
+  "pattern": [
+    "LCL",
+    "L L",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:hunter_boots"
+  }
+}

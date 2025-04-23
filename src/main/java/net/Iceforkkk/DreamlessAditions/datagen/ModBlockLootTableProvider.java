@@ -1,6 +1,7 @@
 package net.Iceforkkk.DreamlessAditions.datagen;
 
 import net.Iceforkkk.DreamlessAditions.block.ModBlocks;
+import net.Iceforkkk.DreamlessAditions.registries.ModItems;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -18,9 +19,16 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        //Drop Self
         dropSelf(ModBlocks.SLEEPLESSCLOTHBLOCK.get());
-        dropSelf(ModBlocks.JADEORE.get());
+        dropSelf(ModBlocks.TUNGSTENBLOCK.get());
+        //Ore
+        add(ModBlocks.TUNGSTENORE.get(),
+                block -> createOreDrop(ModBlocks.TUNGSTENORE.get(), ModItems.RAWTUNGSTEN.get()));
+        add(ModBlocks.JADEORE.get(),
+                block -> createOreDrop(ModBlocks.JADEORE.get(), ModItems.JADE.get()));
     }
+
 
     @Override
     protected Iterable<Block> getKnownBlocks() {

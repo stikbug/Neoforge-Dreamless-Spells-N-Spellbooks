@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "dreamless_spells:emerald_boots"
+    },
+    "J": {
+      "item": "dreamless_spells:jade"
+    }
+  },
+  "pattern": [
+    "JEJ",
+    "J J",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:jade_boots"
+  }
+}

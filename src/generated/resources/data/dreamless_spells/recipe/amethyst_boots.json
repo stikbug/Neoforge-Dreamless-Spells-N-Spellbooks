@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_block"
+    },
+    "G": {
+      "item": "dreamless_spells:glass_boots"
+    }
+  },
+  "pattern": [
+    "AGA",
+    "A A",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:amethyst_boots"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "dreamless_spells:tank_boots"
+    },
+    "T": {
+      "item": "dreamless_spells:tungsten_block"
+    }
+  },
+  "pattern": [
+    "TBT",
+    "T T",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:tungsten_boots"
+  }
+}

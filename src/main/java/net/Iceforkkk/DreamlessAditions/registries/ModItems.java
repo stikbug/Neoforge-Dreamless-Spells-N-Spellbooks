@@ -28,7 +28,11 @@ public class ModItems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ARCANEGEM = ITEMS.register("arcane_gem",
             ()-> new Item(new Item.Properties()));
-    //Armor
+    public static final DeferredItem<Item> RAWTUNGSTEN = ITEMS.register("raw_tungsten",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TUNGSTENINGOT = ITEMS.register("tungsten_ingot",
+            ()-> new Item(new Item.Properties()));
+    //Slepless Armor
     public static final DeferredItem<ArmorItem> SLEEPLESSHELMET = ITEMS.register("sleepless_helmet",
             ()-> new SleeplessArmorArmorItem(ArmorItem.Type.HELMET, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(39))));
     public static final DeferredItem<ArmorItem> SLEEPLESSCHESTPLATE = ITEMS.register("sleepless_chestplate",
@@ -55,6 +59,20 @@ public class ModItems {
     public static final DeferredItem<ArchmageBootsCurio> ARCHMAGE_BOOTS = ITEMS.register("archmage_boots", ArchmageBootsCurio::new);
     public static final DeferredItem<MagiBootsCurio> MAGI_BOOTS = ITEMS.register("magi_boots", MagiBootsCurio::new);
     public static final DeferredItem<ScrappedBootsCurio> SCRAPPED_BOOTS = ITEMS.register("scrapped_boots", ScrappedBootsCurio::new);
+    public static final DeferredItem<GlassBootsCurio> GLASS_BOOTS = ITEMS.register("glass_boots", GlassBootsCurio::new);
+    public static final DeferredItem<TemperedGlassBootsCurio> TEMPERED_GLASS_BOOTS = ITEMS.register("tempered_glass_boots", TemperedGlassBootsCurio::new);
+    public static final DeferredItem<ArcaneCrystalBootsCurio> ARCANE_CRYSTAL_BOOTS = ITEMS.register("arcane_crystal_boots", ArcaneCrystalBootsCurio::new);
+    public static final DeferredItem<AmethystBootsCurio> AMETHYST_BOOTS = ITEMS.register("amethyst_boots", AmethystBootsCurio::new);
+    public static final DeferredItem<EmeraldBootsCurio> EMERALD_BOOTS = ITEMS.register("emerald_boots", EmeraldBootsCurio::new);
+    public static final DeferredItem<JadeBootsCurio> JADE_BOOTS = ITEMS.register("jade_boots", JadeBootsCurio::new);
+    public static final DeferredItem<UndefeatedBootsCurio> UNDEFEATED_BOOTS = ITEMS.register("undefeated_boots", UndefeatedBootsCurio::new);
+    public static final DeferredItem<LegendBootsCurio> LEGEND_BOOTS = ITEMS.register("legend_boots", LegendBootsCurio::new);
+    public static final DeferredItem<BrahamsBootsCurio> BRAHAMS_BOOTS = ITEMS.register("brahams_boots", BrahamsBootsCurio::new);
+    public static final DeferredItem<HunterBootsCurio> HUNTER_BOOTS = ITEMS.register("hunter_boots", HunterBootsCurio::new);
+    public static final DeferredItem<VampireBaronBootsCurio> VAMPIRE_BARON_BOOTS = ITEMS.register("vampire_baron_boots", VampireBaronBootsCurio::new);
+    public static final DeferredItem<VampireEarlBootsCurio> VAMPIRE_EARL_BOOTS = ITEMS.register("vampire_earl_boots", VampireEarlBootsCurio::new);
+    public static final DeferredItem<VampireKingBootsCurio> VAMPIRE_KING_BOOTS = ITEMS.register("vampire_king_boots", VampireKingBootsCurio::new);
+    public static final DeferredItem<TungstenBootsCurio> TUNGSTEN_BOOTS = ITEMS.register("tungsten_boots", TungstenBootsCurio::new);
 
     public static void register (IEventBus eventBus) {
         ITEMS.register(eventBus);

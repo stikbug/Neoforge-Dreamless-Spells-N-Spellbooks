@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hunter_boots": {
+      "conditions": {
+        "items": [
+          {
+            "items": "dreamless_spells:hunter_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dreamless_spells:vampire_baron_boots"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_hunter_boots"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dreamless_spells:vampire_baron_boots"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "dreamless_spells:amethyst_boots"
+    },
+    "C": {
+      "item": "dreamless_spells:arcane_gem"
+    }
+  },
+  "pattern": [
+    "CAC",
+    "C C",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:arcane_crystal_boots"
+  }
+}

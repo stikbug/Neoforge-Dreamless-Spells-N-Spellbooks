@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "J": {
+      "item": "dreamless_spells:jade_boots"
+    },
+    "Q": {
+      "item": "minecraft:quartz"
+    },
+    "S": {
+      "item": "irons_spellbooks:divine_soulshard"
+    }
+  },
+  "pattern": [
+    "QJQ",
+    "QSQ",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:undefeated_boots"
+  }
+}

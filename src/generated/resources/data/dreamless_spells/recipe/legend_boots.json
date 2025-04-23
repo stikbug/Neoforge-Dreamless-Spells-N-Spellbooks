@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "dreamless_spells:brahams_boots"
+    },
+    "D": {
+      "item": "irons_spellbooks:divine_soulshard"
+    },
+    "F": {
+      "item": "irons_spellbooks:speed_boots"
+    },
+    "P": {
+      "item": "dreamless_spells:pagmas_boots"
+    },
+    "U": {
+      "item": "dreamless_spells:undefeated_boots"
+    }
+  },
+  "pattern": [
+    " P ",
+    "BDU",
+    " F "
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:legend_boots"
+  }
+}

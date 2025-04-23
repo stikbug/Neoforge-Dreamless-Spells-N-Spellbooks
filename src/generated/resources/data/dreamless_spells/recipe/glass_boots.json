@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "O": {
+      "item": "dreamless_spells:old_boots"
+    }
+  },
+  "pattern": [
+    "GOG",
+    "G G",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:glass_boots"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "dreamless_spells:netherite_greaves"
+    },
+    "P": {
+      "item": "irons_spellbooks:pyrium_ingot"
+    }
+  },
+  "pattern": [
+    "PNP",
+    "P P",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:pyrium_boots"
+  }
+}

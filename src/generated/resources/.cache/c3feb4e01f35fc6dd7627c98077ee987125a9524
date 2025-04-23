@@ -1,2 +1,4 @@
-// 1.21.1	2025-03-19T22:03:58.1830193	Tags for minecraft:block mod id dreamless_spells
-b434bfe53a8073cfbadb4f6118c00ae18d5d7e9b data/minecraft/tags/block/mineable/pickaxe.json
+// 1.21.1	2025-04-23T08:14:00.320862	Tags for minecraft:block mod id dreamless_spells
+679f05cecbe4f41f3741911e38f8bdf029b0a2da data/minecraft/tags/block/mineable/pickaxe.json
+b5b78620c28e9facc0ceea8de9285c7a7f52821e data/minecraft/tags/block/needs_diamond_tool.json
+25064b431c6a82476942a444ab8350d825e23385 data/minecraft/tags/block/needs_iron_tool.json

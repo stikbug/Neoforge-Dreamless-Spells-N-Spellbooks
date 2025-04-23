@@ -25,6 +25,14 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(5f).sound(SoundType.STONE)));
 
+    public static final DeferredBlock<Block> TUNGSTENORE = registerBlock("tungsten_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(5f).sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> TUNGSTENBLOCK = registerBlock("tungsten_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(5f).sound(SoundType.NETHERITE_BLOCK)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
