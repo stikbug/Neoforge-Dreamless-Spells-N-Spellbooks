@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values" :[
+    "dreamless_spells:blank_tablet",
+    "dreamless_spells:arcane_tablet",
+    "dreamless_spells:blood_tablet",
+    "dreamless_spells:cooldown_tablet",
+    "dreamless_spells:ender_tablet",
+    "dreamless_spells:evocation_tablet",
+    "dreamless_spells:fire_tablet",
+    "dreamless_spells:holy_tablet",
+    "dreamless_spells:ice_tablet",
+    "dreamless_spells:lightning_tablet",
+    "dreamless_spells:nature_tablet",
+    "dreamless_spells:protection_tablet"
+
+  ]
+}

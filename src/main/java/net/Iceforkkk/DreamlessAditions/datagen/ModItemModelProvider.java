@@ -13,6 +13,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        //Normal Items
         basicItem(ModItems.SLEEPLESSCLOTH.get());
         basicItem(ModItems.SLEEPLESSCHAIN.get());
         basicItem(ModItems.NITROGLAND.get());
@@ -22,7 +23,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.ARCANEGEM.get());
         basicItem(ModItems.TUNGSTENINGOT.get());
         basicItem(ModItems.RAWTUNGSTEN.get());
+        basicItem(ModItems.TUNGSTENNUGGET.get());
+        basicItem(ModItems.TUNGSTEN_MITHRIL_MIXTURE.get());
+        basicItem(ModItems.PAVARIUM.get());
 
+
+        //Boots Curios
         basicItem(ModItems.OLD_BOOTS.get());
         basicItem(ModItems.COPPER_BOOTS.get());
         basicItem(ModItems.IRON_SOCKS.get());
@@ -53,11 +59,25 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.LEGEND_BOOTS.get());
         basicItem(ModItems.TUNGSTEN_BOOTS.get());
 
-        basicItem(ModItems.SLEEPLESSHELMET.get());
-        basicItem(ModItems.SLEEPLESSCHESTPLATE.get());
-        basicItem(ModItems.SLEEPLESSLEGGINGS.get());
-        basicItem(ModItems.SLEEPLESSBOOTS.get());
-        basicItem(ModItems.FASTBOOTS.get());
+        //Tablet Curios
+        basicItem(ModItems.BLANK_TABLET.get());
+        basicItem(ModItems.ARCANE_TABLET.get());
+        basicItem(ModItems.BLOOD_TABLET.get());
+        basicItem(ModItems.COOLDOWN_TABLET.get());
+        basicItem(ModItems.ENDER_TABLET.get());
+        basicItem(ModItems.EVOCATION_TABLET.get());
+        basicItem(ModItems.FIRE_TABLET.get());
+        basicItem(ModItems.HOLY_TABLET.get());
+        basicItem(ModItems.ICE_TABLET.get());
+        basicItem(ModItems.LIGHTNING_TABLET.get());
+        basicItem(ModItems.NATURE_TABLET.get());
+        basicItem(ModItems.PROTECTION_TABLET.get());
+
+        //Holy Priest Armor
+        basicItem(ModItems.HOLYPRIESTHELMET.get());
+        basicItem(ModItems.HOLYPRIESTCHESTPLATE.get());
+        basicItem(ModItems.HOLYPRIESTLEGGINGS.get());
+        basicItem(ModItems.HOLYPRIESTBOOTS.get());
 
 
     }

@@ -28,13 +28,17 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.NITROGLAND);
                         output.accept(ModItems.MYSTERIOUSCIRCUITRY);
                         output.accept(ModItems.JADE);
-                        //Items that have durrability
-                        output.accept(ModItems.SLEEPLESSBOOTS);
-                        output.accept(ModItems.SLEEPLESSLEGGINGS);
-                        output.accept(ModItems.SLEEPLESSCHESTPLATE);
-                        output.accept(ModItems.SLEEPLESSHELMET);
-                        output.accept(ModItems.FASTBOOTS);
-                        //Curios
+                        output.accept(ModItems.TUNGSTENINGOT);
+                        output.accept(ModItems.RAWTUNGSTEN);
+                        output.accept(ModItems.TUNGSTENNUGGET);
+                        output.accept(ModItems.TUNGSTEN_MITHRIL_MIXTURE);
+                        output.accept(ModItems.PAVARIUM);
+                        //Holy Priest Armor
+                        output.accept(ModItems.HOLYPRIESTBOOTS);
+                        output.accept(ModItems.HOLYPRIESTLEGGINGS);
+                        output.accept(ModItems.HOLYPRIESTCHESTPLATE);
+                        output.accept(ModItems.HOLYPRIESTHELMET);
+                        //Boot Curios
                         output.accept((ItemLike) ModItems.OLD_BOOTS);
                         output.accept((ItemLike) ModItems.IRON_SOCKS);
                         output.accept((ItemLike) ModItems.COPPER_BOOTS);
@@ -62,7 +66,21 @@ public class ModCreativeModeTabs {
                         output.accept((ItemLike) ModItems.VAMPIRE_KING_BOOTS);
                         output.accept((ItemLike) ModItems.BRAHAMS_BOOTS);
                         output.accept((ItemLike) ModItems.LEGEND_BOOTS);
-
+                        output.accept((ItemLike) ModItems.SCRAPPED_BOOTS);
+                        output.accept((ItemLike) ModItems.TUNGSTEN_BOOTS);
+                        //Tablet Curios
+                        output.accept((ItemLike) ModItems.ARCANE_TABLET);
+                        output.accept((ItemLike) ModItems.ICE_TABLET);
+                        output.accept((ItemLike) ModItems.BLANK_TABLET);
+                        output.accept((ItemLike) ModItems.COOLDOWN_TABLET);
+                        output.accept((ItemLike) ModItems.BLOOD_TABLET);
+                        output.accept((ItemLike) ModItems.ENDER_TABLET);
+                        output.accept((ItemLike) ModItems.EVOCATION_TABLET);
+                        output.accept((ItemLike) ModItems.FIRE_TABLET);
+                        output.accept((ItemLike) ModItems.HOLY_TABLET);
+                        output.accept((ItemLike) ModItems.LIGHTNING_TABLET);
+                        output.accept((ItemLike) ModItems.NATURE_TABLET);
+                        output.accept((ItemLike) ModItems.PROTECTION_TABLET);
                         //Blocks
                         output.accept(ModBlocks.TUNGSTENORE);
                         output.accept(ModBlocks.TUNGSTENBLOCK);
