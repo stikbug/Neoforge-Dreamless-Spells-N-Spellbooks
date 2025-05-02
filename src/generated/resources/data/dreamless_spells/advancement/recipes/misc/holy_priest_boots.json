@@ -1,27 +1,27 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_sleepless_chain": {
-      "conditions": {
-        "items": [
-          {
-            "items": "dreamless_spells:sleepless_chain"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "dreamless_spells:holy_priest_boots"
       },
       "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tungsten_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "dreamless_spells:tungsten_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_sleepless_chain"
+      "has_tungsten_ingot"
     ]
   ],
   "rewards": {

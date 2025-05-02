@@ -2,16 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "S": {
-      "item": "dreamless_spells:sleepless_chain"
+    "B": {
+      "item": "irons_spellbooks:priest_boots"
     },
-    "W": {
-      "item": "dreamless_spells:sleepless_cloth"
+    "P": {
+      "item": "dreamless_spells:pavarium"
+    },
+    "T": {
+      "item": "dreamless_spells:tungsten_ingot"
     }
   },
   "pattern": [
-    "S S",
-    "W W",
+    "TBT",
+    "P P",
     "   "
   ],
   "result": {

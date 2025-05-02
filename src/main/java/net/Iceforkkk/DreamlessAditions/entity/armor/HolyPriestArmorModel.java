@@ -6,9 +6,9 @@ import net.Iceforkkk.DreamlessAditions.item.armor.HolyPriestArmorItem;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.model.DefaultedEntityGeoModel;
 
-public class SleeplessArmorArmorModel extends DefaultedEntityGeoModel<HolyPriestArmorItem> {
+public class HolyPriestArmorModel extends DefaultedEntityGeoModel<HolyPriestArmorItem> {
 
-    public SleeplessArmorArmorModel() {
+    public HolyPriestArmorModel() {
         super(ResourceLocation.fromNamespaceAndPath(Dreamless_Spells.MOD_ID, ""));
     }
 

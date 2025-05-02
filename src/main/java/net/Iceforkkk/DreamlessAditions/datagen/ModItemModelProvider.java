@@ -14,8 +14,6 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         //Normal Items
-        basicItem(ModItems.SLEEPLESSCLOTH.get());
-        basicItem(ModItems.SLEEPLESSCHAIN.get());
         basicItem(ModItems.NITROGLAND.get());
         basicItem(ModItems.NITROCORE.get());
         basicItem(ModItems.MYSTERIOUSCIRCUITRY.get());

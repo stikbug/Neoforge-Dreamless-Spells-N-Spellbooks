@@ -13,10 +13,6 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Dreamless_Spells.MOD_ID);
     //Normal Materials
-    public static final DeferredItem<Item> SLEEPLESSCHAIN = ITEMS.register("sleepless_chain",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> SLEEPLESSCLOTH = ITEMS.register("sleepless_cloth",
-            ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> NITROGLAND = ITEMS.register("nitro_gland",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> NITROCORE = ITEMS.register("nitro_core",

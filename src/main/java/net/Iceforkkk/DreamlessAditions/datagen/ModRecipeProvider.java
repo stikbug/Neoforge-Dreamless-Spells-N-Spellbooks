@@ -1,17 +1,13 @@
 package net.Iceforkkk.DreamlessAditions.datagen;
 
-import io.redspace.ironsspellbooks.IronsSpellbooks;
 import io.redspace.ironsspellbooks.registries.ItemRegistry;
 import net.Iceforkkk.DreamlessAditions.block.ModBlocks;
-import net.Iceforkkk.DreamlessAditions.item.curios.NetheriteGreavesCurio;
 import net.Iceforkkk.DreamlessAditions.registries.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.List;
@@ -25,12 +21,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
         //Blocks
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SLEEPLESSCLOTHBLOCK.get())
-                .pattern("SSS")
-                .pattern("SSS")
-                .pattern("SSS")
-                .define('S', ModItems.SLEEPLESSCLOTH.get())
-                .unlockedBy("has_sleepless_cloth", has(ModItems.SLEEPLESSCLOTH)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TUNGSTENBLOCK.get())
                 .pattern("TTT")
@@ -55,53 +45,42 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ItemRegistry.ARCANE_ESSENCE.get())
                 .unlockedBy("has_diamonds", has(Items.DIAMOND)).save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SLEEPLESSCLOTH.get())
-                .pattern(" S ")
-                .pattern("SWS")
-                .pattern(" S ")
-                .define('S', Items.PHANTOM_MEMBRANE)
-                .define('W', Items.WHITE_WOOL)
-                .unlockedBy("has_wool", has(Items.WHITE_WOOL)).save(recipeOutput);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SLEEPLESSCHAIN.get())
-                .pattern("CSC")
-                .pattern("S S")
-                .pattern("CSC")
-                .define('S', Items.PHANTOM_MEMBRANE)
-                .define('C', Items.CHAIN)
-                .unlockedBy("has_chain", has(Items.CHAIN)).save(recipeOutput);
         //Holy Priest Armor
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.HOLYPRIESTHELMET.get())
-                .pattern("SSS")
-                .pattern("W W")
+                .pattern("PHP")
+                .pattern("T T")
                 .pattern("   ")
-                .define('S', ModItems.SLEEPLESSCHAIN.get())
-                .define('W', ModItems.SLEEPLESSCLOTH.get())
-                .unlockedBy("has_sleepless_chain", has(ModItems.SLEEPLESSCHAIN)).save(recipeOutput);
+                .define('T', ModItems.TUNGSTENINGOT.get())
+                .define('P', ModItems.PAVARIUM.get())
+                .define('H', ItemRegistry.PRIEST_HELMET.get())
+                .unlockedBy("has_tungsten_ingot", has(ModItems.TUNGSTENINGOT)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.HOLYPRIESTCHESTPLATE.get())
-                .pattern("S S")
-                .pattern("WSW")
-                .pattern("WWW")
-                .define('S', ModItems.SLEEPLESSCHAIN.get())
-                .define('W', ModItems.SLEEPLESSCLOTH.get())
-                .unlockedBy("has_sleepless_chain", has(ModItems.SLEEPLESSCHAIN)).save(recipeOutput);
+                .pattern("P P")
+                .pattern("TCT")
+                .pattern("PTP")
+                .define('T', ModItems.TUNGSTENINGOT.get())
+                .define('P', ModItems.PAVARIUM.get())
+                .define('C', ItemRegistry.PRIEST_CHESTPLATE.get())
+                .unlockedBy("has_tungsten_ingot", has(ModItems.TUNGSTENINGOT)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.HOLYPRIESTLEGGINGS.get())
-                .pattern("WWW")
-                .pattern("S S")
-                .pattern("S S")
-                .define('S', ModItems.SLEEPLESSCHAIN.get())
-                .define('W', ModItems.SLEEPLESSCLOTH.get())
-                .unlockedBy("has_sleepless_chain", has(ModItems.SLEEPLESSCHAIN)).save(recipeOutput);
+                .pattern("TLT")
+                .pattern("T T")
+                .pattern("P P")
+                .define('T', ModItems.TUNGSTENINGOT.get())
+                .define('P', ModItems.PAVARIUM.get())
+                .define('L', ItemRegistry.PRIEST_LEGGINGS.get())
+                .unlockedBy("has_tungsten_ingot", has(ModItems.TUNGSTENINGOT)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.HOLYPRIESTBOOTS.get())
-                .pattern("S S")
-                .pattern("W W")
+                .pattern("TBT")
+                .pattern("P P")
                 .pattern("   ")
-                .define('S', ModItems.SLEEPLESSCHAIN.get())
-                .define('W', ModItems.SLEEPLESSCLOTH.get())
-                .unlockedBy("has_sleepless_chain", has(ModItems.SLEEPLESSCHAIN)).save(recipeOutput);
+                .define('T', ModItems.TUNGSTENINGOT.get())
+                .define('P', ModItems.PAVARIUM.get())
+                .define('B', ItemRegistry.PRIEST_BOOTS.get())
+                .unlockedBy("has_tungsten_ingot", has(ModItems.TUNGSTENINGOT)).save(recipeOutput);
 
         //Boots Curios ----------------------------------------------------------------------------------------------------
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COPPER_BOOTS.get())
@@ -471,10 +450,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
         //Shapeless recipes -------------------------------------------------------------------------------------------------------------------------------------------
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SLEEPLESSCLOTH.get(), 9)
-                .requires(ModBlocks.SLEEPLESSCLOTHBLOCK)
-                .unlockedBy("has_sleepless_cloth_block", has(ModBlocks.SLEEPLESSCLOTHBLOCK))
-                .save(recipeOutput,"dreamless_spells:sleepless_cloth_from_sleepless_cloth_block");
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TUNGSTENINGOT.get(), 9)
                 .requires(ModBlocks.TUNGSTENBLOCK)

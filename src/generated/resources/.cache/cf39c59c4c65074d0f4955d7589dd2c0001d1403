@@ -1,4 +1,4 @@
-// 1.21.1	2025-04-29T09:44:53.465166	Item Models: dreamless_spells
+// 1.21.1	2025-04-30T09:05:33.861979	Item Models: dreamless_spells
 6b1345ff7d91e1bed96c11a6b1363bf537078b99 assets/dreamless_spells/models/item/amethyst_boots.json
 657dc10580ffa1bf8a3d420372fb5b1d98b2f0f9 assets/dreamless_spells/models/item/arcane_cloth_boots.json
 0116ef70c7f748fe2ed51afd7a26fa6c0fae0162 assets/dreamless_spells/models/item/arcane_crystal_boots.json
@@ -44,8 +44,6 @@ a6e3b83e53f5aca0603aa304c5a7b203f859cac5 assets/dreamless_spells/models/item/pro
 a2ee920c6200a53fe128babd720886dd7196560c assets/dreamless_spells/models/item/pyrium_boots.json
 c487f7522055556f7c1c91e9b425ed40dbbacca7 assets/dreamless_spells/models/item/raw_tungsten.json
 a80152c07f2206f3dfbad5ef5f558b22f67f446a assets/dreamless_spells/models/item/scrapped_boots.json
-076f215f85a3ef1fc92a41acfa42be73f3db025e assets/dreamless_spells/models/item/sleepless_chain.json
-b4e4adfd8ebe837833ec4290a2a6be8955e4343c assets/dreamless_spells/models/item/sleepless_cloth.json
 6439388cdbf7c571d1a3eca96267d53ba705c51a assets/dreamless_spells/models/item/tank_boots.json
 58f0208d59e3052adcdc8d5a904f89204a8c65b4 assets/dreamless_spells/models/item/tempered_glass_boots.json
 17cc3fefd577234c0ad60cf11bd5572b477ad499 assets/dreamless_spells/models/item/tungsten_boots.json

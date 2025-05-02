@@ -27,12 +27,8 @@ public class ModArmorMaterials {
                 attribute.put(ArmorItem.Type.HELMET, 5);
                 attribute.put(ArmorItem.Type.BODY, 11);
 
-            }), 16, 2, 0.2f, () -> ModItems.SLEEPLESSCHAIN.get());
+            }), 16, 2, 0.2f, () -> ModItems.TUNGSTENINGOT.get());
 
-    public static final Holder<ArmorMaterial> FASTBOOTS_MATERIAL = register("fastboots",
-            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
-                attribute.put(ArmorItem.Type.BOOTS, 3);
-            }), 16, 1, 0f, () -> ModItems.SLEEPLESSCLOTH.get());
 
     private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,
                                                   int enchantability, float toughness, float knockbackResistance,
