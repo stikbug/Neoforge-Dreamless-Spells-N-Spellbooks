@@ -449,8 +449,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_divine_soulshard", has(ItemRegistry.DIVINE_SOULSHARD.get())).save(recipeOutput);
 
 
-        //Shapeless recipes -------------------------------------------------------------------------------------------------------------------------------------------
-
+        //Shapeless recipes -------------------------------------------------------------------------------------------------------------------------------------------+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TUNGSTENINGOT.get(), 9)
                 .requires(ModBlocks.TUNGSTENBLOCK)
                 .unlockedBy("has_tungsten_block", has(ModBlocks.TUNGSTENBLOCK))
