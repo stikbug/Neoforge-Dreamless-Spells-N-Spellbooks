@@ -79,6 +79,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.LIGHTNING_TABLET);
                         output.accept(ModItems.NATURE_TABLET);
                         output.accept(ModItems.PROTECTION_TABLET);
+                        //Ring Curios
+                        output.accept(ModItems.ABSURD_RING);
+                        output.accept(ModItems.DORANS_RING);
+                        output.accept(ModItems.ELFIN_RING);
+                        //Mask Curios
+                        output.accept(ModItems.SLAUGHTERERS_MASK);
                         //Blocks
                         output.accept(ModBlocks.TUNGSTENORE);
                         output.accept(ModBlocks.TUNGSTENBLOCK);

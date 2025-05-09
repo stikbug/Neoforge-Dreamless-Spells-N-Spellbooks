@@ -1,4 +1,5 @@
-// 1.21.1	2025-04-30T09:05:33.861979	Item Models: dreamless_spells
+// 1.21.1	2025-05-08T20:36:38.327635	Item Models: dreamless_spells
+574d0f35871baa363444c8d0a74161248902c892 assets/dreamless_spells/models/item/absurd_ring.json
 6b1345ff7d91e1bed96c11a6b1363bf537078b99 assets/dreamless_spells/models/item/amethyst_boots.json
 657dc10580ffa1bf8a3d420372fb5b1d98b2f0f9 assets/dreamless_spells/models/item/arcane_cloth_boots.json
 0116ef70c7f748fe2ed51afd7a26fa6c0fae0162 assets/dreamless_spells/models/item/arcane_crystal_boots.json
@@ -12,6 +13,8 @@ c45544aca06d397f712fc67f549af77df7c6520f assets/dreamless_spells/models/item/bra
 a53866e35a487dcf7bdc27ad022ff7fb267cc6ad assets/dreamless_spells/models/item/cooldown_tablet.json
 c513054c706679ea947dafa4c49c40132bdd6800 assets/dreamless_spells/models/item/copper_boots.json
 98db58028df79620119eb6cb506eaa14b1b311f5 assets/dreamless_spells/models/item/deep_divers.json
+acf6d57107ab0b1e3f6fb74cebdf2bc459b9b33f assets/dreamless_spells/models/item/dorans_ring.json
+cd510987381f7d8d64863c272a6981586d990c3e assets/dreamless_spells/models/item/elfin_ring.json
 dbf32dc33309b4b26c7bc6f55567eb330a0db53e assets/dreamless_spells/models/item/emerald_boots.json
 f5bcf106fc765a2e6ee6a9316a1822429b58ad1e assets/dreamless_spells/models/item/ender_tablet.json
 e1475bd4b92ed79c4ae83fcbbb94038147c8f15a assets/dreamless_spells/models/item/evocation_tablet.json
@@ -44,6 +47,7 @@ a6e3b83e53f5aca0603aa304c5a7b203f859cac5 assets/dreamless_spells/models/item/pro
 a2ee920c6200a53fe128babd720886dd7196560c assets/dreamless_spells/models/item/pyrium_boots.json
 c487f7522055556f7c1c91e9b425ed40dbbacca7 assets/dreamless_spells/models/item/raw_tungsten.json
 a80152c07f2206f3dfbad5ef5f558b22f67f446a assets/dreamless_spells/models/item/scrapped_boots.json
+245d2c086eee9714a93d8c7987b8462e1d2600b5 assets/dreamless_spells/models/item/slaughterers_mask.json
 6439388cdbf7c571d1a3eca96267d53ba705c51a assets/dreamless_spells/models/item/tank_boots.json
 58f0208d59e3052adcdc8d5a904f89204a8c65b4 assets/dreamless_spells/models/item/tempered_glass_boots.json
 17cc3fefd577234c0ad60cf11bd5572b477ad499 assets/dreamless_spells/models/item/tungsten_boots.json

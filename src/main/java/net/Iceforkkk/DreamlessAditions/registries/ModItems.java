@@ -72,6 +72,11 @@ public class ModItems {
     public static final DeferredItem<VampireEarlBootsCurio> VAMPIRE_EARL_BOOTS = ITEMS.register("vampire_earl_boots", VampireEarlBootsCurio::new);
     public static final DeferredItem<VampireKingBootsCurio> VAMPIRE_KING_BOOTS = ITEMS.register("vampire_king_boots", VampireKingBootsCurio::new);
     public static final DeferredItem<TungstenBootsCurio> TUNGSTEN_BOOTS = ITEMS.register("tungsten_boots", TungstenBootsCurio::new);
+    public static final DeferredItem<AbsurdRingCurio> ABSURD_RING = ITEMS.register("absurd_ring", AbsurdRingCurio::new);
+    public static final DeferredItem<DoransRingCurio> DORANS_RING = ITEMS.register("dorans_ring", DoransRingCurio::new);
+    public static final DeferredItem<ElfinRingCurio> ELFIN_RING = ITEMS.register("elfin_ring", ElfinRingCurio::new);
+    public static final DeferredItem<SlaughterersMaskCurio> SLAUGHTERERS_MASK = ITEMS.register("slaughterers_mask", SlaughterersMaskCurio::new);
+
     //Tablet Curios
     public static final DeferredItem<BlankTabletCurio> BLANK_TABLET = ITEMS.register("blank_tablet", BlankTabletCurio::new);
     public static final DeferredItem<ArcaneTabletCurio> ARCANE_TABLET = ITEMS.register("arcane_tablet", ArcaneTabletCurio::new);

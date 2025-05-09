@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "irons_spellbooks:mithril_ingot"
+    },
+    "P": {
+      "item": "dreamless_spells:pavarium"
+    },
+    "S": {
+      "item": "irons_spellbooks:ruined_book"
+    }
+  },
+  "pattern": [
+    "MPM",
+    "PSP",
+    "MPM"
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:slaughterers_mask"
+  }
+}

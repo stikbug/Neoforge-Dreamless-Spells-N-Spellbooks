@@ -446,6 +446,52 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("   ")
                 .define('M', ItemRegistry.MITHRIL_INGOT.get())
                 .define('T', ModItems.TUNGSTENINGOT.get())
+                .unlockedBy("has_tungsten_ingot", has(ModItems.TUNGSTENINGOT.get())).save(recipeOutput);
+
+        //Ring recipes -------------------------------------------------------------------------------------------------------------------------------------------+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.DORANS_RING.get())
+                .pattern("PDP")
+                .pattern("NMN")
+                .pattern("PTP")
+                .define('M', ItemRegistry.MANA_RING.get())
+                .define('D', ItemRegistry.DIVINE_SOULSHARD.get())
+                .define('N', ItemRegistry.MITHRIL_INGOT.get())
+                .define('T', ModItems.TUNGSTENINGOT.get())
+                .define('P', ModItems.PAVARIUM.get())
+                .unlockedBy("has_divine_soulshard", has(ItemRegistry.DIVINE_SOULSHARD.get())).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ABSURD_RING.get())
+                .pattern("PDP")
+                .pattern("NMN")
+                .pattern("PTP")
+                .define('M', ItemRegistry.COOLDOWN_RING.get())
+                .define('D', ItemRegistry.DIVINE_SOULSHARD.get())
+                .define('N', ItemRegistry.MITHRIL_INGOT.get())
+                .define('T', ModItems.TUNGSTENINGOT.get())
+                .define('P', ModItems.PAVARIUM.get())
+                .unlockedBy("has_divine_soulshard", has(ItemRegistry.DIVINE_SOULSHARD.get())).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ELFIN_RING.get())
+                .pattern("PDP")
+                .pattern("NMN")
+                .pattern("PTP")
+                .define('M', ItemRegistry.BLOOD_STAFF.get())
+                .define('D', ItemRegistry.DIVINE_SOULSHARD.get())
+                .define('N', ItemRegistry.MITHRIL_INGOT.get())
+                .define('T', ModItems.TUNGSTENINGOT.get())
+                .define('P', ModItems.PAVARIUM.get())
+                .unlockedBy("has_divine_soulshard", has(ItemRegistry.DIVINE_SOULSHARD.get())).save(recipeOutput);
+
+        //Mask recipes -------------------------------------------------------------------------------------------------------------------------------------------+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SLAUGHTERERS_MASK.get())
+                .pattern("MPM")
+                .pattern("PSP")
+                .pattern("MPM")
+                .define('M', ItemRegistry.MITHRIL_INGOT.get())
+                .define('S', ItemRegistry.RUINED_BOOK.get())
+                .define('P', ModItems.PAVARIUM.get())
                 .unlockedBy("has_divine_soulshard", has(ItemRegistry.DIVINE_SOULSHARD.get())).save(recipeOutput);
 
 

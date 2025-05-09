@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "irons_spellbooks:divine_soulshard"
+    },
+    "M": {
+      "item": "irons_spellbooks:mana_ring"
+    },
+    "N": {
+      "item": "irons_spellbooks:mithril_ingot"
+    },
+    "P": {
+      "item": "dreamless_spells:pavarium"
+    },
+    "T": {
+      "item": "dreamless_spells:tungsten_ingot"
+    }
+  },
+  "pattern": [
+    "PDP",
+    "NMN",
+    "PTP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:dorans_ring"
+  }
+}

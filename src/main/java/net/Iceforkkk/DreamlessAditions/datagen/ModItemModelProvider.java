@@ -71,6 +71,15 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.NATURE_TABLET.get());
         basicItem(ModItems.PROTECTION_TABLET.get());
 
+        //Ring Curios
+        basicItem(ModItems.DORANS_RING.get());
+        basicItem(ModItems.ELFIN_RING.get());
+        basicItem(ModItems.ABSURD_RING.get());
+
+        //Mask Curios
+        basicItem(ModItems.SLAUGHTERERS_MASK.get());
+
+
         //Holy Priest Armor
         basicItem(ModItems.HOLYPRIESTHELMET.get());
         basicItem(ModItems.HOLYPRIESTCHESTPLATE.get());

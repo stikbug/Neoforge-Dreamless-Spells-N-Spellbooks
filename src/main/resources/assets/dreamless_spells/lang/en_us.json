@@ -28,6 +28,8 @@
   "curios.identifier.tablet": "Tablet",
   "curios.modifiers.tablet": "When in the Tablet Slot:",
 
+  "curios.identifier.mask": "Mask",
+  "curios.modifiers.mask": "When in the Mask Slot:",
 
   "item.dreamless_spells.old_boots": "Old Boots",
   "item.dreamless_spells.iron_socks": "Iron Socks",
@@ -70,6 +72,11 @@
   "item.dreamless_spells.lightning_tablet": "Lightning Tablet",
   "item.dreamless_spells.blood_tablet": "Blood Tablet",
   "item.dreamless_spells.ender_tablet": "Ender Tablet",
-  "item.dreamless_spells.holy_tablet": "Holy Tablet"
+  "item.dreamless_spells.holy_tablet": "Holy Tablet",
+
+  "item.dreamless_spells.absurd_ring": "Ring of Absurdity",
+  "item.dreamless_spells.dorans_ring": "Doran's Ring",
+  "item.dreamless_spells.elfin_ring": "Elfin Stone's Ring",
+  "item.dreamless_spells.slaughterers_mask": "Mask of the Slaughterer"
 
 }
