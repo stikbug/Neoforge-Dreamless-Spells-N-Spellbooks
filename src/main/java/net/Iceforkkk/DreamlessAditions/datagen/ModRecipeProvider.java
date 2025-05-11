@@ -21,7 +21,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
         //Blocks
-
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TUNGSTENBLOCK.get())
                 .pattern("TTT")
                 .pattern("TTT")
@@ -35,6 +34,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("TTT")
                 .pattern("TTT")
                 .define('T', ModItems.TUNGSTENNUGGET.get())
+                .unlockedBy("has_tungsten_ingot", has(ModItems.TUNGSTENINGOT.get())).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TUNGSTEN_MITHRIL_MIXTURE.get())
+                .pattern(" T ")
+                .pattern(" M ")
+                .pattern("   ")
+                .define('M', ItemRegistry.MITHRIL_INGOT.get())
+                .define('T', ModItems.TUNGSTENINGOT.get())
                 .unlockedBy("has_tungsten_ingot", has(ModItems.TUNGSTENINGOT.get())).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ARCANEGEM.get(), 2)
@@ -440,16 +447,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('D', ItemRegistry.DIVINE_SOULSHARD.get())
                 .unlockedBy("has_divine_soulshard", has(ItemRegistry.DIVINE_SOULSHARD.get())).save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TUNGSTEN_MITHRIL_MIXTURE.get())
-                .pattern(" T ")
-                .pattern(" M ")
-                .pattern("   ")
-                .define('M', ItemRegistry.MITHRIL_INGOT.get())
-                .define('T', ModItems.TUNGSTENINGOT.get())
-                .unlockedBy("has_tungsten_ingot", has(ModItems.TUNGSTENINGOT.get())).save(recipeOutput);
-
         //Ring recipes -------------------------------------------------------------------------------------------------------------------------------------------+
-
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.DORANS_RING.get())
                 .pattern("PDP")
                 .pattern("NMN")
@@ -484,7 +482,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_divine_soulshard", has(ItemRegistry.DIVINE_SOULSHARD.get())).save(recipeOutput);
 
         //Mask recipes -------------------------------------------------------------------------------------------------------------------------------------------+
-
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SLAUGHTERERS_MASK.get())
                 .pattern("MPM")
                 .pattern("PSP")
@@ -507,7 +504,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         //Smelting Recipes -----------------------------------------------------------------------------------------------------------------------------------------------
         List<ItemLike> TUNGSTEN_SMELTABLES = List.of(ModItems.RAWTUNGSTEN, ModBlocks.TUNGSTENORE);
-        //
         oreSmelting(recipeOutput, TUNGSTEN_SMELTABLES, RecipeCategory.MISC, ModItems.TUNGSTENINGOT.get(), 0.25f, 200, "tungsten_ingot");
         oreBlasting(recipeOutput, TUNGSTEN_SMELTABLES, RecipeCategory.MISC, ModItems.TUNGSTENINGOT.get(), 0.25f, 100, "tungsten_ingot");
         //

@@ -21,7 +21,9 @@ public class ModItemTagProvider extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(Tags.Items.INGOTS)
                 .add(ModItems.TUNGSTENINGOT.get())
-                .add(ModItems.PAVARIUM.get());
+                .add(ModItems.PAVARIUM.get())
+                .add(ModItems.TUNGSTEN_MITHRIL_MIXTURE.get());
+
 
         tag(Tags.Items.ARMORS)
                 //Holy Priest Armor
@@ -31,6 +33,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.HOLYPRIESTHELMET.get());
 
         tag(Tags.Items.NUGGETS)
+                .add(ModItems.TUNGSTENNUGGET.get());
+
+        tag(Tags.Items.GEMS)
+                .add(ModItems.JADE.get())
+                .add(ModItems.ARCANEGEM.get())
                 .add(ModItems.TUNGSTENNUGGET.get());
 
     }

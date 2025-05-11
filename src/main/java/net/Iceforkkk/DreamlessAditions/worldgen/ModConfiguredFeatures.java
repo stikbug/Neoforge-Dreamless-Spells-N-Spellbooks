@@ -29,7 +29,7 @@ public class ModConfiguredFeatures {
         List<OreConfiguration.TargetBlockState> overworldTungstenOres = List.of(
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.TUNGSTENORE.get().defaultBlockState())
         );
-        register(context, OVERWORLD_TUNGSTEN_ORE_KEY, Feature.ORE, new OreConfiguration(overworldTungstenOres, 5));
+        register(context, OVERWORLD_TUNGSTEN_ORE_KEY, Feature.ORE, new OreConfiguration(overworldTungstenOres, 3));
 
         List<OreConfiguration.TargetBlockState> overworldJadeOres = List.of(
                 OreConfiguration.target(stoneReplaceables, ModBlocks.JADEORE.get().defaultBlockState())
