@@ -1,7 +1,7 @@
-// 1.21.1	2025-04-23T12:03:26.455636	Registries
+// 1.21.1	2025-05-12T05:13:38.79405	Registries
 401965c0e961880b5aef2ec4f22deba4693eb096 data/dreamless_spells/neoforge/biome_modifier/add_jade_ore.json
 0ae6853e86ceddc8317282f9decbbc393e256010 data/dreamless_spells/neoforge/biome_modifier/add_tungsten_ore.json
 8cbc382effd9c618a6506f2f5a6aec3d63849bc0 data/dreamless_spells/worldgen/configured_feature/jade_ore.json
-c773ea05ef90245db236172c92800312a64c98af data/dreamless_spells/worldgen/configured_feature/tungsten_ore.json
+62d729d1cab8204d8ea63fe593a69921a29e8b2c data/dreamless_spells/worldgen/configured_feature/tungsten_ore.json
 6c2433318d08369d750b0c174679bea5fd95a3ab data/dreamless_spells/worldgen/placed_feature/jade_ore_placed.json
-e129cc8576e26742e5ef0ce7b31cde34cb31921f data/dreamless_spells/worldgen/placed_feature/tungsten_ore_placed.json
+cfce82307134b71a38b811ceb37822c639467070 data/dreamless_spells/worldgen/placed_feature/tungsten_ore_placed.json

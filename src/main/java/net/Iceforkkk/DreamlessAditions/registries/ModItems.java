@@ -35,7 +35,7 @@ public class ModItems {
             ()-> new Item(new Item.Properties()));
     //Holy Priest Armor
     public static final DeferredItem<ArmorItem> HOLYPRIESTHELMET = ITEMS.register("holy_priest_helmet",
-            ()-> new HolyPriestArmorItem(ArmorItem.Type.HELMET, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(39))));
+            ()-> new HolyPriestArmorItem(ArmorItem.Type.HELMET, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(39))){});
     public static final DeferredItem<ArmorItem> HOLYPRIESTCHESTPLATE = ITEMS.register("holy_priest_chestplate",
             ()-> new HolyPriestArmorItem(ArmorItem.Type.CHESTPLATE, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.CHESTPLATE.getDurability(39))));
     public static final DeferredItem<ArmorItem> HOLYPRIESTLEGGINGS = ITEMS.register("holy_priest_leggings",

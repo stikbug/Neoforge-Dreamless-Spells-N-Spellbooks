@@ -1,4 +1,9 @@
-// 1.21.1	2025-04-23T08:14:00.320862	Tags for minecraft:block mod id dreamless_spells
-679f05cecbe4f41f3741911e38f8bdf029b0a2da data/minecraft/tags/block/mineable/pickaxe.json
-b5b78620c28e9facc0ceea8de9285c7a7f52821e data/minecraft/tags/block/needs_diamond_tool.json
+// 1.21.1	2025-05-12T05:13:38.794208	Tags for minecraft:block mod id dreamless_spells
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/incorrect_for_diamond_tool.json
+85fa48a03d361dba8eb23d76f77d43bf5ff9e759 data/minecraft/tags/block/incorrect_for_gold_tool.json
+cc44eeff94b15961ceec068d65ff34025ea71e13 data/minecraft/tags/block/incorrect_for_iron_tool.json
+90c46b8a01289eb997a6b0da3385dc9d124f8ce7 data/minecraft/tags/block/incorrect_for_stone_tool.json
+90c46b8a01289eb997a6b0da3385dc9d124f8ce7 data/minecraft/tags/block/incorrect_for_wooden_tool.json
+a277cc04e4154621a1b925ccb8222c114a0d8735 data/minecraft/tags/block/mineable/pickaxe.json
+cc44eeff94b15961ceec068d65ff34025ea71e13 data/minecraft/tags/block/needs_diamond_tool.json
 25064b431c6a82476942a444ab8350d825e23385 data/minecraft/tags/block/needs_iron_tool.json
