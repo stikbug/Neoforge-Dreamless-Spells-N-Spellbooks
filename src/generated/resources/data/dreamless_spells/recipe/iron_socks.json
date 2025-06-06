@@ -6,7 +6,7 @@
       "item": "dreamless_spells:copper_boots"
     },
     "I": {
-      "item": "minecraft:iron_ingot"
+      "tag": "c:ingots/iron"
     }
   },
   "pattern": [

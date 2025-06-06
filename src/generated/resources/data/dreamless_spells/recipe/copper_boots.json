@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "C": {
-      "item": "minecraft:copper_ingot"
+      "tag": "c:ingots/copper"
     },
     "O": {
       "item": "dreamless_spells:old_boots"

@@ -1,13 +1,10 @@
-// 1.21.1	2025-04-22T17:58:41.961552	Block States: dreamless_spells
+// 1.21.1	2025-06-06T11:02:17.5983427	Block States: dreamless_spells
 d9b5055a19a6412be71180df051f0304e4f52c11 assets/dreamless_spells/blockstates/jade_ore.json
-176cd7f7c36405dc04d3a23907af2d245487c337 assets/dreamless_spells/blockstates/sleepless_cloth_block.json
 9b1eb58d6f9ca114725b16de8e832e47c1f29661 assets/dreamless_spells/blockstates/tungsten_block.json
 cbc92fecc4fa7ed1353fbaaa42c069e27449878c assets/dreamless_spells/blockstates/tungsten_ore.json
 a45084665a9154707a665c1ca27d2cc7a3859d63 assets/dreamless_spells/models/block/jade_ore.json
-108a4d23900dfae63b0d0a168e25b133f2c87509 assets/dreamless_spells/models/block/sleepless_cloth_block.json
 964cd3c9094c9929fd9e93fc42d3764612f455ab assets/dreamless_spells/models/block/tungsten_block.json
 70d0926f891a3bd0693f6f3d5b86981ec90216c0 assets/dreamless_spells/models/block/tungsten_ore.json
 0e022134e089fbf4f8600581d9e0802f1a385ef4 assets/dreamless_spells/models/item/jade_ore.json
-7a80a48394fed0b70868e3c8c9b7938ad774e729 assets/dreamless_spells/models/item/sleepless_cloth_block.json
 1df0ade2db84dd1053477e6208a423d62a3fa852 assets/dreamless_spells/models/item/tungsten_block.json
 83fc36758c90bbc89cacec392f6b3fc024f60d69 assets/dreamless_spells/models/item/tungsten_ore.json

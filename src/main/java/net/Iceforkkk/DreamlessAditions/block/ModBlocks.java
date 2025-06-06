@@ -17,21 +17,23 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(Dreamless_Spells.MOD_ID);
 
-    public static final DeferredBlock<Block> SLEEPLESSCLOTHBLOCK = registerBlock("sleepless_cloth_block",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(2f).sound(SoundType.WOOL)));
-
     public static final DeferredBlock<Block> JADEORE = registerBlock("jade_ore",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(5f).sound(SoundType.STONE)));
+                    .strength(5f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> TUNGSTENORE = registerBlock("tungsten_ore",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(5f).sound(SoundType.DEEPSLATE)));
+                    .strength(5f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.DEEPSLATE)));
 
     public static final DeferredBlock<Block> TUNGSTENBLOCK = registerBlock("tungsten_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(5f).sound(SoundType.NETHERITE_BLOCK)));
+                    .strength(5f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.NETHERITE_BLOCK)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

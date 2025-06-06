@@ -6,7 +6,7 @@
       "item": "dreamless_spells:jade_boots"
     },
     "Q": {
-      "item": "minecraft:quartz"
+      "tag": "c:gems/quartz"
     },
     "S": {
       "item": "irons_spellbooks:divine_soulshard"

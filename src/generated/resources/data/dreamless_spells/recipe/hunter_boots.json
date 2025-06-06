@@ -6,7 +6,7 @@
       "item": "dreamless_spells:cloth_boots"
     },
     "L": {
-      "item": "minecraft:leather"
+      "tag": "c:leathers"
     }
   },
   "pattern": [

@@ -1,13 +1,16 @@
 package net.Iceforkkk.DreamlessAditions.datagen;
 
+import com.mojang.datafixers.types.templates.Tag;
 import io.redspace.ironsspellbooks.registries.ItemRegistry;
 import net.Iceforkkk.DreamlessAditions.block.ModBlocks;
 import net.Iceforkkk.DreamlessAditions.registries.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.List;
@@ -48,7 +51,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" A ")
                 .pattern("ADA")
                 .pattern(" A ")
-                .define('D', Items.DIAMOND)
+                .define('D', Tags.Items.GEMS_DIAMOND)
                 .define('A', ItemRegistry.ARCANE_ESSENCE.get())
                 .unlockedBy("has_diamonds", has(Items.DIAMOND)).save(recipeOutput);
 
@@ -90,11 +93,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_tungsten_ingot", has(ModItems.TUNGSTENINGOT)).save(recipeOutput);
 
         //Boots Curios ----------------------------------------------------------------------------------------------------
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COPPER_BOOTS.get())
+         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COPPER_BOOTS.get())
                 .pattern("COC")
                 .pattern("C C")
                 .pattern("   ")
-                .define('C', Items.COPPER_INGOT)
+                .define('C', Tags.Items.INGOTS_COPPER)
                 .define('O', ModItems.OLD_BOOTS.get())
                 .unlockedBy("has_old_boots", has(ModItems.OLD_BOOTS)).save(recipeOutput);
 
@@ -102,7 +105,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("ICI")
                 .pattern("I I")
                 .pattern("   ")
-                .define('I', Items.IRON_INGOT)
+                .define('I', Tags.Items.INGOTS_IRON)
                 .define('C', ModItems.COPPER_BOOTS.get())
                 .unlockedBy("has_copper_boots", has(ModItems.COPPER_BOOTS)).save(recipeOutput);
 
@@ -110,7 +113,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("IDI")
                 .pattern("I I")
                 .pattern("   ")
-                .define('I', Items.IRON_BLOCK)
+                .define('I', Tags.Items.INGOTS_IRON)
                 .define('D', ModItems.DEEP_DIVERS.get())
                 .unlockedBy("has_deep_diver", has(ModItems.DEEP_DIVERS)).save(recipeOutput);
 
@@ -127,9 +130,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("GCG")
                 .pattern("B B")
                 .pattern("   ")
-                .define('G', Items.GOLD_INGOT)
+                .define('G', Tags.Items.INGOTS_GOLD)
                 .define('C', ModItems.COPPER_BOOTS.get())
-                .define('B', Items.GOLD_BLOCK)
+                .define('B', Tags.Items.STORAGE_BLOCKS_GOLD)
                 .unlockedBy("has_copper_boots", has(ModItems.COPPER_BOOTS)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SCRAPPED_BOOTS.get())
@@ -144,7 +147,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("WOW")
                 .pattern("W W")
                 .pattern("   ")
-                .define('W', Items.WHITE_WOOL)
+                .define('W', ItemTags.WOOL)
                 .define('O', ModItems.OLD_BOOTS.get())
                 .unlockedBy("has_old_boots", has(ModItems.OLD_BOOTS)).save(recipeOutput);
 
@@ -184,7 +187,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("LCL")
                 .pattern("L L")
                 .pattern("   ")
-                .define('L', Items.LEATHER)
+                .define('L', Tags.Items.LEATHERS)
                 .define('C', ModItems.CLOTH_BOOTS.get())
                 .unlockedBy("has_cloth_boots", has(ModItems.CLOTH_BOOTS)).save(recipeOutput);
 
@@ -229,7 +232,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("GOG")
                 .pattern("G G")
                 .pattern("   ")
-                .define('G', Items.GLASS)
+                .define('G', Tags.Items.GLASS_BLOCKS)
                 .define('O', ModItems.OLD_BOOTS.get())
                 .unlockedBy("has_old_boots", has(ModItems.OLD_BOOTS)).save(recipeOutput);
 
@@ -237,7 +240,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("TGT")
                 .pattern("T T")
                 .pattern("   ")
-                .define('T', Items.TINTED_GLASS)
+                .define('T', Tags.Items.GLASS_BLOCKS_TINTED)
                 .define('G', ModItems.GLASS_BOOTS.get())
                 .unlockedBy("has_glass_boots", has(ModItems.GLASS_BOOTS)).save(recipeOutput);
 
@@ -261,7 +264,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("EAE")
                 .pattern("E E")
                 .pattern("   ")
-                .define('E', Items.EMERALD_BLOCK)
+                .define('E', Tags.Items.STORAGE_BLOCKS_EMERALD)
                 .define('A', ModItems.ARCANE_CRYSTAL_BOOTS.get())
                 .unlockedBy("has_arcane_crystal_boots", has(ModItems.ARCANE_CRYSTAL_BOOTS)).save(recipeOutput);
 
@@ -277,7 +280,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("QJQ")
                 .pattern("QSQ")
                 .pattern("   ")
-                .define('Q', Items.QUARTZ)
+                .define('Q', Tags.Items.GEMS_QUARTZ)
                 .define('J', ModItems.JADE_BOOTS.get())
                 .define('S', ItemRegistry.DIVINE_SOULSHARD.get())
                 .unlockedBy("has_jade_boots", has(ModItems.JADE_BOOTS)).save(recipeOutput);
@@ -323,7 +326,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("L L")
                 .pattern("L L")
                 .pattern("L L")
-                .define('L', Items.LEATHER)
+                .define('L', Tags.Items.LEATHERS)
                 .unlockedBy("has_leather", has(Items.LEATHER)).save(recipeOutput);
 
         //Tablet Recipes ----------------------------------------------------------------------------------------------------------------------------------------------

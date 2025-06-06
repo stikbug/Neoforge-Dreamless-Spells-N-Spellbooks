@@ -42,6 +42,7 @@ public class ModItems {
             ()-> new HolyPriestArmorItem(ArmorItem.Type.LEGGINGS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.LEGGINGS.getDurability(39))));
     public static final DeferredItem<ArmorItem> HOLYPRIESTBOOTS = ITEMS.register("holy_priest_boots",
             ()-> new HolyPriestArmorItem(ArmorItem.Type.BOOTS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(39))));
+
     //Boots Curios
     public static final DeferredItem<OldBootsCurio> OLD_BOOTS = ITEMS.register("old_boots", OldBootsCurio::new);
     public static final DeferredItem<IronSocksCurio> IRON_SOCKS = ITEMS.register("iron_socks", IronSocksCurio::new);

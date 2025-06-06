@@ -23,13 +23,6 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.JADEORE.get())
                 .add(ModBlocks.TUNGSTENBLOCK.get());
 
-        tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.TUNGSTENORE.get())
-                .add(ModBlocks.TUNGSTENBLOCK.get());
-
-        tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.JADEORE.get());
-
         tag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL);
 
         tag(BlockTags.INCORRECT_FOR_IRON_TOOL)
@@ -37,18 +30,19 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.TUNGSTENBLOCK.get());
 
         tag(BlockTags.INCORRECT_FOR_GOLD_TOOL)
-                .add(ModBlocks.JADEORE.get())
+                .add(ModBlocks.JADEORE.get());
+
+        tag(BlockTags.INCORRECT_FOR_STONE_TOOL)
+                .add(ModBlocks.JADEORE.get());
+
+        tag(BlockTags.INCORRECT_FOR_WOODEN_TOOL);
+
+        tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.TUNGSTENORE.get())
                 .add(ModBlocks.TUNGSTENBLOCK.get());
 
-        tag(BlockTags.INCORRECT_FOR_STONE_TOOL)
-                .add(ModBlocks.JADEORE.get())
-                .add(ModBlocks.TUNGSTENBLOCK.get())
-                .add(ModBlocks.TUNGSTENORE.get());
+        tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.JADEORE.get());
 
-        tag(BlockTags.INCORRECT_FOR_WOODEN_TOOL)
-                .add(ModBlocks.JADEORE.get())
-                .add(ModBlocks.TUNGSTENBLOCK.get())
-                .add(ModBlocks.TUNGSTENORE.get());
     }
 }

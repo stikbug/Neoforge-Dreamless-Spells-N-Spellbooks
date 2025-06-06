@@ -14,7 +14,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(ModBlocks.SLEEPLESSCLOTHBLOCK);
         blockWithItem(ModBlocks.JADEORE);
         blockWithItem(ModBlocks.TUNGSTENORE);
         blockWithItem(ModBlocks.TUNGSTENBLOCK);

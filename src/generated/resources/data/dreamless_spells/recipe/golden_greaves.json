@@ -3,13 +3,13 @@
   "category": "misc",
   "key": {
     "B": {
-      "item": "minecraft:gold_block"
+      "tag": "c:storage_blocks/gold"
     },
     "C": {
       "item": "dreamless_spells:copper_boots"
     },
     "G": {
-      "item": "minecraft:gold_ingot"
+      "tag": "c:ingots/gold"
     }
   },
   "pattern": [

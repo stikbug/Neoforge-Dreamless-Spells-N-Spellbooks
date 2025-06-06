@@ -6,7 +6,7 @@
       "item": "dreamless_spells:arcane_crystal_boots"
     },
     "E": {
-      "item": "minecraft:emerald_block"
+      "tag": "c:storage_blocks/emerald"
     }
   },
   "pattern": [

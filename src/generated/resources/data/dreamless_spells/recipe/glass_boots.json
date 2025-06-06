@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "G": {
-      "item": "minecraft:glass"
+      "tag": "c:glass_blocks"
     },
     "O": {
       "item": "dreamless_spells:old_boots"

@@ -6,7 +6,7 @@
       "item": "dreamless_spells:deep_divers"
     },
     "I": {
-      "item": "minecraft:iron_block"
+      "tag": "c:ingots/iron"
     }
   },
   "pattern": [

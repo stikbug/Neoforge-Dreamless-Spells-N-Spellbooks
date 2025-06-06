@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "L": {
-      "item": "minecraft:leather"
+      "tag": "c:leathers"
     }
   },
   "pattern": [

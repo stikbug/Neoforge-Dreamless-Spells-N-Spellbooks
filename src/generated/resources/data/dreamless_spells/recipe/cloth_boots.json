@@ -6,7 +6,7 @@
       "item": "dreamless_spells:old_boots"
     },
     "W": {
-      "item": "minecraft:white_wool"
+      "tag": "minecraft:wool"
     }
   },
   "pattern": [

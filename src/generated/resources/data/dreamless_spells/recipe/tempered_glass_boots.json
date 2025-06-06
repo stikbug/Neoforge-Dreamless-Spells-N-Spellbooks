@@ -6,7 +6,7 @@
       "item": "dreamless_spells:glass_boots"
     },
     "T": {
-      "item": "minecraft:tinted_glass"
+      "tag": "c:glass_blocks/tinted"
     }
   },
   "pattern": [

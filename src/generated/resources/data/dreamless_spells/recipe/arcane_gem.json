@@ -6,7 +6,7 @@
       "item": "irons_spellbooks:arcane_essence"
     },
     "D": {
-      "item": "minecraft:diamond"
+      "tag": "c:gems/diamond"
     }
   },
   "pattern": [

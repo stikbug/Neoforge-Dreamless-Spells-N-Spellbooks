@@ -20,7 +20,6 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         //Drop Self
-        dropSelf(ModBlocks.SLEEPLESSCLOTHBLOCK.get());
         dropSelf(ModBlocks.TUNGSTENBLOCK.get());
         //Ore
         add(ModBlocks.TUNGSTENORE.get(),
