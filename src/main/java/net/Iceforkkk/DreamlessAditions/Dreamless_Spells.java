@@ -1,8 +1,10 @@
 package net.Iceforkkk.DreamlessAditions;
 
 import net.Iceforkkk.DreamlessAditions.block.ModBlocks;
+import net.Iceforkkk.DreamlessAditions.effect.ModEffects;
 import net.Iceforkkk.DreamlessAditions.registries.ModCreativeModeTabs;
 import net.Iceforkkk.DreamlessAditions.registries.ModItems;
+import net.Iceforkkk.DreamlessAditions.registries.SpellRegistries;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -41,6 +43,10 @@ public class Dreamless_Spells
         modEventBus.addListener(this::addCreative);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        ModEffects.register(modEventBus);
+
+        SpellRegistries.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
