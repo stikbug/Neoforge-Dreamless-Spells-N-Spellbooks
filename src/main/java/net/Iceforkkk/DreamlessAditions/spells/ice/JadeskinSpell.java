@@ -7,6 +7,7 @@ import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
 import io.redspace.ironsspellbooks.api.spells.*;
 import io.redspace.ironsspellbooks.api.util.AnimationHolder;
 import io.redspace.ironsspellbooks.api.util.Utils;
+import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
 import io.redspace.ironsspellbooks.registries.SoundRegistry;
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
 import net.Iceforkkk.DreamlessAditions.effect.ModEffects;
@@ -29,7 +30,7 @@ public class JadeskinSpell extends AbstractSpell {
     @Override
     public List<MutableComponent> getUniqueInfo(int spellLevel, LivingEntity caster) {
         return List.of(
-                Component.translatable("ui.irons_spellbooks.effect_length", Utils.timeFromTicks(getSpellPower(spellLevel, caster) * 40, 1))
+                Component.translatable("ui.irons_spellbooks.effect_length", Utils.timeFromTicks(getSpellPower(spellLevel, caster) * 20, 1))
         );
     }
 
@@ -44,7 +45,7 @@ public class JadeskinSpell extends AbstractSpell {
     {
         this.manaCostPerLevel = 80;
         this.baseSpellPower = 5;
-        this.spellPowerPerLevel = 3;
+        this.spellPowerPerLevel = 5;
         this.castTime = 0;
         this.baseManaCost = 150;
     }
@@ -65,57 +66,17 @@ public class JadeskinSpell extends AbstractSpell {
     }
 
     @Override
-    public AnimationHolder getCastStartAnimation() {
-        return SpellAnimations.SELF_CAST_TWO_HANDS;
-    }
-
-    @Override
     public Optional<SoundEvent> getCastFinishSound() {
         return Optional.of(SoundRegistry.SUMMONED_SWORDS_CAST.get());
     }
 
     @Override
-    public void onCast(Level level, int spellLevel, LivingEntity entity, CastSource castSource, MagicData playerMagicData) {
-        float healing = getHealAmount(entity, spellLevel);
-
-        NeoForge.EVENT_BUS.post(new SpellHealEvent(entity, entity, healing, this.getSchoolType()));
-        entity.heal(healing);
-        entity.addEffect(new MobEffectInstance(ModEffects.JADESKIN_EFFECT, getEffectDuration(entity, spellLevel), 0, false, false, true));
-
-        int count = 8;
-        float radius = 0.25F;
-
-        super.onCast(level, spellLevel, entity, castSource, playerMagicData);
-    }
-
-    private float getHealAmount(LivingEntity caster, int spellLevel)
-    {
-        return getSpellPower(spellLevel, caster) / 3.5F;
-    }
-
-    //Obtaining Methods
-    @Override
-    public boolean canBeCraftedBy(Player player) {
-        return true;
-    }
-
-    @Override
-    public boolean allowLooting() {
-        return false;
-    }
-
-    @Override
-    public boolean allowCrafting() {
-        return true;
+    public void onCast(Level world, int spellLevel, LivingEntity entity, CastSource castSource, MagicData playerMagicData) {
+        entity.addEffect(new MobEffectInstance(ModEffects.JADESKIN_EFFECT, (int) getSpellPower(spellLevel, entity) * 20, 0, false, false, true));
+        super.onCast(world, spellLevel, entity, castSource, playerMagicData);
     }
     @Override
-    public boolean requiresLearning() {
-        return false;
-    }
-
-
-    private int getEffectDuration(LivingEntity caster, int spellLevel)
-    {
-        return (int) (20 * getSpellPower(spellLevel, caster));
+    public AnimationHolder getCastStartAnimation() {
+        return SpellAnimations.SELF_CAST_ANIMATION;
     }
 }
