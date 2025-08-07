@@ -106,6 +106,7 @@ public class ModItems {
     public static final DeferredItem<DoransRingCurio> DORANS_RING = ITEMS.register("dorans_ring", DoransRingCurio::new);
     public static final DeferredItem<ElfinRingCurio> ELFIN_RING = ITEMS.register("elfin_ring", ElfinRingCurio::new);
     public static final DeferredItem<SlaughterersMaskCurio> SLAUGHTERERS_MASK = ITEMS.register("slaughterers_mask", SlaughterersMaskCurio::new);
+    public static final DeferredItem<GoatHoofCurio> GOAT_HOOF = ITEMS.register("goat_hoof", GoatHoofCurio::new);
 
     //Tablet Curios
     public static final DeferredItem<BlankTabletCurio> BLANK_TABLET = ITEMS.register("blank_tablet", BlankTabletCurio::new);
@@ -120,6 +121,23 @@ public class ModItems {
     public static final DeferredItem<LightningTabletCurio> LIGHTNING_TABLET = ITEMS.register("lightning_tablet", LightningTabletCurio::new);
     public static final DeferredItem<NatureTabletCurio> NATURE_TABLET = ITEMS.register("nature_tablet", NatureTabletCurio::new);
     public static final DeferredItem<ProtectionTabletCurio> PROTECTION_TABLET = ITEMS.register("protection_tablet", ProtectionTabletCurio::new);
+
+    //Necklace Curios
+    public static final DeferredItem<HeartyNecklaceCurio> HEARTY_NECKLACE = ITEMS.register("hearty_necklace", HeartyNecklaceCurio::new);
+
+    //Charm Curios
+    public static final DeferredItem<BustlingFungusCurio> BUSTLING_FUNGUS = ITEMS.register("bustling_fungus", BustlingFungusCurio::new);
+    public static final DeferredItem<SaleStarCurio> SALE_STAR = ITEMS.register("sale_star", SaleStarCurio::new);
+
+    //Bracelet Curios
+    public static final DeferredItem<KyrosBandCurio> KYROS_BAND = ITEMS.register("kyros_band", KyrosBandCurio::new);
+    public static final DeferredItem<RolandsBandCurio> ROLANDS_BAND = ITEMS.register("rolands_band", RolandsBandCurio::new);
+
+    //Belt Curios
+    public static final DeferredItem<HopooFeatherCurio> HOPOO_FEATHER = ITEMS.register("hopoo_feather", HopooFeatherCurio::new);
+    public static final DeferredItem<WaxQuailCurio> WAX_QUAIL = ITEMS.register("wax_quail", WaxQUailCurio::new);
+
+
 
     public static void register (IEventBus eventBus) {
         ITEMS.register(eventBus);
