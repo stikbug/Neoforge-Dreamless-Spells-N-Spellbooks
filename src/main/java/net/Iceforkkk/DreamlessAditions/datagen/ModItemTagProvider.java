@@ -91,6 +91,5 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         tag(ItemTags.FOOT_ARMOR)
                 .add(ModItems.HOLYPRIESTBOOTS.get());
-
     }
 }

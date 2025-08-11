@@ -25,7 +25,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.TUNGSTEN_MITHRIL_MIXTURE.get());
         basicItem(ModItems.PAVARIUM.get());
 
-
         //Boots Curios
         basicItem(ModItems.OLD_BOOTS.get());
         basicItem(ModItems.COPPER_BOOTS.get());
@@ -79,13 +78,26 @@ public class ModItemModelProvider extends ItemModelProvider {
         //Mask Curios
         basicItem(ModItems.SLAUGHTERERS_MASK.get());
 
+        //Neclace Curios
+        basicItem(ModItems.HEARTY_NECKLACE.get());
+
+        //Charm Curios
+        basicItem(ModItems.BUSTLING_FUNGUS.get());
+        basicItem(ModItems.SALE_STAR.get());
+
+        //Bracelet Curios
+        basicItem(ModItems.KYROS_BAND.get());
+        basicItem(ModItems.ROLANDS_BAND.get());
+
+        //Belt Curios
+        basicItem(ModItems.HOPOO_FEATHER.get());
+        basicItem(ModItems.WAX_QUAIL.get());
 
         //Holy Priest Armor
         basicItem(ModItems.HOLYPRIESTHELMET.get());
         basicItem(ModItems.HOLYPRIESTCHESTPLATE.get());
         basicItem(ModItems.HOLYPRIESTLEGGINGS.get());
         basicItem(ModItems.HOLYPRIESTBOOTS.get());
-
 
     }
 }
