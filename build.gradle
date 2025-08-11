@@ -161,6 +161,8 @@ dependencies {
     // APOTHIC ATTRIBUTES
     implementation "curse.maven:apothic-attributes-898963:6302334"
     implementation "curse.maven:placebo-283644:6337156"
+    //ADDITIONAL ATTRIBUTES
+    implementation fg.deobf("curse.maven:additional-attributes-986624:6782138")
 
 
 
