@@ -135,7 +135,7 @@ public class ModItems {
 
     //Belt Curios
     public static final DeferredItem<HopooFeatherCurio> HOPOO_FEATHER = ITEMS.register("hopoo_feather", HopooFeatherCurio::new);
-    public static final DeferredItem<WaxQuailCurio> WAX_QUAIL = ITEMS.register("wax_quail", WaxQUailCurio::new);
+    public static final DeferredItem<WaxQuailCurio> WAX_QUAIL = ITEMS.register("wax_quail", WaxQuailCurio::new);
 
 
 

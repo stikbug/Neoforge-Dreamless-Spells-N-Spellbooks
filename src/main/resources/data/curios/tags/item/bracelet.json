@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "dreamless_spells:hearty_necklace"
+    "dreamless_spells:kyros_band",
+    "dreamless_spells:rolands_band"
   ]
 }

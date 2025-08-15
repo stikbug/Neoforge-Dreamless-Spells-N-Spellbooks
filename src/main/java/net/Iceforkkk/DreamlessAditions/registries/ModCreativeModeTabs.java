@@ -86,6 +86,15 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SLAUGHTERERS_MASK);
                         //Necklace Curios
                         output.accept(ModItems.HEARTY_NECKLACE);
+                        //Bracelet Curios
+                        output.accept(ModItems.KYROS_BAND);
+                        output.accept(ModItems.ROLANDS_BAND);
+                        //Charm Curios
+                        output.accept(ModItems.BUSTLING_FUNGUS);
+                        output.accept(ModItems.SALE_STAR);
+                        //Belt Curios
+                        output.accept(ModItems.HOPOO_FEATHER);
+                        output.accept(ModItems.WAX_QUAIL);
                         //Blocks
                         output.accept(ModBlocks.TUNGSTENORE);
                         output.accept(ModBlocks.TUNGSTENBLOCK);

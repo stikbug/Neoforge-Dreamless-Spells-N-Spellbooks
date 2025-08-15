@@ -93,7 +93,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_tungsten_ingot", has(ModItems.TUNGSTENINGOT)).save(recipeOutput);
 
         //Boots Curios ----------------------------------------------------------------------------------------------------
-         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COPPER_BOOTS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COPPER_BOOTS.get())
                 .pattern("COC")
                 .pattern("C C")
                 .pattern("   ")
@@ -493,6 +493,63 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', ItemRegistry.RUINED_BOOK.get())
                 .define('P', ModItems.PAVARIUM.get())
                 .unlockedBy("has_divine_soulshard", has(ItemRegistry.DIVINE_SOULSHARD.get())).save(recipeOutput);
+
+        //Necklace recipes -------------------------------------------------------------------------------------------------------------------------------------------+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.HEARTY_NECKLACE.get())
+                .pattern("TTT")
+                .pattern("BAT")
+                .pattern("BBT")
+                .define('A', ItemRegistry.AMETHYST_RESONANCE_NECKLACE.get())
+                .define('B', ItemRegistry.BLOODY_VELLUM.get())
+                .define('T', ModItems.TUNGSTENINGOT.get())
+                .unlockedBy("has_tungsten_ingot", has(ModItems.TUNGSTENINGOT.get())).save(recipeOutput);
+
+        //Charm recipes -------------------------------------------------------------------------------------------------------------------------------------------+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BUSTLING_FUNGUS.get())
+                .pattern("TTP")
+                .pattern("MAT")
+                .pattern("NMT")
+                .define('A', ItemRegistry.POISONWARD_RING.get())
+                .define('M', ItemRegistry.MITHRIL_INGOT.get())
+                .define('N', ItemRegistry.NATURE_UPGRADE_ORB.get())
+                .define('T', ModItems.TUNGSTENINGOT.get())
+                .define('P', ModItems.PAVARIUM.get())
+                .unlockedBy("has_pavarium", has(ModItems.PAVARIUM.get())).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SALE_STAR.get())
+                .pattern("MPC")
+                .pattern("PDP")
+                .pattern("HPE")
+                .define('H', ItemRegistry.HOLY_UPGRADE_ORB.get())
+                .define('E', ItemRegistry.EVOCATION_UPGRADE_ORB.get())
+                .define('M', ItemRegistry.MANA_UPGRADE_ORB.get())
+                .define('C', ItemRegistry.COOLDOWN_UPGRADE_ORB.get())
+                .define('D', ItemRegistry.DIVINE_SOULSHARD.get())
+                .define('P', ModItems.PAVARIUM.get())
+                .unlockedBy("has_divine_soulshard", has(ItemRegistry.DIVINE_SOULSHARD.get())).save(recipeOutput);
+
+        //Bracelet recipes -------------------------------------------------------------------------------------------------------------------------------------------+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROLANDS_BAND.get())
+                .pattern("BPB")
+                .pattern("TAT")
+                .pattern("BPB")
+                .define('A', ItemRegistry.FROSTWARD_RING.get())
+                .define('B', ItemRegistry.MITHRIL_INGOT.get())
+                .define('T', ModItems.TUNGSTENINGOT.get())
+                .define('P', ModItems.PAVARIUM.get())
+                .unlockedBy("has_tungsten_ingot", has(ModItems.TUNGSTENINGOT.get())).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.KYROS_BAND.get())
+                .pattern("BPB")
+                .pattern("TAT")
+                .pattern("BPB")
+                .define('A', ItemRegistry.FIREWARD_RING.get())
+                .define('B', ItemRegistry.BLOODY_VELLUM.get())
+                .define('T', ModItems.TUNGSTENINGOT.get())
+                .define('P', ModItems.PAVARIUM.get())
+                .unlockedBy("has_tungsten_ingot", has(ModItems.TUNGSTENINGOT.get())).save(recipeOutput);
+
+        //Belt recipes -------------------------------------------------------------------------------------------------------------------------------------------+
 
 
         //Shapeless recipes -------------------------------------------------------------------------------------------------------------------------------------------+

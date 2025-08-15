@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "irons_spellbooks:cooldown_upgrade_orb"
+    },
+    "D": {
+      "item": "irons_spellbooks:divine_soulshard"
+    },
+    "E": {
+      "item": "irons_spellbooks:evocation_upgrade_orb"
+    },
+    "H": {
+      "item": "irons_spellbooks:holy_upgrade_orb"
+    },
+    "M": {
+      "item": "irons_spellbooks:mana_upgrade_orb"
+    },
+    "P": {
+      "item": "dreamless_spells:pavarium"
+    }
+  },
+  "pattern": [
+    "MPC",
+    "PDP",
+    "HPE"
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:sale_star"
+  }
+}

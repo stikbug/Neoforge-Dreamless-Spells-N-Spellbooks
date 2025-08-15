@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "irons_spellbooks:amethyst_resonance_charm"
+    },
+    "B": {
+      "item": "irons_spellbooks:bloody_vellum"
+    },
+    "T": {
+      "item": "dreamless_spells:tungsten_ingot"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "BAT",
+    "BBT"
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:hearty_necklace"
+  }
+}
