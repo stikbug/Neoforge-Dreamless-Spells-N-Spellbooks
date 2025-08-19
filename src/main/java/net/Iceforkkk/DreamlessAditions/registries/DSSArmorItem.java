@@ -29,13 +29,13 @@ import javax.annotation.Nullable;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
-public class ModArmorItem extends ArmorItem implements GeoItem {
+public class DSSArmorItem extends ArmorItem implements GeoItem {
     // I copied this stuff from DTE, once you have this armor item class set up
     // You don't need to touch it any further
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
     private final Supplier<ItemAttributeModifiers> defaultModifiers;
 
-    public ModArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties, AttributeContainer... attributeContainers) {
+    public DSSArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties, AttributeContainer... attributeContainers) {
         super(material, type, properties);
         this.defaultModifiers = Suppliers.memoize(() ->
         {
@@ -91,7 +91,7 @@ public class ModArmorItem extends ArmorItem implements GeoItem {
         //nothing goes in here :p
     }
 
-    private PlayState predicate(AnimationState<ModArmorItem> itemAnimationState)
+    private PlayState predicate(AnimationState<DSSArmorItem> itemAnimationState)
     {
         itemAnimationState.getController().setAnimation(RawAnimation.begin().thenLoop("idle"));
         return PlayState.CONTINUE;

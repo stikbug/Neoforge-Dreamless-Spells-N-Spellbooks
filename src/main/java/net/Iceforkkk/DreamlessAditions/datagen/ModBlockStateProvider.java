@@ -1,7 +1,7 @@
 package net.Iceforkkk.DreamlessAditions.datagen;
 
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
-import net.Iceforkkk.DreamlessAditions.block.ModBlocks;
+import net.Iceforkkk.DreamlessAditions.block.DSSBlocks;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -14,9 +14,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(ModBlocks.JADEORE);
-        blockWithItem(ModBlocks.TUNGSTENORE);
-        blockWithItem(ModBlocks.TUNGSTENBLOCK);
+        blockWithItem(DSSBlocks.JADEORE);
+        blockWithItem(DSSBlocks.TUNGSTENORE);
+        blockWithItem(DSSBlocks.TUNGSTENBLOCK);
     }
     //Helper method for simple blocks
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

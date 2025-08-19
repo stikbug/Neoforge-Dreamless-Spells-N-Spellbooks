@@ -1,7 +1,7 @@
 package net.Iceforkkk.DreamlessAditions.datagen;
 
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
-import net.Iceforkkk.DreamlessAditions.registries.ModItems;
+import net.Iceforkkk.DreamlessAditions.registries.DSSItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -21,75 +21,75 @@ public class ModItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(Tags.Items.INGOTS)
-                .add(ModItems.TUNGSTENINGOT.get())
-                .add(ModItems.PAVARIUM.get())
-                .add(ModItems.TUNGSTEN_MITHRIL_MIXTURE.get());
+                .add(DSSItems.TUNGSTENINGOT.get())
+                .add(DSSItems.PAVARIUM.get())
+                .add(DSSItems.TUNGSTEN_MITHRIL_MIXTURE.get());
 
         tag(Tags.Items.NUGGETS)
-                .add(ModItems.TUNGSTENNUGGET.get());
+                .add(DSSItems.TUNGSTENNUGGET.get());
 
         tag(Tags.Items.GEMS)
-                .add(ModItems.JADE.get())
-                .add(ModItems.ARCANEGEM.get())
-                .add(ModItems.TUNGSTENNUGGET.get());
+                .add(DSSItems.JADE.get())
+                .add(DSSItems.ARCANEGEM.get())
+                .add(DSSItems.TUNGSTENNUGGET.get());
 
         tag(Tags.Items.ENCHANTABLES)
                 //Holy Priest Armor
-                .add(ModItems.HOLYPRIESTBOOTS.get())
-                .add(ModItems.HOLYPRIESTLEGGINGS.get())
-                .add(ModItems.HOLYPRIESTCHESTPLATE.get())
-                .add(ModItems.HOLYPRIESTHELMET.get());
+                .add(DSSItems.HOLYPRIESTBOOTS.get())
+                .add(DSSItems.HOLYPRIESTLEGGINGS.get())
+                .add(DSSItems.HOLYPRIESTCHESTPLATE.get())
+                .add(DSSItems.HOLYPRIESTHELMET.get());
         //Armor Tags
         tag(Tags.Items.ARMORS)
                 //Holy Priest Armor
-                .add(ModItems.HOLYPRIESTBOOTS.get())
-                .add(ModItems.HOLYPRIESTLEGGINGS.get())
-                .add(ModItems.HOLYPRIESTCHESTPLATE.get())
-                .add(ModItems.HOLYPRIESTHELMET.get());
+                .add(DSSItems.HOLYPRIESTBOOTS.get())
+                .add(DSSItems.HOLYPRIESTLEGGINGS.get())
+                .add(DSSItems.HOLYPRIESTCHESTPLATE.get())
+                .add(DSSItems.HOLYPRIESTHELMET.get());
 
         tag(ItemTags.ARMOR_ENCHANTABLE)
                 //Holy Priest Armor
-                .add(ModItems.HOLYPRIESTBOOTS.get())
-                .add(ModItems.HOLYPRIESTLEGGINGS.get())
-                .add(ModItems.HOLYPRIESTCHESTPLATE.get())
-                .add(ModItems.HOLYPRIESTHELMET.get());
+                .add(DSSItems.HOLYPRIESTBOOTS.get())
+                .add(DSSItems.HOLYPRIESTLEGGINGS.get())
+                .add(DSSItems.HOLYPRIESTCHESTPLATE.get())
+                .add(DSSItems.HOLYPRIESTHELMET.get());
 
         tag(ItemTags.EQUIPPABLE_ENCHANTABLE)
                 //Holy Priest Armor
-                .add(ModItems.HOLYPRIESTBOOTS.get())
-                .add(ModItems.HOLYPRIESTLEGGINGS.get())
-                .add(ModItems.HOLYPRIESTCHESTPLATE.get())
-                .add(ModItems.HOLYPRIESTHELMET.get());
+                .add(DSSItems.HOLYPRIESTBOOTS.get())
+                .add(DSSItems.HOLYPRIESTLEGGINGS.get())
+                .add(DSSItems.HOLYPRIESTCHESTPLATE.get())
+                .add(DSSItems.HOLYPRIESTHELMET.get());
 
         tag(ItemTags.DURABILITY_ENCHANTABLE)
                 //Holy Priest Armor
-                .add(ModItems.HOLYPRIESTBOOTS.get())
-                .add(ModItems.HOLYPRIESTLEGGINGS.get())
-                .add(ModItems.HOLYPRIESTCHESTPLATE.get())
-                .add(ModItems.HOLYPRIESTHELMET.get());
+                .add(DSSItems.HOLYPRIESTBOOTS.get())
+                .add(DSSItems.HOLYPRIESTLEGGINGS.get())
+                .add(DSSItems.HOLYPRIESTCHESTPLATE.get())
+                .add(DSSItems.HOLYPRIESTHELMET.get());
 
         tag(ItemTags.HEAD_ARMOR_ENCHANTABLE)
-                .add(ModItems.HOLYPRIESTHELMET.get());
+                .add(DSSItems.HOLYPRIESTHELMET.get());
 
         tag(ItemTags.CHEST_ARMOR_ENCHANTABLE)
-                .add(ModItems.HOLYPRIESTCHESTPLATE.get());
+                .add(DSSItems.HOLYPRIESTCHESTPLATE.get());
 
         tag(ItemTags.LEG_ARMOR_ENCHANTABLE)
-                .add(ModItems.HOLYPRIESTLEGGINGS.get());
+                .add(DSSItems.HOLYPRIESTLEGGINGS.get());
 
         tag(ItemTags.FOOT_ARMOR_ENCHANTABLE)
-                .add(ModItems.HOLYPRIESTBOOTS.get());
+                .add(DSSItems.HOLYPRIESTBOOTS.get());
 
         tag(ItemTags.HEAD_ARMOR)
-                .add(ModItems.HOLYPRIESTHELMET.get());
+                .add(DSSItems.HOLYPRIESTHELMET.get());
 
         tag(ItemTags.CHEST_ARMOR)
-                .add(ModItems.HOLYPRIESTCHESTPLATE.get());
+                .add(DSSItems.HOLYPRIESTCHESTPLATE.get());
 
         tag(ItemTags.LEG_ARMOR)
-                .add(ModItems.HOLYPRIESTLEGGINGS.get());
+                .add(DSSItems.HOLYPRIESTLEGGINGS.get());
 
         tag(ItemTags.FOOT_ARMOR)
-                .add(ModItems.HOLYPRIESTBOOTS.get());
+                .add(DSSItems.HOLYPRIESTBOOTS.get());
     }
 }

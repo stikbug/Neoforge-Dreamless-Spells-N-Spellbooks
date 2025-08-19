@@ -1,7 +1,7 @@
 package net.Iceforkkk.DreamlessAditions.block;
 
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
-import net.Iceforkkk.DreamlessAditions.registries.ModItems;
+import net.Iceforkkk.DreamlessAditions.registries.DSSItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -13,7 +13,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
-public class ModBlocks {
+public class DSSBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(Dreamless_Spells.MOD_ID);
 
@@ -42,7 +42,7 @@ public class ModBlocks {
     }
 
     private static <T extends Block> void  registerBlockItem(String Name, DeferredBlock<T> block) {
-        ModItems.ITEMS.register(Name, ()-> new BlockItem(block.get(), new Item.Properties()));
+        DSSItems.ITEMS.register(Name, ()-> new BlockItem(block.get(), new Item.Properties()));
     }
 
 

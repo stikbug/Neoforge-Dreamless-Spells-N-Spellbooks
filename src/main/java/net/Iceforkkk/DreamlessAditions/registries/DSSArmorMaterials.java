@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.function.Supplier;
 
 
-public class ModArmorMaterials {
+public class DSSArmorMaterials {
     public static final Holder<ArmorMaterial> SLEEPLESS_ARMOR_MATERIAL = register("sleepless_armor",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
                 attribute.put(ArmorItem.Type.BOOTS, 5);
@@ -27,7 +27,7 @@ public class ModArmorMaterials {
                 attribute.put(ArmorItem.Type.HELMET, 5);
                 attribute.put(ArmorItem.Type.BODY, 11);
 
-            }), 16, 2, 0.2f, () -> ModItems.TUNGSTENINGOT.get());
+            }), 16, 2, 0.2f, () -> DSSItems.TUNGSTENINGOT.get());
 
 
     private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,

@@ -1,11 +1,11 @@
 package net.Iceforkkk.DreamlessAditions;
 
-import net.Iceforkkk.DreamlessAditions.block.ModBlocks;
-import net.Iceforkkk.DreamlessAditions.effect.ModEffects;
-import net.Iceforkkk.DreamlessAditions.registries.ModCreativeModeTabs;
-import net.Iceforkkk.DreamlessAditions.registries.ModItems;
-import net.Iceforkkk.DreamlessAditions.registries.SpellRegistries;
+import net.Iceforkkk.DreamlessAditions.block.DSSBlocks;
+import net.Iceforkkk.DreamlessAditions.effect.DSSEffects;
+import net.Iceforkkk.DreamlessAditions.registries.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTabs;
+import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -35,18 +35,21 @@ public class Dreamless_Spells
 
         NeoForge.EVENT_BUS.register(this);
 
-        ModCreativeModeTabs.register(modEventBus);
+        DSSCreativeModeTabs.register(modEventBus);
 
-        ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
+        DSSItems.register(modEventBus);
+        DSSBlocks.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
-        ModEffects.register(modEventBus);
+        DSSEffects.register(modEventBus);
 
         SpellRegistries.register(modEventBus);
+        DSSAttributeRegistry.register(modEventBus);
+        DSSSchoolRegistry.register(modEventBus);
+
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -75,4 +78,10 @@ public class Dreamless_Spells
 
         }
     }
+
+    public static ResourceLocation id(@NotNull String path)
+    {
+        return ResourceLocation.fromNamespaceAndPath(Dreamless_Spells.MOD_ID, path);
+    }
+
 }

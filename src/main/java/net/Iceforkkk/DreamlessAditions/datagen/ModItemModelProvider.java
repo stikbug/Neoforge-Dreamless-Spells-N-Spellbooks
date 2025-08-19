@@ -1,7 +1,7 @@
 package net.Iceforkkk.DreamlessAditions.datagen;
 
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
-import net.Iceforkkk.DreamlessAditions.registries.ModItems;
+import net.Iceforkkk.DreamlessAditions.registries.DSSItems;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -14,90 +14,90 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         //Normal Items
-        basicItem(ModItems.NITROGLAND.get());
-        basicItem(ModItems.NITROCORE.get());
-        basicItem(ModItems.MYSTERIOUSCIRCUITRY.get());
-        basicItem(ModItems.JADE.get());
-        basicItem(ModItems.ARCANEGEM.get());
-        basicItem(ModItems.TUNGSTENINGOT.get());
-        basicItem(ModItems.RAWTUNGSTEN.get());
-        basicItem(ModItems.TUNGSTENNUGGET.get());
-        basicItem(ModItems.TUNGSTEN_MITHRIL_MIXTURE.get());
-        basicItem(ModItems.PAVARIUM.get());
+        basicItem(DSSItems.NITROGLAND.get());
+        basicItem(DSSItems.NITROCORE.get());
+        basicItem(DSSItems.MYSTERIOUSCIRCUITRY.get());
+        basicItem(DSSItems.JADE.get());
+        basicItem(DSSItems.ARCANEGEM.get());
+        basicItem(DSSItems.TUNGSTENINGOT.get());
+        basicItem(DSSItems.RAWTUNGSTEN.get());
+        basicItem(DSSItems.TUNGSTENNUGGET.get());
+        basicItem(DSSItems.TUNGSTEN_MITHRIL_MIXTURE.get());
+        basicItem(DSSItems.PAVARIUM.get());
 
         //Boots Curios
-        basicItem(ModItems.OLD_BOOTS.get());
-        basicItem(ModItems.COPPER_BOOTS.get());
-        basicItem(ModItems.IRON_SOCKS.get());
-        basicItem(ModItems.TANK_BOOTS.get());
-        basicItem(ModItems.DEEP_DIVERS.get());
-        basicItem(ModItems.PAGMAS_BOOTS.get());
-        basicItem(ModItems.PYRIUM_BOOTS.get());
-        basicItem(ModItems.NETHERITE_GREAVES.get());
-        basicItem(ModItems.GOLDEN_GREAVES.get());
-        basicItem(ModItems.CLOTH_BOOTS.get());
-        basicItem(ModItems.ARCANE_CLOTH_BOOTS.get());
-        basicItem(ModItems.MAGE_BOOTS.get());
-        basicItem(ModItems.ARCHMAGE_BOOTS.get());
-        basicItem(ModItems.MAGI_BOOTS.get());
-        basicItem(ModItems.SCRAPPED_BOOTS.get());
-        basicItem(ModItems.GLASS_BOOTS.get());
-        basicItem(ModItems.TEMPERED_GLASS_BOOTS.get());
-        basicItem(ModItems.AMETHYST_BOOTS.get());
-        basicItem(ModItems.EMERALD_BOOTS.get());
-        basicItem(ModItems.ARCANE_CRYSTAL_BOOTS.get());
-        basicItem(ModItems.JADE_BOOTS.get());
-        basicItem(ModItems.BRAHAMS_BOOTS.get());
-        basicItem(ModItems.HUNTER_BOOTS.get());
-        basicItem(ModItems.VAMPIRE_BARON_BOOTS.get());
-        basicItem(ModItems.VAMPIRE_EARL_BOOTS.get());
-        basicItem(ModItems.VAMPIRE_KING_BOOTS.get());
-        basicItem(ModItems.UNDEFEATED_BOOTS.get());
-        basicItem(ModItems.LEGEND_BOOTS.get());
-        basicItem(ModItems.TUNGSTEN_BOOTS.get());
+        basicItem(DSSItems.OLD_BOOTS.get());
+        basicItem(DSSItems.COPPER_BOOTS.get());
+        basicItem(DSSItems.IRON_SOCKS.get());
+        basicItem(DSSItems.TANK_BOOTS.get());
+        basicItem(DSSItems.DEEP_DIVERS.get());
+        basicItem(DSSItems.PAGMAS_BOOTS.get());
+        basicItem(DSSItems.PYRIUM_BOOTS.get());
+        basicItem(DSSItems.NETHERITE_GREAVES.get());
+        basicItem(DSSItems.GOLDEN_GREAVES.get());
+        basicItem(DSSItems.CLOTH_BOOTS.get());
+        basicItem(DSSItems.ARCANE_CLOTH_BOOTS.get());
+        basicItem(DSSItems.MAGE_BOOTS.get());
+        basicItem(DSSItems.ARCHMAGE_BOOTS.get());
+        basicItem(DSSItems.MAGI_BOOTS.get());
+        basicItem(DSSItems.SCRAPPED_BOOTS.get());
+        basicItem(DSSItems.GLASS_BOOTS.get());
+        basicItem(DSSItems.TEMPERED_GLASS_BOOTS.get());
+        basicItem(DSSItems.AMETHYST_BOOTS.get());
+        basicItem(DSSItems.EMERALD_BOOTS.get());
+        basicItem(DSSItems.ARCANE_CRYSTAL_BOOTS.get());
+        basicItem(DSSItems.JADE_BOOTS.get());
+        basicItem(DSSItems.BRAHAMS_BOOTS.get());
+        basicItem(DSSItems.HUNTER_BOOTS.get());
+        basicItem(DSSItems.VAMPIRE_BARON_BOOTS.get());
+        basicItem(DSSItems.VAMPIRE_EARL_BOOTS.get());
+        basicItem(DSSItems.VAMPIRE_KING_BOOTS.get());
+        basicItem(DSSItems.UNDEFEATED_BOOTS.get());
+        basicItem(DSSItems.LEGEND_BOOTS.get());
+        basicItem(DSSItems.TUNGSTEN_BOOTS.get());
 
         //Tablet Curios
-        basicItem(ModItems.BLANK_TABLET.get());
-        basicItem(ModItems.ARCANE_TABLET.get());
-        basicItem(ModItems.BLOOD_TABLET.get());
-        basicItem(ModItems.COOLDOWN_TABLET.get());
-        basicItem(ModItems.ENDER_TABLET.get());
-        basicItem(ModItems.EVOCATION_TABLET.get());
-        basicItem(ModItems.FIRE_TABLET.get());
-        basicItem(ModItems.HOLY_TABLET.get());
-        basicItem(ModItems.ICE_TABLET.get());
-        basicItem(ModItems.LIGHTNING_TABLET.get());
-        basicItem(ModItems.NATURE_TABLET.get());
-        basicItem(ModItems.PROTECTION_TABLET.get());
+        basicItem(DSSItems.BLANK_TABLET.get());
+        basicItem(DSSItems.ARCANE_TABLET.get());
+        basicItem(DSSItems.BLOOD_TABLET.get());
+        basicItem(DSSItems.COOLDOWN_TABLET.get());
+        basicItem(DSSItems.ENDER_TABLET.get());
+        basicItem(DSSItems.EVOCATION_TABLET.get());
+        basicItem(DSSItems.FIRE_TABLET.get());
+        basicItem(DSSItems.HOLY_TABLET.get());
+        basicItem(DSSItems.ICE_TABLET.get());
+        basicItem(DSSItems.LIGHTNING_TABLET.get());
+        basicItem(DSSItems.NATURE_TABLET.get());
+        basicItem(DSSItems.PROTECTION_TABLET.get());
 
         //Ring Curios
-        basicItem(ModItems.DORANS_RING.get());
-        basicItem(ModItems.ELFIN_RING.get());
-        basicItem(ModItems.ABSURD_RING.get());
+        basicItem(DSSItems.DORANS_RING.get());
+        basicItem(DSSItems.ELFIN_RING.get());
+        basicItem(DSSItems.ABSURD_RING.get());
 
         //Mask Curios
-        basicItem(ModItems.SLAUGHTERERS_MASK.get());
+        basicItem(DSSItems.SLAUGHTERERS_MASK.get());
 
         //Neclace Curios
-        basicItem(ModItems.HEARTY_NECKLACE.get());
+        basicItem(DSSItems.HEARTY_NECKLACE.get());
 
         //Charm Curios
-        basicItem(ModItems.BUSTLING_FUNGUS.get());
-        basicItem(ModItems.SALE_STAR.get());
+        basicItem(DSSItems.BUSTLING_FUNGUS.get());
+        basicItem(DSSItems.SALE_STAR.get());
 
         //Bracelet Curios
-        basicItem(ModItems.KYROS_BAND.get());
-        basicItem(ModItems.ROLANDS_BAND.get());
+        basicItem(DSSItems.KYROS_BAND.get());
+        basicItem(DSSItems.ROLANDS_BAND.get());
 
         //Belt Curios
-        basicItem(ModItems.HOPOO_FEATHER.get());
-        basicItem(ModItems.WAX_QUAIL.get());
+        basicItem(DSSItems.HOPOO_FEATHER.get());
+        basicItem(DSSItems.WAX_QUAIL.get());
 
         //Holy Priest Armor
-        basicItem(ModItems.HOLYPRIESTHELMET.get());
-        basicItem(ModItems.HOLYPRIESTCHESTPLATE.get());
-        basicItem(ModItems.HOLYPRIESTLEGGINGS.get());
-        basicItem(ModItems.HOLYPRIESTBOOTS.get());
+        basicItem(DSSItems.HOLYPRIESTHELMET.get());
+        basicItem(DSSItems.HOLYPRIESTCHESTPLATE.get());
+        basicItem(DSSItems.HOLYPRIESTLEGGINGS.get());
+        basicItem(DSSItems.HOLYPRIESTBOOTS.get());
 
     }
 }

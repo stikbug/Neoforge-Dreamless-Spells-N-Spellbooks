@@ -15,7 +15,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.List;
 
-public class ModItems {
+public class DSSItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Dreamless_Spells.MOD_ID);
     //Normal Materials
     public static final DeferredItem<Item> NITROGLAND = ITEMS.register("nitro_gland",

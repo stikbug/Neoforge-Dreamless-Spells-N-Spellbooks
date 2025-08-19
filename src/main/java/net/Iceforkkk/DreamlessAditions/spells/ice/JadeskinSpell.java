@@ -8,7 +8,7 @@ import io.redspace.ironsspellbooks.api.util.AnimationHolder;
 import io.redspace.ironsspellbooks.api.util.Utils;
 import io.redspace.ironsspellbooks.registries.SoundRegistry;
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
-import net.Iceforkkk.DreamlessAditions.effect.ModEffects;
+import net.Iceforkkk.DreamlessAditions.effect.DSSEffects;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
@@ -69,7 +69,7 @@ public class JadeskinSpell extends AbstractSpell {
 
     @Override
     public void onCast(Level world, int spellLevel, LivingEntity entity, CastSource castSource, MagicData playerMagicData) {
-        entity.addEffect(new MobEffectInstance(ModEffects.JADESKIN_EFFECT, (int) (getSpellPower(spellLevel, entity) * 40), spellLevel - 1, false, false, true));
+        entity.addEffect(new MobEffectInstance(DSSEffects.JADESKIN_EFFECT, (int) (getSpellPower(spellLevel, entity) * 40), spellLevel - 1, false, false, true));
         super.onCast(world, spellLevel, entity, castSource, playerMagicData);
     }
     @Override

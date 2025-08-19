@@ -4,14 +4,14 @@ import io.redspace.ironsspellbooks.api.spells.IPresetSpellContainer;
 import io.redspace.ironsspellbooks.api.spells.ISpellContainer;
 import io.redspace.ironsspellbooks.item.weapons.AttributeContainer;
 import io.redspace.ironsspellbooks.registries.ComponentRegistry;
-import net.Iceforkkk.DreamlessAditions.registries.ModArmorItem;
+import net.Iceforkkk.DreamlessAditions.registries.DSSArmorItem;
 import net.minecraft.core.Holder;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
 
-public class ImbuableModArmorItem extends ModArmorItem implements IPresetSpellContainer {
-    public ImbuableModArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties, AttributeContainer... attributeContainers) {
+public class ImbuableDSSArmorItem extends DSSArmorItem implements IPresetSpellContainer {
+    public ImbuableDSSArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties, AttributeContainer... attributeContainers) {
         super(material, type, properties, attributeContainers);
     }
 
