@@ -2,8 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "H": {
-      "item": "irons_spellbooks:priest_helmet"
+    "C": {
+      "item": "irons_spellbooks:priest_chestplate"
     },
     "P": {
       "item": "dreamless_spells:pavarium"
@@ -13,12 +13,12 @@
     }
   },
   "pattern": [
-    "PHP",
-    "T T",
-    "   "
+    "P P",
+    "TCT",
+    "PTP"
   ],
   "result": {
     "count": 1,
-    "id": "dreamless_spells:holy_priest_helmet"
+    "id": "dreamless_spells:empty_priest_chestplate"
   }
 }

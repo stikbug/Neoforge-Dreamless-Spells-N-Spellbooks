@@ -1,6 +1,9 @@
 {
   "creativetab.dreamless_spells.dreamless_items": "Dreamless Items",
 
+  "item.dreamless_spells.empty_rune": "Empty Rune",
+  "item.dreamless_spells.empty_upgrade_orb": "Empty Upgrade Orb (?)",
+
   "item.dreamless_spells.nitro_core": "Nitro Core",
   "item.dreamless_spells.nitro_gland": "Nitro Gland",
   "item.dreamless_spells.mysterious_circuitry": "Mysterious Circuitry",
@@ -16,10 +19,10 @@
   "block.dreamless_spells.tungsten_ore": "Tungsten Ore",
   "block.dreamless_spells.tungsten_block": "Tungsten Block",
 
-  "item.dreamless_spells.holy_priest_helmet": "Holy Priest Helmet",
-  "item.dreamless_spells.holy_priest_chestplate": "Holy Priest Chestplate",
-  "item.dreamless_spells.holy_priest_leggings": "Holy Priest Leggings",
-  "item.dreamless_spells.holy_priest_boots": "Holy Priest Boots",
+  "item.dreamless_spells.empty_priest_helmet": "Empty Priest Helmet",
+  "item.dreamless_spells.empty_priest_chestplate": "Empty Priest Chestplate",
+  "item.dreamless_spells.empty_priest_leggings": "Empty Priest Leggings",
+  "item.dreamless_spells.empty_priest_boots": "Empty Priest Boots",
 
   "curios.identifier.feet": "Feet",
   "curios.modifiers.feet": "When in the Feet Slot:",
@@ -92,6 +95,13 @@
   "effect.dreamless_spells.jadeskin": "Jadeskin",
   "spell.dreamless_spells.jadeskin": "Jadeskin",
 
-  "tooltip.dreamless_spells.holy_priest.tooltip": "§5This isn't very holy OR priest-like. What's the deal?§5"
+  "effect.dreamless_spells.drained": "Drained",
+  "spell.dreamless_spells.drained": "Drained",
+
+  "attribute.dreamless_spells.empty_spell_power": "Empty Spell Power",
+  "attribute.dreamless_spells.empty_spell_resist": "Empty Spell Resist",
+  "school.dreamless_spells.empty": "Empty",
+
+  "tooltip.dreamless_spells.empty_priest.tooltip": "§5Seems pretty full to me...§5"
 
 }

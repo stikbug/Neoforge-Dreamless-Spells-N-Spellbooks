@@ -30,6 +30,14 @@ public class DSSEffects {
                             AttributeModifier.Operation.ADD_VALUE)
     );
 
+    //Drained
+    public static final Holder<MobEffect> DRAINED_EFFECT = MOB_EFFECTS.register("drained",
+            () -> new JadeskinEffect(MobEffectCategory.HARMFUL, 0xfbb741)
+                    .addAttributeModifier(AttributeRegistry.MAX_MANA,
+                            ResourceLocation.fromNamespaceAndPath(Dreamless_Spells.MOD_ID, "drained"), -0.1f,
+                            AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
+    );
+
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
     }

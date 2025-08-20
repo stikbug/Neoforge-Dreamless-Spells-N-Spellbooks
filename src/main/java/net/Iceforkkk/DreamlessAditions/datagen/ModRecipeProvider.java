@@ -55,7 +55,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_diamonds", has(Items.DIAMOND)).save(recipeOutput);
 
         //Holy Priest Armor
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.HOLYPRIESTHELMET.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.EMPTYPRIESTHELMET.get())
                 .pattern("PHP")
                 .pattern("T T")
                 .pattern("   ")
@@ -64,7 +64,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('H', ItemRegistry.PRIEST_HELMET.get())
                 .unlockedBy("has_tungsten_ingot", has(DSSItems.TUNGSTENINGOT)).save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.HOLYPRIESTCHESTPLATE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.EMPTYPRIESTCHESTPLATE.get())
                 .pattern("P P")
                 .pattern("TCT")
                 .pattern("PTP")
@@ -73,7 +73,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('C', ItemRegistry.PRIEST_CHESTPLATE.get())
                 .unlockedBy("has_tungsten_ingot", has(DSSItems.TUNGSTENINGOT)).save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.HOLYPRIESTLEGGINGS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.EMPTYPRIESTLEGGINGS.get())
                 .pattern("TLT")
                 .pattern("T T")
                 .pattern("P P")
@@ -82,7 +82,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('L', ItemRegistry.PRIEST_LEGGINGS.get())
                 .unlockedBy("has_tungsten_ingot", has(DSSItems.TUNGSTENINGOT)).save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.HOLYPRIESTBOOTS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.EMPTYPRIESTBOOTS.get())
                 .pattern("TBT")
                 .pattern("P P")
                 .pattern("   ")

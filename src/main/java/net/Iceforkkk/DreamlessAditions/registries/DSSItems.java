@@ -1,15 +1,15 @@
 package net.Iceforkkk.DreamlessAditions.registries;
 
+import io.redspace.ironsspellbooks.item.UpgradeOrbItem;
+import io.redspace.ironsspellbooks.registries.ComponentRegistry;
 import io.redspace.ironsspellbooks.util.ItemPropertiesHelper;
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
-import net.Iceforkkk.DreamlessAditions.item.armor.HolyPriestArmorItem;
+import net.Iceforkkk.DreamlessAditions.item.armor.EmptyPriestArmorItem;
 import net.Iceforkkk.DreamlessAditions.item.curios.*;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -38,36 +38,39 @@ public class DSSItems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> TUNGSTEN_MITHRIL_MIXTURE = ITEMS.register("tungsten_mithril_mixture",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> EMPTY_RUNE = ITEMS.register("empty_rune",
+            ()-> new Item(new Item.Properties()));
+
     //Holy Priest Armor
-    public static final DeferredItem<ArmorItem> HOLYPRIESTHELMET = ITEMS.register("holy_priest_helmet",
-            ()-> new HolyPriestArmorItem(ArmorItem.Type.HELMET, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(39))){
+    public static final DeferredItem<ArmorItem> EMPTYPRIESTHELMET = ITEMS.register("empty_priest_helmet",
+            ()-> new EmptyPriestArmorItem(ArmorItem.Type.HELMET, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(39))){
                 @Override
                 public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-                    tooltipComponents.add(Component.translatable("tooltip.dreamless_spells.holy_priest.tooltip"));
+                    tooltipComponents.add(Component.translatable("tooltip.dreamless_spells.empty_priest.tooltip"));
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
                 }
             });
-    public static final DeferredItem<ArmorItem> HOLYPRIESTCHESTPLATE = ITEMS.register("holy_priest_chestplate",
-            ()-> new HolyPriestArmorItem(ArmorItem.Type.CHESTPLATE, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.CHESTPLATE.getDurability(39))){
+    public static final DeferredItem<ArmorItem> EMPTYPRIESTCHESTPLATE = ITEMS.register("empty_priest_chestplate",
+            ()-> new EmptyPriestArmorItem(ArmorItem.Type.CHESTPLATE, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.CHESTPLATE.getDurability(39))){
                 @Override
                 public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-                    tooltipComponents.add(Component.translatable("tooltip.dreamless_spells.holy_priest.tooltip"));
+                    tooltipComponents.add(Component.translatable("tooltip.dreamless_spells.empty_priest.tooltip"));
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
                 }
             });
-    public static final DeferredItem<ArmorItem> HOLYPRIESTLEGGINGS = ITEMS.register("holy_priest_leggings",
-            ()-> new HolyPriestArmorItem(ArmorItem.Type.LEGGINGS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.LEGGINGS.getDurability(39))){
+    public static final DeferredItem<ArmorItem> EMPTYPRIESTLEGGINGS = ITEMS.register("empty_priest_leggings",
+            ()-> new EmptyPriestArmorItem(ArmorItem.Type.LEGGINGS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.LEGGINGS.getDurability(39))){
                 @Override
                 public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-                    tooltipComponents.add(Component.translatable("tooltip.dreamless_spells.holy_priest.tooltip"));
+                    tooltipComponents.add(Component.translatable("tooltip.dreamless_spells.empty_priest.tooltip"));
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
                 }
             });
-    public static final DeferredItem<ArmorItem> HOLYPRIESTBOOTS = ITEMS.register("holy_priest_boots",
-            ()-> new HolyPriestArmorItem(ArmorItem.Type.BOOTS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(39))){
+    public static final DeferredItem<ArmorItem> EMPTYPRIESTBOOTS = ITEMS.register("empty_priest_boots",
+            ()-> new EmptyPriestArmorItem(ArmorItem.Type.BOOTS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(39))){
                 @Override
                 public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-                    tooltipComponents.add(Component.translatable("tooltip.dreamless_spells.holy_priest.tooltip"));
+                    tooltipComponents.add(Component.translatable("tooltip.dreamless_spells.empty_priest.tooltip"));
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
                 }
             });
@@ -137,6 +140,14 @@ public class DSSItems {
     public static final DeferredItem<HopooFeatherCurio> HOPOO_FEATHER = ITEMS.register("hopoo_feather", HopooFeatherCurio::new);
     public static final DeferredItem<WaxQuailCurio> WAX_QUAIL = ITEMS.register("wax_quail", WaxQuailCurio::new);
 
+    //Upgrade Orbs
+
+    //Empty Orb
+    public static final DeferredHolder<Item, Item> EMPTY_UPGRADE_ORB = ITEMS.register("empty_upgrade_orb",
+            () -> new UpgradeOrbItem(ItemPropertiesHelper
+                    .material()
+                    .rarity(Rarity.EPIC)
+                    .component(ComponentRegistry.UPGRADE_ORB_TYPE, DSSUpgradeOrbTypeRegistry.EMPTY_SPELL_POWER)));
 
 
     public static void register (IEventBus eventBus) {

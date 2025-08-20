@@ -31,10 +31,10 @@ public class DSSCreativeModeTabs {
                         output.accept(DSSItems.TUNGSTEN_MITHRIL_MIXTURE);
                         output.accept(DSSItems.PAVARIUM);
                         //Holy Priest Armor
-                        output.accept(DSSItems.HOLYPRIESTBOOTS);
-                        output.accept(DSSItems.HOLYPRIESTLEGGINGS);
-                        output.accept(DSSItems.HOLYPRIESTCHESTPLATE);
-                        output.accept(DSSItems.HOLYPRIESTHELMET);
+                        output.accept(DSSItems.EMPTYPRIESTBOOTS);
+                        output.accept(DSSItems.EMPTYPRIESTLEGGINGS);
+                        output.accept(DSSItems.EMPTYPRIESTCHESTPLATE);
+                        output.accept(DSSItems.EMPTYPRIESTHELMET);
                         //Boot Curios
                         output.accept(DSSItems.OLD_BOOTS);
                         output.accept(DSSItems.IRON_SOCKS);

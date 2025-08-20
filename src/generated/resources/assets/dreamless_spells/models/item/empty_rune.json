@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dreamless_spells:item/holy_priest_boots"
+    "layer0": "dreamless_spells:item/empty_rune"
   }
 }

@@ -35,61 +35,61 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         tag(Tags.Items.ENCHANTABLES)
                 //Holy Priest Armor
-                .add(DSSItems.HOLYPRIESTBOOTS.get())
-                .add(DSSItems.HOLYPRIESTLEGGINGS.get())
-                .add(DSSItems.HOLYPRIESTCHESTPLATE.get())
-                .add(DSSItems.HOLYPRIESTHELMET.get());
+                .add(DSSItems.EMPTYPRIESTBOOTS.get())
+                .add(DSSItems.EMPTYPRIESTLEGGINGS.get())
+                .add(DSSItems.EMPTYPRIESTCHESTPLATE.get())
+                .add(DSSItems.EMPTYPRIESTHELMET.get());
         //Armor Tags
         tag(Tags.Items.ARMORS)
                 //Holy Priest Armor
-                .add(DSSItems.HOLYPRIESTBOOTS.get())
-                .add(DSSItems.HOLYPRIESTLEGGINGS.get())
-                .add(DSSItems.HOLYPRIESTCHESTPLATE.get())
-                .add(DSSItems.HOLYPRIESTHELMET.get());
+                .add(DSSItems.EMPTYPRIESTBOOTS.get())
+                .add(DSSItems.EMPTYPRIESTLEGGINGS.get())
+                .add(DSSItems.EMPTYPRIESTCHESTPLATE.get())
+                .add(DSSItems.EMPTYPRIESTHELMET.get());
 
         tag(ItemTags.ARMOR_ENCHANTABLE)
                 //Holy Priest Armor
-                .add(DSSItems.HOLYPRIESTBOOTS.get())
-                .add(DSSItems.HOLYPRIESTLEGGINGS.get())
-                .add(DSSItems.HOLYPRIESTCHESTPLATE.get())
-                .add(DSSItems.HOLYPRIESTHELMET.get());
+                .add(DSSItems.EMPTYPRIESTBOOTS.get())
+                .add(DSSItems.EMPTYPRIESTLEGGINGS.get())
+                .add(DSSItems.EMPTYPRIESTCHESTPLATE.get())
+                .add(DSSItems.EMPTYPRIESTHELMET.get());
 
         tag(ItemTags.EQUIPPABLE_ENCHANTABLE)
                 //Holy Priest Armor
-                .add(DSSItems.HOLYPRIESTBOOTS.get())
-                .add(DSSItems.HOLYPRIESTLEGGINGS.get())
-                .add(DSSItems.HOLYPRIESTCHESTPLATE.get())
-                .add(DSSItems.HOLYPRIESTHELMET.get());
+                .add(DSSItems.EMPTYPRIESTBOOTS.get())
+                .add(DSSItems.EMPTYPRIESTLEGGINGS.get())
+                .add(DSSItems.EMPTYPRIESTCHESTPLATE.get())
+                .add(DSSItems.EMPTYPRIESTHELMET.get());
 
         tag(ItemTags.DURABILITY_ENCHANTABLE)
                 //Holy Priest Armor
-                .add(DSSItems.HOLYPRIESTBOOTS.get())
-                .add(DSSItems.HOLYPRIESTLEGGINGS.get())
-                .add(DSSItems.HOLYPRIESTCHESTPLATE.get())
-                .add(DSSItems.HOLYPRIESTHELMET.get());
+                .add(DSSItems.EMPTYPRIESTBOOTS.get())
+                .add(DSSItems.EMPTYPRIESTLEGGINGS.get())
+                .add(DSSItems.EMPTYPRIESTCHESTPLATE.get())
+                .add(DSSItems.EMPTYPRIESTHELMET.get());
 
         tag(ItemTags.HEAD_ARMOR_ENCHANTABLE)
-                .add(DSSItems.HOLYPRIESTHELMET.get());
+                .add(DSSItems.EMPTYPRIESTHELMET.get());
 
         tag(ItemTags.CHEST_ARMOR_ENCHANTABLE)
-                .add(DSSItems.HOLYPRIESTCHESTPLATE.get());
+                .add(DSSItems.EMPTYPRIESTCHESTPLATE.get());
 
         tag(ItemTags.LEG_ARMOR_ENCHANTABLE)
-                .add(DSSItems.HOLYPRIESTLEGGINGS.get());
+                .add(DSSItems.EMPTYPRIESTLEGGINGS.get());
 
         tag(ItemTags.FOOT_ARMOR_ENCHANTABLE)
-                .add(DSSItems.HOLYPRIESTBOOTS.get());
+                .add(DSSItems.EMPTYPRIESTBOOTS.get());
 
         tag(ItemTags.HEAD_ARMOR)
-                .add(DSSItems.HOLYPRIESTHELMET.get());
+                .add(DSSItems.EMPTYPRIESTHELMET.get());
 
         tag(ItemTags.CHEST_ARMOR)
-                .add(DSSItems.HOLYPRIESTCHESTPLATE.get());
+                .add(DSSItems.EMPTYPRIESTCHESTPLATE.get());
 
         tag(ItemTags.LEG_ARMOR)
-                .add(DSSItems.HOLYPRIESTLEGGINGS.get());
+                .add(DSSItems.EMPTYPRIESTLEGGINGS.get());
 
         tag(ItemTags.FOOT_ARMOR)
-                .add(DSSItems.HOLYPRIESTBOOTS.get());
+                .add(DSSItems.EMPTYPRIESTBOOTS.get());
     }
 }

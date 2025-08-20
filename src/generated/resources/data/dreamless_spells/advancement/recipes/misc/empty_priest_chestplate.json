@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "dreamless_spells:holy_priest_chestplate"
+        "recipe": "dreamless_spells:empty_priest_chestplate"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "dreamless_spells:holy_priest_chestplate"
+      "dreamless_spells:empty_priest_chestplate"
     ]
   }
 }

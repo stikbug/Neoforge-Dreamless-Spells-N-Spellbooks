@@ -24,6 +24,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(DSSItems.TUNGSTENNUGGET.get());
         basicItem(DSSItems.TUNGSTEN_MITHRIL_MIXTURE.get());
         basicItem(DSSItems.PAVARIUM.get());
+        basicItem(DSSItems.EMPTY_RUNE.get());
+
+        //Upgrade Orbs
+        basicItem(DSSItems.EMPTY_UPGRADE_ORB.get());
 
         //Boots Curios
         basicItem(DSSItems.OLD_BOOTS.get());
@@ -93,11 +97,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(DSSItems.HOPOO_FEATHER.get());
         basicItem(DSSItems.WAX_QUAIL.get());
 
-        //Holy Priest Armor
-        basicItem(DSSItems.HOLYPRIESTHELMET.get());
-        basicItem(DSSItems.HOLYPRIESTCHESTPLATE.get());
-        basicItem(DSSItems.HOLYPRIESTLEGGINGS.get());
-        basicItem(DSSItems.HOLYPRIESTBOOTS.get());
-
+        //Armor
+        //Empty Priest Armor
+        basicItem(DSSItems.EMPTYPRIESTHELMET.get());
+        basicItem(DSSItems.EMPTYPRIESTCHESTPLATE.get());
+        basicItem(DSSItems.EMPTYPRIESTLEGGINGS.get());
+        basicItem(DSSItems.EMPTYPRIESTBOOTS.get());
+        //
     }
 }
