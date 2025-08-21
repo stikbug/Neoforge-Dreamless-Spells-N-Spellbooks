@@ -19,7 +19,7 @@ import java.util.function.Supplier;
 
 
 public class DSSArmorMaterials {
-    public static final Holder<ArmorMaterial> EMPTY_ARMOR_MATERIAL = register("sleepless_armor",
+    public static final Holder<ArmorMaterial> EMPTY_PRIEST_MATERIAL = register(
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
                 attribute.put(ArmorItem.Type.BOOTS, 3);
                 attribute.put(ArmorItem.Type.LEGGINGS, 8);
@@ -27,15 +27,23 @@ public class DSSArmorMaterials {
                 attribute.put(ArmorItem.Type.HELMET, 3);
                 attribute.put(ArmorItem.Type.BODY, 12);
 
-            }), 16, 0, 0f, () -> DSSItems.TUNGSTENINGOT.get());
+            }));
+
+    public static final Holder<ArmorMaterial> EMPTY_BRAWLER_MATERIAL = register(
+            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
+                attribute.put(ArmorItem.Type.BOOTS, 5);
+                attribute.put(ArmorItem.Type.LEGGINGS, 11);
+                attribute.put(ArmorItem.Type.CHESTPLATE, 9);
+                attribute.put(ArmorItem.Type.HELMET, 6);
+                attribute.put(ArmorItem.Type.BODY, 20);
+
+            }));
 
 
-    private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,
-                                                  int enchantability, float toughness, float knockbackResistance,
-                                                  Supplier<Item> ingredientItem) {
-        ResourceLocation location = ResourceLocation.fromNamespaceAndPath(Dreamless_Spells.MOD_ID, name);
+    private static Holder<ArmorMaterial> register(EnumMap<ArmorItem.Type, Integer> typeProtection) {
+        ResourceLocation location = ResourceLocation.fromNamespaceAndPath(Dreamless_Spells.MOD_ID, "sleepless_armor");
         Holder<SoundEvent> equipSound = SoundEvents.ARMOR_EQUIP_NETHERITE;
-        Supplier<Ingredient> ingredient = () -> Ingredient.of(ingredientItem.get());
+        Supplier<Ingredient> ingredient = () -> Ingredient.of(((Supplier<Item>) DSSItems.TUNGSTENINGOT).get());
         List<ArmorMaterial.Layer> layers = List.of(new ArmorMaterial.Layer(location));
 
         EnumMap<ArmorItem.Type, Integer> typeMap = new EnumMap<>(ArmorItem.Type.class);
@@ -44,7 +52,7 @@ public class DSSArmorMaterials {
         }
 
         return Registry.registerForHolder(BuiltInRegistries.ARMOR_MATERIAL, location,
-                new ArmorMaterial(typeProtection, enchantability, equipSound, ingredient, layers, toughness, knockbackResistance));
+                new ArmorMaterial(typeProtection, 16, equipSound, ingredient, layers, (float) 0, (float) 0.0));
 
     }
 }

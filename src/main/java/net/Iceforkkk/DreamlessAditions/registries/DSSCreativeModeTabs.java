@@ -30,7 +30,12 @@ public class DSSCreativeModeTabs {
                         output.accept(DSSItems.TUNGSTENNUGGET);
                         output.accept(DSSItems.TUNGSTEN_MITHRIL_MIXTURE);
                         output.accept(DSSItems.PAVARIUM);
-                        //Holy Priest Armor
+                        //Empty Priest Armor
+                        output.accept(DSSItems.EMPTYPRIESTBOOTS);
+                        output.accept(DSSItems.EMPTYPRIESTLEGGINGS);
+                        output.accept(DSSItems.EMPTYPRIESTCHESTPLATE);
+                        output.accept(DSSItems.EMPTYPRIESTHELMET);
+                        //Empty Brawler Armor
                         output.accept(DSSItems.EMPTYPRIESTBOOTS);
                         output.accept(DSSItems.EMPTYPRIESTLEGGINGS);
                         output.accept(DSSItems.EMPTYPRIESTCHESTPLATE);

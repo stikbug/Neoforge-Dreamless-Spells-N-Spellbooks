@@ -103,6 +103,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(DSSItems.EMPTYPRIESTCHESTPLATE.get());
         basicItem(DSSItems.EMPTYPRIESTLEGGINGS.get());
         basicItem(DSSItems.EMPTYPRIESTBOOTS.get());
-        //
+        //Empty Brawler Armor
+        basicItem(DSSItems.EMPTYBRAWLERHELMET.get());
+        basicItem(DSSItems.EMPTYBRAWLERCHESTPLATE.get());
+        basicItem(DSSItems.EMPTYBRAWLERLEGGINGS.get());
+        basicItem(DSSItems.EMPTYBRAWLERBOOTS.get());
     }
 }
