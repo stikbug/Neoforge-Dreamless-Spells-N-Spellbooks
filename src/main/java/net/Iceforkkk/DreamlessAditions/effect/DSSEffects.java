@@ -49,6 +49,9 @@ public class DSSEffects {
                     .addAttributeModifier(DSSAttributeRegistry.EMPTY_SPELL_POWER,
                             ResourceLocation.fromNamespaceAndPath(Dreamless_Spells.MOD_ID, "emptied"), 0.05f,
                             AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    .addAttributeModifier(AttributeRegistry.MAX_MANA,
+                            ResourceLocation.fromNamespaceAndPath(Dreamless_Spells.MOD_ID, "emptied"), -0.25f,
+                            AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
     );
 
     public static void register(IEventBus eventBus) {

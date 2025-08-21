@@ -83,6 +83,18 @@ public class DrainedSpell extends AbstractSpell {
 
     @Override
     public boolean checkPreCastConditions(Level level, int spellLevel, LivingEntity entity, MagicData playerMagicData) {
+        if (!entity.hasEffect(DSSEffects.EMPTIED_EFFECT)) {
+            if (entity instanceof ServerPlayer serverPlayer) {
+                serverPlayer.connection.send(
+                        new ClientboundSetActionBarTextPacket(
+                                Component.translatable("ui.dreamless_spells.unforsaken_status", this.getDisplayName(serverPlayer))
+                                        .withStyle(ChatFormatting.RED)
+                        )
+                );
+            }
+            return false; //prevents casting
+        }
+
         if (Utils.preCastTargetHelper(level, entity, playerMagicData, this, 32, .35f)) {
             float radius = 3f;
             assert playerMagicData.getAdditionalCastData() != null;
@@ -101,6 +113,7 @@ public class DrainedSpell extends AbstractSpell {
         if (entity.hasEffect(DSSEffects.EMPTIED_EFFECT)) {
             if (entity instanceof ServerPlayer serverPlayer) {
                 serverPlayer.connection.send(new ClientboundSetActionBarTextPacket(Component.translatable("ui.dreamless_spells.forsaken_status", this.getDisplayName(serverPlayer)).withStyle(ChatFormatting.RED)));
+
                 if (playerMagicData.getAdditionalCastData() instanceof TargetedTargetAreaCastData targetData) {
                     var targetEntity = targetData.getTarget((ServerLevel) world);
                     if (targetEntity != null) {
@@ -114,13 +127,13 @@ public class DrainedSpell extends AbstractSpell {
                         }
                     });
                 }
-                }
+            }
                 } else {
                     if (entity instanceof ServerPlayer serverPlayer) {
-                        serverPlayer.connection.send(new ClientboundSetActionBarTextPacket(Component.translatable("ui.endersequipment.no_divine_status", this.getDisplayName(serverPlayer)).withStyle(ChatFormatting.RED)));
+                        serverPlayer.connection.send(new ClientboundSetActionBarTextPacket(Component.translatable("ui.dreamless_spells.unforsaken_status", this.getDisplayName(serverPlayer)).withStyle(ChatFormatting.RED)));
                     }
-                }
         }
+    }
 
 
 
