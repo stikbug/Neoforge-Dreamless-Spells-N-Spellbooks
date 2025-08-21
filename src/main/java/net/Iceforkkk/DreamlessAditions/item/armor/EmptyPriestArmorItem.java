@@ -14,10 +14,9 @@ import software.bernie.geckolib.renderer.GeoArmorRenderer;
 
 public class EmptyPriestArmorItem extends DSSArmorItem {
     public EmptyPriestArmorItem(Type type, Properties settings) {
-        super(DSSArmorMaterials.SLEEPLESS_ARMOR_MATERIAL, type, settings,
-                new AttributeContainer(AttributeRegistry.SPELL_RESIST, .25, AttributeModifier.Operation.ADD_VALUE),
-                new AttributeContainer(DSSAttributeRegistry.EMPTY_MAGIC_POWER, 0.25, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL),
-                new AttributeContainer(AttributeRegistry.MAX_MANA, -0.25, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
+        super(DSSArmorMaterials.EMPTY_ARMOR_MATERIAL, type, settings,
+                new AttributeContainer(DSSAttributeRegistry.EMPTY_SPELL_POWER, 0.25, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                new AttributeContainer(AttributeRegistry.MAX_MANA, -0.25, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
         );
     }
 

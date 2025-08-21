@@ -34,8 +34,8 @@ public class DSSSchoolRegistry {
                     EMPTY_RESOURCE,
                     DSSTags.EMPTY_FOCUS,
                     Component.translatable("school.dreamless_spells.empty").withStyle(Style.EMPTY.withColor(141414)),
-                    DSSAttributeRegistry.EMPTY_MAGIC_POWER,
-                    DSSAttributeRegistry.EMPTY_MAGIC_RESIST,
+                    DSSAttributeRegistry.EMPTY_SPELL_POWER,
+                    DSSAttributeRegistry.EMPTY_SPELL_RESIST,
                     SoundRegistry.EVOCATION_CAST,
                     DSSDamageTypes.EMPTY_MAGIC
             ));

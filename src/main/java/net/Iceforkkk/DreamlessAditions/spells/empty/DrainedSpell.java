@@ -47,7 +47,7 @@ public class DrainedSpell extends AbstractSpell {
             .setMinRarity(SpellRarity.LEGENDARY)
             .setSchoolResource(DSSSchoolRegistry.EMPTY_RESOURCE)
             .setMaxLevel(3)
-            .setCooldownSeconds(60)
+            .setCooldownSeconds(180)
             .build();
 
     public DrainedSpell()

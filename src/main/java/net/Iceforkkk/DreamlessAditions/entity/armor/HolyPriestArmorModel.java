@@ -20,7 +20,7 @@ public class HolyPriestArmorModel extends DefaultedEntityGeoModel<EmptyPriestArm
 
     @Override
     public ResourceLocation getTextureResource(EmptyPriestArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(Dreamless_Spells.MOD_ID, "textures/models/armor/holy_priest.png");
+        return ResourceLocation.fromNamespaceAndPath(Dreamless_Spells.MOD_ID, "textures/models/armor/empty_priest.png");
     }
 
     @Override

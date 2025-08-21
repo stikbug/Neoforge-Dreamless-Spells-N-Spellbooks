@@ -16,8 +16,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class DSSAttributeRegistry {
     private static final DeferredRegister<Attribute> ATTRIBUTES = DeferredRegister.create(Registries.ATTRIBUTE, Dreamless_Spells.MOD_ID);
 
-    public static final DeferredHolder<Attribute, Attribute> EMPTY_MAGIC_POWER = registerPowerAttribute("empty");
-    public static final DeferredHolder<Attribute, Attribute> EMPTY_MAGIC_RESIST = registerResistanceAttribute("empty");
+    public static final DeferredHolder<Attribute, Attribute> EMPTY_SPELL_POWER = registerPowerAttribute("empty");
+    public static final DeferredHolder<Attribute, Attribute> EMPTY_SPELL_RESIST = registerResistanceAttribute("empty");
 
     public static void register(IEventBus eventBus)
     {
@@ -37,7 +37,7 @@ public class DSSAttributeRegistry {
     private static DeferredHolder<Attribute, Attribute> registerResistanceAttribute(String id)
     {
         return ATTRIBUTES.register(id + "_magic_resist", () ->
-                (new MagicRangedAttribute("attribute.dreamless_spells." + id + "_magic_resist",
+                (new MagicRangedAttribute("attribute.dreamless_spells." + id + "_spell_resist",
                         1.0D, 0, 10).setSyncable(true)));
     }
 
