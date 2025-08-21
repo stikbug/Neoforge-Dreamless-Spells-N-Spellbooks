@@ -19,10 +19,15 @@
   "block.dreamless_spells.tungsten_ore": "Tungsten Ore",
   "block.dreamless_spells.tungsten_block": "Tungsten Block",
 
-  "item.dreamless_spells.empty_priest_helmet": "Empty Priest Crown",
-  "item.dreamless_spells.empty_priest_chestplate": "Empty Priest Chestplate",
+  "item.dreamless_spells.empty_priest_helmet": "Empty Priest Hood",
+  "item.dreamless_spells.empty_priest_chestplate": "Empty Priest Robes",
   "item.dreamless_spells.empty_priest_leggings": "Empty Priest Leggings",
-  "item.dreamless_spells.empty_priest_boots": "Empty Priest Boots",
+  "item.dreamless_spells.empty_priest_boots": "Empty Priest Stockings",
+
+  "item.dreamless_spells.empty_brawler_helmet": "Empty Brawler Crown",
+  "item.dreamless_spells.empty_brawler_chestplate": "Empty Brawler Plate mail",
+  "item.dreamless_spells.empty_brawler_leggings": "Empty Brawler Leggings",
+  "item.dreamless_spells.empty_brawler_boots": "Empty Brawler Boots",
 
   "curios.identifier.feet": "Feet",
   "curios.modifiers.feet": "When in the Feet Slot:",
@@ -104,6 +109,7 @@
   "attribute.dreamless_spells.empty_spell_resist": "Empty Spell Resist",
   "school.dreamless_spells.empty": "Empty",
 
-  "tooltip.dreamless_spells.empty_priest.tooltip": "§5Seems pretty full to me...§5"
-
+  "tooltip.dreamless_spells.empty_priest.tooltip": "§5Seems pretty full to me...§5",
+  "ui.dreamless_spells.unforsaken_status": "Your Mana is not truly empty...",
+  "ui.dreamless_spells.forsaken_status": "Your Mana is Truly Empty!"
 }

@@ -14,10 +14,13 @@ import io.redspace.ironsspellbooks.spells.TargetedTargetAreaCastData;
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
 import net.Iceforkkk.DreamlessAditions.effect.DSSEffects;
 import net.Iceforkkk.DreamlessAditions.registries.DSSSchoolRegistry;
+import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
+import net.minecraft.network.protocol.game.ClientboundSetActionBarTextPacket;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
@@ -26,6 +29,8 @@ import net.minecraft.world.level.Level;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import static io.redspace.ironsspellbooks.entity.spells.firefly_swarm.FireflySwarmProjectile.radius;
 
 @AutoSpellConfig
 public class DrainedSpell extends AbstractSpell {
@@ -92,20 +97,31 @@ public class DrainedSpell extends AbstractSpell {
 
     @Override
     public void onCast(Level world, int spellLevel, LivingEntity entity, CastSource castSource, MagicData playerMagicData) {
-        if (playerMagicData.getAdditionalCastData() instanceof TargetedTargetAreaCastData targetData) {
-            var targetEntity = targetData.getTarget((ServerLevel) world);
-            if (targetEntity != null) {
-                float radius = 3;
-                AtomicInteger targets = new AtomicInteger(0);
-                targetEntity.level().getEntitiesOfClass(LivingEntity.class, targetEntity.getBoundingBox().inflate(radius)).forEach((victim) -> {
-                    if (targets.get() < MAX_TARGETS && victim != entity && victim.distanceToSqr(targetEntity) < radius * radius && !DamageSources.isFriendlyFireBetween(entity, victim)) {
-                        victim.addEffect(new MobEffectInstance(DSSEffects.DRAINED_EFFECT, (int) (getSpellPower(spellLevel, entity) * 40), spellLevel - 1, false, false, true));
+
+        if (entity.hasEffect(DSSEffects.EMPTIED_EFFECT)) {
+            if (entity instanceof ServerPlayer serverPlayer) {
+                serverPlayer.connection.send(new ClientboundSetActionBarTextPacket(Component.translatable("ui.dreamless_spells.forsaken_status", this.getDisplayName(serverPlayer)).withStyle(ChatFormatting.RED)));
+                if (playerMagicData.getAdditionalCastData() instanceof TargetedTargetAreaCastData targetData) {
+                    var targetEntity = targetData.getTarget((ServerLevel) world);
+                    if (targetEntity != null) {
+                        float radius = 3;
                     }
-                });
-            }
+                    AtomicInteger targets = new AtomicInteger(0);
+                    assert targetEntity != null;
+                    targetEntity.level().getEntitiesOfClass(LivingEntity.class, targetEntity.getBoundingBox().inflate(radius)).forEach((victim) -> {
+                        if (targets.get() < MAX_TARGETS && victim != entity && victim.distanceToSqr(targetEntity) < radius * radius && !DamageSources.isFriendlyFireBetween(entity, victim)) {
+                            victim.addEffect(new MobEffectInstance(DSSEffects.DRAINED_EFFECT, (int) (getSpellPower(spellLevel, entity) * 40), spellLevel - 1, false, false, true));
+                        }
+                    });
+                }
+                }
+                } else {
+                    if (entity instanceof ServerPlayer serverPlayer) {
+                        serverPlayer.connection.send(new ClientboundSetActionBarTextPacket(Component.translatable("ui.endersequipment.no_divine_status", this.getDisplayName(serverPlayer)).withStyle(ChatFormatting.RED)));
+                    }
+                }
         }
-        super.onCast(world, spellLevel, entity, castSource, playerMagicData);
-    }
+
 
 
     @Override
