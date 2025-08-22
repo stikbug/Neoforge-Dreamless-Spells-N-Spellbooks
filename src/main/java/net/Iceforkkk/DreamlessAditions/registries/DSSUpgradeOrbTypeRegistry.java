@@ -9,7 +9,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 
 public class DSSUpgradeOrbTypeRegistry {
 
-    public static ResourceKey<UpgradeOrbType> EMPTY_SPELL_POWER = ResourceKey.create(UpgradeOrbTypeRegistry.UPGRADE_ORB_REGISTRY_KEY, Dreamless_Spells.id("empty_spell_power.json"));
+    public static ResourceKey<UpgradeOrbType> EMPTY_SPELL_POWER = ResourceKey.create(UpgradeOrbTypeRegistry.UPGRADE_ORB_REGISTRY_KEY, Dreamless_Spells.id("empty_spell_power"));
 
     public static void bootstrap(BootstrapContext<UpgradeOrbType> bootstrap) {
         bootstrap.register(EMPTY_SPELL_POWER,
