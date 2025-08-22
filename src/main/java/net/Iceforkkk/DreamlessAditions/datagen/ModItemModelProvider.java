@@ -3,6 +3,7 @@ package net.Iceforkkk.DreamlessAditions.datagen;
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
 import net.Iceforkkk.DreamlessAditions.registries.DSSItems;
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.item.ArmorItem;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
@@ -25,6 +26,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(DSSItems.TUNGSTEN_MITHRIL_MIXTURE.get());
         basicItem(DSSItems.PAVARIUM.get());
         basicItem(DSSItems.EMPTY_RUNE.get());
+        basicItem(DSSItems.PAVARIUM_NUGGET.get());
+        basicItem(DSSItems.EMPTY_GEM.get());
 
         //Upgrade Orbs
         basicItem(DSSItems.EMPTY_UPGRADE_ORB.get());

@@ -8,6 +8,8 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.SmithingTransformRecipe;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
@@ -37,6 +39,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("TTT")
                 .define('T', DSSItems.TUNGSTENNUGGET.get())
                 .unlockedBy("has_tungsten_ingot", has(DSSItems.TUNGSTENINGOT.get())).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.PAVARIUM.get())
+                .pattern("TTT")
+                .pattern("TTT")
+                .pattern("TTT")
+                .define('T', DSSItems.PAVARIUM_NUGGET.get())
+                .unlockedBy("has_pavarium_nugget", has(DSSItems.PAVARIUM_NUGGET.get())).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.TUNGSTEN_MITHRIL_MIXTURE.get())
                 .pattern(" T ")
@@ -557,6 +566,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_tungsten_block", has(DSSBlocks.TUNGSTENBLOCK))
                 .save(recipeOutput,"dreamless_spells:tungsten_ingot_from_tungsten_block");
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DSSItems.EMPTY_GEM.get(), 1)
+                .requires(DSSItems.ARCANEGEM)
+                .requires(DSSItems.PAVARIUM_NUGGET)
+                .unlockedBy("has_pavarium", has(DSSItems.PAVARIUM));
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DSSItems.PAVARIUM_NUGGET.get(), 9)
+                .requires(DSSItems.PAVARIUM)
+                .unlockedBy("has_tungsten_ingot", has(DSSItems.TUNGSTENINGOT));
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DSSItems.TUNGSTENNUGGET.get(), 9)
                 .requires(DSSItems.TUNGSTENINGOT)
                 .unlockedBy("has_tungsten_ingot", has(DSSItems.TUNGSTENINGOT));
@@ -569,7 +588,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> TUNGSTEN_MITHRIL_SMELTABLES = List.of(DSSItems.TUNGSTEN_MITHRIL_MIXTURE);
         oreBlasting(recipeOutput, TUNGSTEN_MITHRIL_SMELTABLES, RecipeCategory.MISC, DSSItems.PAVARIUM.get(), 0.25f, 100, "pavarium");
 
-
-
+        //Smithing Recipes
     }
 }

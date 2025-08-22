@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-21T13:22:13.668782	Item Models: dreamless_spells
+// 1.21.1	2025-08-22T08:10:24.935514	Item Models: dreamless_spells
 574d0f35871baa363444c8d0a74161248902c892 assets/dreamless_spells/models/item/absurd_ring.json
 6b1345ff7d91e1bed96c11a6b1363bf537078b99 assets/dreamless_spells/models/item/amethyst_boots.json
 657dc10580ffa1bf8a3d420372fb5b1d98b2f0f9 assets/dreamless_spells/models/item/arcane_cloth_boots.json
@@ -21,6 +21,7 @@ dbf32dc33309b4b26c7bc6f55567eb330a0db53e assets/dreamless_spells/models/item/eme
 d52e987f28c74eefd4baa6d2a3a0d5b7220d71ac assets/dreamless_spells/models/item/empty_brawler_chestplate.json
 8cc6d207a1be533d9d3c2fe64effd5bda9ccfa04 assets/dreamless_spells/models/item/empty_brawler_helmet.json
 dd1a78ae54bd6312378bf9f4e6678e0691fd6990 assets/dreamless_spells/models/item/empty_brawler_leggings.json
+36a7a41c39c4c70a85aabdfc93c9be8bbda7928c assets/dreamless_spells/models/item/empty_gem.json
 85084eb140b951bebac6f65ccb3612c0e20f521c assets/dreamless_spells/models/item/empty_priest_boots.json
 d15a85fd9995f7c2c25c60be92e8e32bd62d3cf1 assets/dreamless_spells/models/item/empty_priest_chestplate.json
 9c24c66130f3710364dae45bd32fd3377f39ee11 assets/dreamless_spells/models/item/empty_priest_helmet.json
@@ -53,6 +54,7 @@ b4cde137d9fb865e68c62c966087f983bbfbfc6e assets/dreamless_spells/models/item/mag
 f43aaaad400d61519563c765d828638db435c98a assets/dreamless_spells/models/item/old_boots.json
 54eca4dbb3b1e1a384eca62ee7b6badc4ce82259 assets/dreamless_spells/models/item/pagmas_boots.json
 3cd1ecfed73bddbcf9d4035771af2d9d01de1e54 assets/dreamless_spells/models/item/pavarium.json
+dd3086938eda54919670b06bdc0565833df4552b assets/dreamless_spells/models/item/pavarium_nugget.json
 a6e3b83e53f5aca0603aa304c5a7b203f859cac5 assets/dreamless_spells/models/item/protection_tablet.json
 a2ee920c6200a53fe128babd720886dd7196560c assets/dreamless_spells/models/item/pyrium_boots.json
 c487f7522055556f7c1c91e9b425ed40dbbacca7 assets/dreamless_spells/models/item/raw_tungsten.json

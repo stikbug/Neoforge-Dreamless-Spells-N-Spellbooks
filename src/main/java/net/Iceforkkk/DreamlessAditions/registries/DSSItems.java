@@ -26,6 +26,10 @@ public class DSSItems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> MYSTERIOUSCIRCUITRY = ITEMS.register("mysterious_circuitry",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> EMPTY_GEM = ITEMS.register("empty_gem",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PAVARIUM_NUGGET = ITEMS.register("pavarium_nugget",
+            ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> JADE = ITEMS.register("jade",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ARCANEGEM = ITEMS.register("arcane_gem",

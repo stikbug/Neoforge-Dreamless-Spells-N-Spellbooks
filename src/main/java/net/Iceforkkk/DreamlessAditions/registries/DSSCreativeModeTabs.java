@@ -4,8 +4,11 @@ import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
 import net.Iceforkkk.DreamlessAditions.block.DSSBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.ItemLike;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -30,16 +33,20 @@ public class DSSCreativeModeTabs {
                         output.accept(DSSItems.TUNGSTENNUGGET);
                         output.accept(DSSItems.TUNGSTEN_MITHRIL_MIXTURE);
                         output.accept(DSSItems.PAVARIUM);
+                        output.accept(DSSItems.PAVARIUM_NUGGET);
+                        output.accept(DSSItems.EMPTY_GEM);
+                        output.accept(DSSItems.EMPTY_RUNE);
+                        output.accept((ItemLike) DSSItems.EMPTY_UPGRADE_ORB);
                         //Empty Priest Armor
-                        output.accept(DSSItems.EMPTYPRIESTBOOTS);
-                        output.accept(DSSItems.EMPTYPRIESTLEGGINGS);
-                        output.accept(DSSItems.EMPTYPRIESTCHESTPLATE);
                         output.accept(DSSItems.EMPTYPRIESTHELMET);
+                        output.accept(DSSItems.EMPTYPRIESTCHESTPLATE);
+                        output.accept(DSSItems.EMPTYPRIESTLEGGINGS);
+                        output.accept(DSSItems.EMPTYPRIESTBOOTS);
                         //Empty Brawler Armor
-                        output.accept(DSSItems.EMPTYPRIESTBOOTS);
-                        output.accept(DSSItems.EMPTYPRIESTLEGGINGS);
-                        output.accept(DSSItems.EMPTYPRIESTCHESTPLATE);
-                        output.accept(DSSItems.EMPTYPRIESTHELMET);
+                        output.accept(DSSItems.EMPTYBRAWLERHELMET);
+                        output.accept(DSSItems.EMPTYBRAWLERCHESTPLATE);
+                        output.accept(DSSItems.EMPTYBRAWLERLEGGINGS);
+                        output.accept(DSSItems.EMPTYBRAWLERBOOTS);
                         //Boot Curios
                         output.accept(DSSItems.OLD_BOOTS);
                         output.accept(DSSItems.IRON_SOCKS);

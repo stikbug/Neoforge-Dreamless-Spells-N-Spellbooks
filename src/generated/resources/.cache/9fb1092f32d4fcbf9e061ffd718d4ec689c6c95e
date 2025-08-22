@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-20T09:43:23.608706	Recipes
+// 1.21.1	2025-08-22T08:10:24.934376	Recipes
 809d20a563d1d489285b6ba290e9a6e830f3b52a data/dreamless_spells/advancement/recipes/misc/absurd_ring.json
 95a1815f0cef5e10eadd37f04d915a6d3254d160 data/dreamless_spells/advancement/recipes/misc/amethyst_boots.json
 8f45e656ebfd2911673377e55a6a71bbd8a2c41f data/dreamless_spells/advancement/recipes/misc/arcane_cloth_boots.json
@@ -40,6 +40,7 @@ c61b0b3719c65119f3778765f5e8e67ef8643b73 data/dreamless_spells/advancement/recip
 66704ba3f5d9bcb4af487dcd13f61ce19870d9f8 data/dreamless_spells/advancement/recipes/misc/nature_tablet.json
 1bdb24891639dd520802b33d5969ff0ade0c432c data/dreamless_spells/advancement/recipes/misc/old_boots.json
 6a8520f7f3dadfc2ac2ebac86071c267be5f816a data/dreamless_spells/advancement/recipes/misc/pagmas_boots.json
+31a9fe9fe6b3815fdc0e88fac2540a388b0a9c7d data/dreamless_spells/advancement/recipes/misc/pavarium.json
 f9396aa763383762921e228f4d09b5b6bca67dea data/dreamless_spells/advancement/recipes/misc/protection_tablet.json
 84b3ee18559ab82f187aa05d212d42fa1dd32949 data/dreamless_spells/advancement/recipes/misc/pyrium_boots.json
 293ed1058a271b7f820ee7f253c9dd1f65526f86 data/dreamless_spells/advancement/recipes/misc/rolands_band.json
@@ -98,6 +99,7 @@ da37324646fae0534a6ebd59ee7d243993491968 data/dreamless_spells/recipe/mage_boots
 4f7c803f03e1bd8ffebcfba67554537b3db748be data/dreamless_spells/recipe/nature_tablet.json
 6f8b008da9a0ed0c10a89d3ae0a34d30e5a1b1df data/dreamless_spells/recipe/old_boots.json
 c553c96bddb3d4ecdac05ad5935646e2e76c3b80 data/dreamless_spells/recipe/pagmas_boots.json
+5af3df827620c27da57b471d4731485cacb57335 data/dreamless_spells/recipe/pavarium.json
 ff86a70511e6ea91803fc286b0f3595c31036bad data/dreamless_spells/recipe/protection_tablet.json
 9d854f302cfde180aef57e0a303e7e1931640aa8 data/dreamless_spells/recipe/pyrium_boots.json
 ff7e38598e3397389ddcf05db9020829aa57d310 data/dreamless_spells/recipe/rolands_band.json
