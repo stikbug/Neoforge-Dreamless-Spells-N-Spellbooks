@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "dreamless_spells:item/affinity_ring_empty"
+  }
+}

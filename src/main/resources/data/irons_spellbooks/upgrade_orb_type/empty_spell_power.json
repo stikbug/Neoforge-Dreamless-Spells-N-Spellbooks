@@ -1,0 +1,9 @@
+{
+  "amount": 0.05,
+  "attribute": "dreamless_spells:empty_spell_power",
+  "containerItem": {
+    "count": 1,
+    "id": "dreamless_spells:empty_upgrade_orb"
+  },
+  "operation": "add_multiplied_base"
+}

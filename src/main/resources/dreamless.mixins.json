@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "net.Iceforkkk.DreamlessAditions.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "CounterspellSpellMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}

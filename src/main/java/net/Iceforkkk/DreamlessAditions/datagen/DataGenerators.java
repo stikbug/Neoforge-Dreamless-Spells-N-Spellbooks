@@ -1,7 +1,12 @@
 package net.Iceforkkk.DreamlessAditions.datagen;
 
+import io.redspace.ironsspellbooks.registries.UpgradeOrbTypeRegistry;
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
+import net.Iceforkkk.DreamlessAditions.registries.DSSDamageTypes;
+import net.Iceforkkk.DreamlessAditions.registries.DSSUpgradeOrbTypeRegistry;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.RegistrySetBuilder;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
@@ -14,12 +19,22 @@ import net.neoforged.neoforge.data.event.GatherDataEvent;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
 @EventBusSubscriber(modid = Dreamless_Spells.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
-    @SubscribeEvent
 
+
+    private static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
+            .add(Registries.DAMAGE_TYPE, DSSDamageTypes::bootstrap)
+            .add(UpgradeOrbTypeRegistry.UPGRADE_ORB_REGISTRY_KEY, DSSUpgradeOrbTypeRegistry::bootstrap);
+
+    public DataGenerators(PackOutput output, CompletableFuture<HolderLookup.Provider> provider) {
+        super();
+    }
+
+    @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();

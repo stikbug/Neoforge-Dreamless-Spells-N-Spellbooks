@@ -7,6 +7,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.SmithingTransformRecipe;
@@ -64,41 +65,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_diamonds", has(Items.DIAMOND)).save(recipeOutput);
 
         //Holy Priest Armor
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.EMPTYPRIESTHELMET.get())
-                .pattern("PHP")
-                .pattern("T T")
-                .pattern("   ")
-                .define('T', DSSItems.TUNGSTENINGOT.get())
-                .define('P', DSSItems.PAVARIUM.get())
-                .define('H', ItemRegistry.PRIEST_HELMET.get())
-                .unlockedBy("has_tungsten_ingot", has(DSSItems.TUNGSTENINGOT)).save(recipeOutput);
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(DSSItems.EMPTY_RUNE.get()), Ingredient.of(ItemRegistry.WIZARD_HELMET.get()), Ingredient.EMPTY, RecipeCategory.COMBAT, DSSItems.EMPTYPRIESTHELMET.get()).unlocks("has_rune", has(DSSItems.EMPTY_RUNE.get())).save(recipeOutput, "empty_priest_headpiece");
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(DSSItems.EMPTY_RUNE.get()), Ingredient.of(ItemRegistry.WIZARD_CHESTPLATE.get()), Ingredient.EMPTY, RecipeCategory.COMBAT, DSSItems.EMPTYPRIESTCHESTPLATE.get()).unlocks("has_rune", has(DSSItems.EMPTY_RUNE.get())).save(recipeOutput, "empty_priest_robes");
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(DSSItems.EMPTY_RUNE.get()), Ingredient.of(ItemRegistry.WIZARD_LEGGINGS.get()), Ingredient.EMPTY, RecipeCategory.COMBAT, DSSItems.EMPTYPRIESTLEGGINGS.get()).unlocks("has_rune", has(DSSItems.EMPTY_RUNE.get())).save(recipeOutput, "empty_priest_skirt");
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(DSSItems.EMPTY_RUNE.get()), Ingredient.of(ItemRegistry.WIZARD_BOOTS.get()), Ingredient.EMPTY, RecipeCategory.COMBAT, DSSItems.EMPTYPRIESTBOOTS.get()).unlocks("has_rune", has(DSSItems.EMPTY_RUNE.get())).save(recipeOutput, "empty_priest_boots");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.EMPTYPRIESTCHESTPLATE.get())
-                .pattern("P P")
-                .pattern("TCT")
-                .pattern("PTP")
-                .define('T', DSSItems.TUNGSTENINGOT.get())
-                .define('P', DSSItems.PAVARIUM.get())
-                .define('C', ItemRegistry.PRIEST_CHESTPLATE.get())
-                .unlockedBy("has_tungsten_ingot", has(DSSItems.TUNGSTENINGOT)).save(recipeOutput);
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(DSSItems.EMPTY_RUNE.get()), Ingredient.of(DSSItems.EMPTYPRIESTHELMET.get()), Ingredient.of(Items.IRON_SWORD), RecipeCategory.COMBAT, DSSItems.EMPTYBRAWLERHELMET.get()).unlocks("has_rune", has(DSSItems.EMPTY_RUNE.get())).save(recipeOutput, "empty_brawler_headpiece");
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(DSSItems.EMPTY_RUNE.get()), Ingredient.of(DSSItems.EMPTYPRIESTCHESTPLATE.get()), Ingredient.of(Items.IRON_SWORD), RecipeCategory.COMBAT, DSSItems.EMPTYBRAWLERCHESTPLATE.get()).unlocks("has_rune", has(DSSItems.EMPTY_RUNE.get())).save(recipeOutput, "empty_brawler_robes");
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(DSSItems.EMPTY_RUNE.get()), Ingredient.of(DSSItems.EMPTYPRIESTLEGGINGS.get()), Ingredient.of(Items.IRON_SWORD), RecipeCategory.COMBAT, DSSItems.EMPTYBRAWLERLEGGINGS.get()).unlocks("has_rune", has(DSSItems.EMPTY_RUNE.get())).save(recipeOutput, "empty_brawler_skirt");
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(DSSItems.EMPTY_RUNE.get()), Ingredient.of(DSSItems.EMPTYPRIESTBOOTS.get()), Ingredient.of(Items.IRON_SWORD), RecipeCategory.COMBAT, DSSItems.EMPTYBRAWLERBOOTS.get()).unlocks("has_rune", has(DSSItems.EMPTY_RUNE.get())).save(recipeOutput, "empty_brawler_boots");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.EMPTYPRIESTLEGGINGS.get())
-                .pattern("TLT")
-                .pattern("T T")
-                .pattern("P P")
-                .define('T', DSSItems.TUNGSTENINGOT.get())
-                .define('P', DSSItems.PAVARIUM.get())
-                .define('L', ItemRegistry.PRIEST_LEGGINGS.get())
-                .unlockedBy("has_tungsten_ingot", has(DSSItems.TUNGSTENINGOT)).save(recipeOutput);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.EMPTYPRIESTBOOTS.get())
-                .pattern("TBT")
-                .pattern("P P")
-                .pattern("   ")
-                .define('T', DSSItems.TUNGSTENINGOT.get())
-                .define('P', DSSItems.PAVARIUM.get())
-                .define('B', ItemRegistry.PRIEST_BOOTS.get())
-                .unlockedBy("has_tungsten_ingot", has(DSSItems.TUNGSTENINGOT)).save(recipeOutput);
 
         //Boots Curios ----------------------------------------------------------------------------------------------------
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.COPPER_BOOTS.get())

@@ -187,7 +187,8 @@ public class DSSItems {
             () -> new UpgradeOrbItem(ItemPropertiesHelper
                     .material()
                     .rarity(Rarity.EPIC)
-                    .component(ComponentRegistry.UPGRADE_ORB_TYPE, DSSUpgradeOrbTypeRegistry.EMPTY_SPELL_POWER)));
+                    .component(ComponentRegistry.UPGRADE_ORB_TYPE, DSSUpgradeOrbTypeRegistry.EMPTY_SPELL_POWER))
+    );
 
 
     public static void register (IEventBus eventBus) {

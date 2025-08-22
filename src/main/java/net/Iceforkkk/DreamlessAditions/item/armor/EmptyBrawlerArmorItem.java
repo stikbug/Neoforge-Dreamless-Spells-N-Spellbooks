@@ -1,5 +1,6 @@
 package net.Iceforkkk.DreamlessAditions.item.armor;
 
+import dev.shadowsoffire.apothic_attributes.ApothicAttributes;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import io.redspace.ironsspellbooks.entity.armor.GenericCustomArmorRenderer;
 import io.redspace.ironsspellbooks.item.weapons.AttributeContainer;
@@ -11,6 +12,7 @@ import net.Iceforkkk.DreamlessAditions.registries.DSSAttributeRegistry;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ItemStack;
@@ -24,6 +26,7 @@ public class EmptyBrawlerArmorItem extends DSSArmorItem {
     public EmptyBrawlerArmorItem(Type type, Properties settings) {
         super(DSSArmorMaterials.EMPTY_BRAWLER_MATERIAL, type, settings,
                 new AttributeContainer(DSSAttributeRegistry.EMPTY_SPELL_POWER, 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                new AttributeContainer(Attributes.ATTACK_DAMAGE, 0.1, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                 new AttributeContainer(AttributeRegistry.MAX_MANA, -0.25, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
         );
     }
@@ -42,10 +45,10 @@ public class EmptyBrawlerArmorItem extends DSSArmorItem {
     }
 
     private boolean isWearingFullSet(Player player) {
-        return player.getItemBySlot(ArmorItem.Type.HELMET.getSlot()).getItem() instanceof EmptyPriestArmorItem &&
-                player.getItemBySlot(ArmorItem.Type.CHESTPLATE.getSlot()).getItem() instanceof EmptyPriestArmorItem &&
-                player.getItemBySlot(ArmorItem.Type.LEGGINGS.getSlot()).getItem() instanceof EmptyPriestArmorItem &&
-                player.getItemBySlot(ArmorItem.Type.BOOTS.getSlot()).getItem() instanceof EmptyPriestArmorItem;
+        return player.getItemBySlot(ArmorItem.Type.HELMET.getSlot()).getItem() instanceof EmptyBrawlerArmorItem &&
+                player.getItemBySlot(ArmorItem.Type.CHESTPLATE.getSlot()).getItem() instanceof EmptyBrawlerArmorItem &&
+                player.getItemBySlot(ArmorItem.Type.LEGGINGS.getSlot()).getItem() instanceof EmptyBrawlerArmorItem &&
+                player.getItemBySlot(ArmorItem.Type.BOOTS.getSlot()).getItem() instanceof EmptyBrawlerArmorItem;
     }
 
     @Override

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:iron_sword"
+  },
+  "base": {
+    "item": "dreamless_spells:empty_priest_chestplate"
+  },
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:empty_brawler_chestplate"
+  },
+  "template": {
+    "item": "dreamless_spells:empty_rune"
+  }
+}
