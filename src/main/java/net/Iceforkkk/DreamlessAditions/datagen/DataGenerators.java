@@ -25,11 +25,6 @@ import java.util.concurrent.CompletableFuture;
 @EventBusSubscriber(modid = Dreamless_Spells.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
 
-
-    private static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
-            .add(Registries.DAMAGE_TYPE, DSSDamageTypes::bootstrap)
-            .add(UpgradeOrbTypeRegistry.UPGRADE_ORB_REGISTRY_KEY, DSSUpgradeOrbTypeRegistry::bootstrap);
-
     public DataGenerators(PackOutput output, CompletableFuture<HolderLookup.Provider> provider) {
         super();
     }

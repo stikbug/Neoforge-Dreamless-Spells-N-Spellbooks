@@ -5,6 +5,7 @@ import io.redspace.ironsspellbooks.registries.ComponentRegistry;
 import io.redspace.ironsspellbooks.util.ItemPropertiesHelper;
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
 import net.Iceforkkk.DreamlessAditions.item.armor.EmptyBrawlerArmorItem;
+import net.Iceforkkk.DreamlessAditions.item.armor.EmptyHunterArmorItem;
 import net.Iceforkkk.DreamlessAditions.item.armor.EmptyPriestArmorItem;
 import net.Iceforkkk.DreamlessAditions.item.curios.*;
 import net.minecraft.network.chat.Component;
@@ -108,6 +109,40 @@ public class DSSItems {
             });
     public static final DeferredItem<ArmorItem> EMPTYBRAWLERBOOTS = ITEMS.register("empty_brawler_boots",
             ()-> new EmptyBrawlerArmorItem(ArmorItem.Type.BOOTS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(40))){
+                @Override
+                public void appendHoverText(@NotNull ItemStack stack,@NotNull TooltipContext context,@NotNull List<Component> tooltipComponents,@NotNull TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.dreamless_spells.empty_priest.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+
+    //Empty Hunter Armor
+    public static final DeferredItem<ArmorItem> EMPTYHUNTERHELMET = ITEMS.register("empty_hunter_helmet",
+            ()-> new EmptyHunterArmorItem(ArmorItem.Type.HELMET, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(40))){
+                @Override
+                public void appendHoverText(@NotNull ItemStack stack, @NotNull TooltipContext context, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.dreamless_spells.empty_priest.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+    public static final DeferredItem<ArmorItem> EMPTYHUNTERCHESTPLATE = ITEMS.register("empty_hunter_chestplate",
+            ()-> new EmptyHunterArmorItem(ArmorItem.Type.CHESTPLATE, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.CHESTPLATE.getDurability(40))){
+                @Override
+                public void appendHoverText(@NotNull ItemStack stack,@NotNull TooltipContext context,@NotNull List<Component> tooltipComponents,@NotNull TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.dreamless_spells.empty_priest.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+    public static final DeferredItem<ArmorItem> EMPTYHUNTERLEGGINGS = ITEMS.register("empty_hunter_leggings",
+            ()-> new EmptyHunterArmorItem(ArmorItem.Type.LEGGINGS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.LEGGINGS.getDurability(40))){
+                @Override
+                public void appendHoverText(@NotNull ItemStack stack,@NotNull TooltipContext context,@NotNull List<Component> tooltipComponents,@NotNull TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.dreamless_spells.empty_priest.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+    public static final DeferredItem<ArmorItem> EMPTYHUNTERBOOTS = ITEMS.register("empty_hunter_boots",
+            ()-> new EmptyHunterArmorItem(ArmorItem.Type.BOOTS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(40))){
                 @Override
                 public void appendHoverText(@NotNull ItemStack stack,@NotNull TooltipContext context,@NotNull List<Component> tooltipComponents,@NotNull TooltipFlag tooltipFlag) {
                     tooltipComponents.add(Component.translatable("tooltip.dreamless_spells.empty_priest.tooltip"));

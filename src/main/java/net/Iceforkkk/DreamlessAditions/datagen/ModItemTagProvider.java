@@ -32,10 +32,14 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(Tags.Items.GEMS)
                 .add(DSSItems.JADE.get())
                 .add(DSSItems.EMPTY_GEM.get())
-                .add(DSSItems.ARCANEGEM.get())
-                .add(DSSItems.TUNGSTENNUGGET.get());
+                .add(DSSItems.ARCANEGEM.get());
 
         tag(Tags.Items.ENCHANTABLES)
+                //Empty Hunter
+                .add(DSSItems.EMPTYHUNTERHELMET.get())
+                .add(DSSItems.EMPTYHUNTERCHESTPLATE.get())
+                .add(DSSItems.EMPTYHUNTERLEGGINGS.get())
+                .add(DSSItems.EMPTYHUNTERBOOTS.get())
                 //Empty Brawler Armor
                 .add(DSSItems.EMPTYBRAWLERBOOTS.get())
                 .add(DSSItems.EMPTYBRAWLERLEGGINGS.get())
@@ -48,6 +52,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(DSSItems.EMPTYPRIESTHELMET.get());
         //Armor Tags
         tag(Tags.Items.ARMORS)
+                //Empty Hunter
+                .add(DSSItems.EMPTYHUNTERHELMET.get())
+                .add(DSSItems.EMPTYHUNTERCHESTPLATE.get())
+                .add(DSSItems.EMPTYHUNTERLEGGINGS.get())
+                .add(DSSItems.EMPTYHUNTERBOOTS.get())
                 //Empty Brawler Armor
                 .add(DSSItems.EMPTYBRAWLERBOOTS.get())
                 .add(DSSItems.EMPTYBRAWLERLEGGINGS.get())
@@ -60,6 +69,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(DSSItems.EMPTYPRIESTHELMET.get());
 
         tag(ItemTags.ARMOR_ENCHANTABLE)
+                //Empty Hunter
+                .add(DSSItems.EMPTYHUNTERHELMET.get())
+                .add(DSSItems.EMPTYHUNTERCHESTPLATE.get())
+                .add(DSSItems.EMPTYHUNTERLEGGINGS.get())
+                .add(DSSItems.EMPTYHUNTERBOOTS.get())
                 //Empty Brawler Armor
                 .add(DSSItems.EMPTYBRAWLERBOOTS.get())
                 .add(DSSItems.EMPTYBRAWLERLEGGINGS.get())
@@ -72,6 +86,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(DSSItems.EMPTYPRIESTHELMET.get());
 
         tag(ItemTags.EQUIPPABLE_ENCHANTABLE)
+                //Empty Hunter
+                .add(DSSItems.EMPTYHUNTERHELMET.get())
+                .add(DSSItems.EMPTYHUNTERCHESTPLATE.get())
+                .add(DSSItems.EMPTYHUNTERLEGGINGS.get())
+                .add(DSSItems.EMPTYHUNTERBOOTS.get())
                 //Empty Brawler Armor
                 .add(DSSItems.EMPTYBRAWLERBOOTS.get())
                 .add(DSSItems.EMPTYBRAWLERLEGGINGS.get())
@@ -84,6 +103,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(DSSItems.EMPTYPRIESTHELMET.get());
 
         tag(ItemTags.DURABILITY_ENCHANTABLE)
+                //Empty Hunter
+                .add(DSSItems.EMPTYHUNTERHELMET.get())
+                .add(DSSItems.EMPTYHUNTERCHESTPLATE.get())
+                .add(DSSItems.EMPTYHUNTERLEGGINGS.get())
+                .add(DSSItems.EMPTYHUNTERBOOTS.get())
                 //Empty Brawler Armor
                 .add(DSSItems.EMPTYBRAWLERBOOTS.get())
                 .add(DSSItems.EMPTYBRAWLERLEGGINGS.get())
@@ -96,34 +120,42 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(DSSItems.EMPTYPRIESTHELMET.get());
 
         tag(ItemTags.HEAD_ARMOR_ENCHANTABLE)
+                .add(DSSItems.EMPTYHUNTERHELMET.get())
                 .add(DSSItems.EMPTYBRAWLERHELMET.get())
                 .add(DSSItems.EMPTYPRIESTHELMET.get());
 
         tag(ItemTags.CHEST_ARMOR_ENCHANTABLE)
+                .add(DSSItems.EMPTYHUNTERCHESTPLATE.get())
                 .add(DSSItems.EMPTYBRAWLERCHESTPLATE.get())
                 .add(DSSItems.EMPTYPRIESTCHESTPLATE.get());
 
         tag(ItemTags.LEG_ARMOR_ENCHANTABLE)
+                .add(DSSItems.EMPTYHUNTERLEGGINGS.get())
                 .add(DSSItems.EMPTYBRAWLERLEGGINGS.get())
                 .add(DSSItems.EMPTYPRIESTLEGGINGS.get());
 
         tag(ItemTags.FOOT_ARMOR_ENCHANTABLE)
+                .add(DSSItems.EMPTYHUNTERBOOTS.get())
                 .add(DSSItems.EMPTYBRAWLERBOOTS.get())
                 .add(DSSItems.EMPTYPRIESTBOOTS.get());
 
         tag(ItemTags.HEAD_ARMOR)
+                .add(DSSItems.EMPTYHUNTERHELMET.get())
                 .add(DSSItems.EMPTYBRAWLERHELMET.get())
                 .add(DSSItems.EMPTYPRIESTHELMET.get());
 
         tag(ItemTags.CHEST_ARMOR)
+                .add(DSSItems.EMPTYHUNTERCHESTPLATE.get())
                 .add(DSSItems.EMPTYBRAWLERCHESTPLATE.get())
                 .add(DSSItems.EMPTYPRIESTCHESTPLATE.get());
 
         tag(ItemTags.LEG_ARMOR)
+                .add(DSSItems.EMPTYHUNTERLEGGINGS.get())
                 .add(DSSItems.EMPTYBRAWLERLEGGINGS.get())
                 .add(DSSItems.EMPTYPRIESTLEGGINGS.get());
 
         tag(ItemTags.FOOT_ARMOR)
+                .add(DSSItems.EMPTYHUNTERBOOTS.get())
                 .add(DSSItems.EMPTYBRAWLERBOOTS.get())
                 .add(DSSItems.EMPTYPRIESTBOOTS.get());
     }

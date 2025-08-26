@@ -47,6 +47,11 @@ public class DSSCreativeModeTabs {
                         output.accept(DSSItems.EMPTYBRAWLERCHESTPLATE);
                         output.accept(DSSItems.EMPTYBRAWLERLEGGINGS);
                         output.accept(DSSItems.EMPTYBRAWLERBOOTS);
+                        //Empty Hunter Armor
+                        output.accept(DSSItems.EMPTYHUNTERHELMET);
+                        output.accept(DSSItems.EMPTYHUNTERCHESTPLATE);
+                        output.accept(DSSItems.EMPTYHUNTERLEGGINGS);
+                        output.accept(DSSItems.EMPTYHUNTERBOOTS);
                         //Boot Curios
                         output.accept(DSSItems.OLD_BOOTS);
                         output.accept(DSSItems.IRON_SOCKS);
