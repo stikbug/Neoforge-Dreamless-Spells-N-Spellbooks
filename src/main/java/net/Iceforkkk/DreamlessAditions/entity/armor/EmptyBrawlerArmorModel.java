@@ -15,7 +15,7 @@ public class EmptyBrawlerArmorModel extends DefaultedEntityGeoModel<EmptyBrawler
     // Just replace where the path is with the file path of your texture, EZ PZ
     @Override
     public ResourceLocation getModelResource(EmptyBrawlerArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(Dreamless_Spells.MOD_ID, "geo/empty_brawler.geo.json");
+        return ResourceLocation.fromNamespaceAndPath(Dreamless_Spells.MOD_ID, "geo/armor/empty_brawler.geo.json");
     }
 
     @Override

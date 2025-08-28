@@ -16,7 +16,7 @@ public class EmptyHunterArmorModel extends DefaultedEntityGeoModel<EmptyHunterAr
     // Just replace where the path is with the file path of your texture, EZ PZ
     @Override
     public ResourceLocation getModelResource(EmptyHunterArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(Dreamless_Spells.MOD_ID, "geo/empty_hunter.geo.json");
+        return ResourceLocation.fromNamespaceAndPath(Dreamless_Spells.MOD_ID, "geo/armor/empty_hunter.geo.json");
     }
 
     @Override

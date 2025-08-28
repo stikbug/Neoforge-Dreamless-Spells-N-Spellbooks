@@ -4,6 +4,9 @@ import dev.shadowsoffire.apothic_attributes.api.ALObjects;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import io.redspace.ironsspellbooks.item.weapons.AttributeContainer;
 import io.redspace.ironsspellbooks.item.weapons.IronsWeaponTier;
+import io.redspace.ironsspellbooks.registries.ItemRegistry;
+import net.Iceforkkk.DreamlessAditions.registries.DSSAttributeRegistry;
+import net.Iceforkkk.DreamlessAditions.registries.DSSItems;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
@@ -15,7 +18,16 @@ import java.util.function.Supplier;
 
 public class DSSExtendedWeaponTiers implements Tier, IronsWeaponTier {
 
-
+    public static DSSExtendedWeaponTiers EMPTY_BROADSWORD = new DSSExtendedWeaponTiers(
+            8064,
+            7,
+            -3.0F,
+            10,
+            BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
+            () -> Ingredient.of(DSSItems.TUNGSTENINGOT.get()),
+            new AttributeContainer[DSSAttributeRegistry.EMPTY_SPELL_POWER, 0.1, AttributeModifier.Operation.ADD_MULTIPLIED_BASE],
+            new AttributeContainer[DSSAttributeRegistry.EMPTY_SPELL_POWER, 0.1, AttributeModifier.Operation.ADD_MULTIPLIED_BASE]
+            );
 
 
     //private final int level;

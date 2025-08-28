@@ -8,6 +8,7 @@ import net.Iceforkkk.DreamlessAditions.item.armor.EmptyBrawlerArmorItem;
 import net.Iceforkkk.DreamlessAditions.item.armor.EmptyHunterArmorItem;
 import net.Iceforkkk.DreamlessAditions.item.armor.EmptyPriestArmorItem;
 import net.Iceforkkk.DreamlessAditions.item.curios.*;
+import net.Iceforkkk.DreamlessAditions.item.weapons.empty_broadsword.EmptyBroadswordItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
@@ -224,6 +225,8 @@ public class DSSItems {
                     .rarity(Rarity.EPIC)
                     .component(ComponentRegistry.UPGRADE_ORB_TYPE, DSSUpgradeOrbTypeRegistry.EMPTY_SPELL_POWER))
     );
+
+    public static final DeferredHolder<Item, Item> EMPTY_BROADSWORD = ITEMS.register("empty_broadsword", EmptyBroadswordItem::new);
 
 
     public static void register (IEventBus eventBus) {
