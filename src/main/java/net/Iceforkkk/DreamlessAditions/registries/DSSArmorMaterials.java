@@ -29,7 +29,7 @@ public class DSSArmorMaterials {
     private static final DeferredRegister<ArmorMaterial> ARMOR_MATERIALS = DeferredRegister.create(Registries.ARMOR_MATERIAL, Dreamless_Spells.MOD_ID);
 
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> EMPTY_PRIEST_MATERIAL = register("empty_priest_armor",
-            makeArmorMap(3, 8, 6, 3),
+            emptyArmorMap(),
             20,
             SoundEvents.ARMOR_EQUIP_NETHERITE,
             () -> Ingredient.of(DSSItems.TUNGSTENINGOT.get()),
@@ -37,7 +37,7 @@ public class DSSArmorMaterials {
             0F);
 
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> EMPTY_BRAWLER_MATERIAL = register("empty_brawler_armor",
-            makeArmorMap(6, 11, 9, 6),
+            emptyAdvancedArmorMap(),
             20,
             SoundEvents.ARMOR_EQUIP_NETHERITE,
             () -> Ingredient.of(DSSItems.TUNGSTENINGOT.get()),
@@ -45,7 +45,7 @@ public class DSSArmorMaterials {
             0.1F);
 
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> EMPTY_HUNTER_MATERIAL = register("empty_hunter_armor",
-            makeArmorMap(5, 9, 8, 5),
+            emptyAdvancedArmorMap(),
             20,
             SoundEvents.ARMOR_EQUIP_NETHERITE,
             () -> Ingredient.of(DSSItems.TUNGSTENINGOT.get()),
