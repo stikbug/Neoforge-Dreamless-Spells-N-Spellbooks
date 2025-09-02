@@ -4,7 +4,6 @@ import dev.shadowsoffire.apothic_attributes.api.ALObjects;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import io.redspace.ironsspellbooks.item.weapons.AttributeContainer;
 import io.redspace.ironsspellbooks.item.weapons.IronsWeaponTier;
-import io.redspace.ironsspellbooks.registries.ItemRegistry;
 import net.Iceforkkk.DreamlessAditions.registries.DSSAttributeRegistry;
 import net.Iceforkkk.DreamlessAditions.registries.DSSItems;
 import net.minecraft.tags.BlockTags;
@@ -20,14 +19,17 @@ public class DSSExtendedWeaponTiers implements Tier, IronsWeaponTier {
 
     public static DSSExtendedWeaponTiers EMPTY_BROADSWORD = new DSSExtendedWeaponTiers(
             8064,
-            7,
+            8,
             -3.0F,
             10,
             BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
             () -> Ingredient.of(DSSItems.TUNGSTENINGOT.get()),
-            new AttributeContainer[DSSAttributeRegistry.EMPTY_SPELL_POWER, 0.1, AttributeModifier.Operation.ADD_MULTIPLIED_BASE],
-            new AttributeContainer[DSSAttributeRegistry.EMPTY_SPELL_POWER, 0.1, AttributeModifier.Operation.ADD_MULTIPLIED_BASE]
-            );
+            new AttributeContainer(AttributeRegistry.FIRE_SPELL_POWER, 0.20, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+            new AttributeContainer(AttributeRegistry.NATURE_SPELL_POWER, 0.20, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+            new AttributeContainer(Attributes.ATTACK_SPEED, 1.3, AttributeModifier.Operation.ADD_VALUE),
+            new AttributeContainer(ALObjects.Attributes.FIRE_DAMAGE, 3, AttributeModifier.Operation.ADD_VALUE),
+            new AttributeContainer(Attributes.ENTITY_INTERACTION_RANGE, 2, AttributeModifier.Operation.ADD_VALUE)
+    );
 
 
     //private final int level;
