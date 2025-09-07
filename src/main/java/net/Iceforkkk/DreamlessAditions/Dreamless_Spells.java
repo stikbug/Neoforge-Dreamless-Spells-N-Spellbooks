@@ -40,6 +40,8 @@ public class Dreamless_Spells
         DSSItems.register(modEventBus);
         DSSBlocks.register(modEventBus);
 
+        DSSArmorMaterials.register(modEventBus);
+
         modEventBus.addListener(this::addCreative);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
