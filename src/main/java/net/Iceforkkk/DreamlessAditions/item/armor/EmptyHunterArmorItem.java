@@ -24,7 +24,7 @@ import software.bernie.geckolib.renderer.GeoArmorRenderer;
 
 public class EmptyHunterArmorItem extends DSSArmorItem {
     public EmptyHunterArmorItem(Type type, Properties settings) {
-        super(DSSArmorMaterials.EMPTY_HUNTER_MATERIAL, type, settings,
+        super(DSSArmorMaterials.EMPTY_HUNTER_MATERIAL.getDelegate(), type, settings,
                 new AttributeContainer(DSSAttributeRegistry.EMPTY_SPELL_POWER, 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                 new AttributeContainer(ALObjects.Attributes.ARROW_DAMAGE, 0.1, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                 new AttributeContainer(AttributeRegistry.MAX_MANA, -0.25, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)

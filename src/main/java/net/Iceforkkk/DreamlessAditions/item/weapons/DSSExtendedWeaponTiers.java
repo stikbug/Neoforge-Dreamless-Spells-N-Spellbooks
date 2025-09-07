@@ -1,10 +1,7 @@
 package net.Iceforkkk.DreamlessAditions.item.weapons;
 
-import dev.shadowsoffire.apothic_attributes.api.ALObjects;
-import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import io.redspace.ironsspellbooks.item.weapons.AttributeContainer;
 import io.redspace.ironsspellbooks.item.weapons.IronsWeaponTier;
-import net.Iceforkkk.DreamlessAditions.registries.DSSAttributeRegistry;
 import net.Iceforkkk.DreamlessAditions.registries.DSSItems;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
@@ -24,10 +21,6 @@ public class DSSExtendedWeaponTiers implements Tier, IronsWeaponTier {
             10,
             BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
             () -> Ingredient.of(DSSItems.TUNGSTENINGOT.get()),
-            new AttributeContainer(AttributeRegistry.FIRE_SPELL_POWER, 0.20, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-            new AttributeContainer(AttributeRegistry.NATURE_SPELL_POWER, 0.20, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-            new AttributeContainer(Attributes.ATTACK_SPEED, 1.3, AttributeModifier.Operation.ADD_VALUE),
-            new AttributeContainer(ALObjects.Attributes.FIRE_DAMAGE, 3, AttributeModifier.Operation.ADD_VALUE),
             new AttributeContainer(Attributes.ENTITY_INTERACTION_RANGE, 2, AttributeModifier.Operation.ADD_VALUE)
     );
 
@@ -41,14 +34,14 @@ public class DSSExtendedWeaponTiers implements Tier, IronsWeaponTier {
     private final Supplier<Ingredient> repairIngredient;
     private final AttributeContainer[] attributeContainers;
 
-    public DSSExtendedWeaponTiers(int uses, float speed, float damage, int enchantmentValue, TagKey<Block> incorrectBlocksForDrops, Supplier<Ingredient> repairIngredient, AttributeContainer[] attributeContainers) {
+    public DSSExtendedWeaponTiers(int uses, float damage, float speed, int enchantmentValue, TagKey<Block> incorrectBlocksForDrops, Supplier<Ingredient> repairIngredient, AttributeContainer... attributes) {
         this.uses = uses;
         this.speed = speed;
         this.damage = damage;
         this.enchantmentValue = enchantmentValue;
         this.incorrectBlocksForDrops = incorrectBlocksForDrops;
         this.repairIngredient = repairIngredient;
-        this.attributeContainers = attributeContainers;
+        this.attributeContainers = attributes;
     }
 
     @Override

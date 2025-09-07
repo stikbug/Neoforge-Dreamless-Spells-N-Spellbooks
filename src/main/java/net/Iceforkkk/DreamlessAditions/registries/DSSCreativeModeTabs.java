@@ -112,6 +112,8 @@ public class DSSCreativeModeTabs {
                         //Belt Curios
                         output.accept(DSSItems.HOPOO_FEATHER);
                         output.accept(DSSItems.WAX_QUAIL);
+                        //Weapons
+                        output.accept(DSSItems.EMPTY_BROADSWORD.get());
                         //Blocks
                         output.accept(DSSBlocks.TUNGSTENORE);
                         output.accept(DSSBlocks.TUNGSTENBLOCK);

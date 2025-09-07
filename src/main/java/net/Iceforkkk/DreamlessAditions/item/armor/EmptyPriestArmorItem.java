@@ -22,7 +22,7 @@ import software.bernie.geckolib.renderer.GeoArmorRenderer;
 
 public class EmptyPriestArmorItem extends DSSArmorItem {
     public EmptyPriestArmorItem(Type type, Properties settings) {
-        super(DSSArmorMaterials.EMPTY_PRIEST_MATERIAL, type, settings,
+        super(DSSArmorMaterials.EMPTY_PRIEST_MATERIAL.getDelegate(), type, settings,
                 new AttributeContainer(DSSAttributeRegistry.EMPTY_SPELL_POWER, 0.15, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                 new AttributeContainer(AttributeRegistry.MAX_MANA, -0.25, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
         );
