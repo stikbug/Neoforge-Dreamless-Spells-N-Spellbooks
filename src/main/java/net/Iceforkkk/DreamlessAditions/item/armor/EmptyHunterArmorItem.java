@@ -15,6 +15,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.neoforged.api.distmarker.Dist;
@@ -23,7 +24,7 @@ import org.jetbrains.annotations.NotNull;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 
 public class EmptyHunterArmorItem extends DSSArmorItem {
-    public EmptyHunterArmorItem(Type type, Properties settings) {
+    public EmptyHunterArmorItem(ArmorItem.Type type, Properties settings) {
         super(DSSArmorMaterials.EMPTY_HUNTER_MATERIAL.getDelegate(), type, settings,
                 new AttributeContainer(DSSAttributeRegistry.EMPTY_SPELL_POWER, 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                 new AttributeContainer(ALObjects.Attributes.ARROW_DAMAGE, 0.1, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
