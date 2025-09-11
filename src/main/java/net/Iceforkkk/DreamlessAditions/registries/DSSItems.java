@@ -4,9 +4,7 @@ import io.redspace.ironsspellbooks.item.UpgradeOrbItem;
 import io.redspace.ironsspellbooks.registries.ComponentRegistry;
 import io.redspace.ironsspellbooks.util.ItemPropertiesHelper;
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
-import net.Iceforkkk.DreamlessAditions.item.armor.EmptyBrawlerArmorItem;
-import net.Iceforkkk.DreamlessAditions.item.armor.EmptyHunterArmorItem;
-import net.Iceforkkk.DreamlessAditions.item.armor.EmptyPriestArmorItem;
+import net.Iceforkkk.DreamlessAditions.item.armor.*;
 import net.Iceforkkk.DreamlessAditions.item.curios.*;
 import net.Iceforkkk.DreamlessAditions.item.weapons.empty_broadsword.EmptyBroadswordItem;
 import net.minecraft.network.chat.Component;
@@ -48,6 +46,26 @@ public class DSSItems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> EMPTY_RUNE = ITEMS.register("empty_rune",
             ()-> new Item(new Item.Properties()));
+
+    //Solar Armor
+    public static final DeferredItem<ArmorItem> SOLAR_HELMET = ITEMS.register("solar_helmet",
+            ()-> new SolarArmorItem(ArmorItem.Type.HELMET, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(30))));
+    public static final DeferredItem<ArmorItem> SOLAR_CHESTPLATE = ITEMS.register("solar_chestplate",
+            ()-> new SolarArmorItem(ArmorItem.Type.CHESTPLATE, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(30))));
+    public static final DeferredItem<ArmorItem> SOLAR_LEGGINGS = ITEMS.register("solar_leggings",
+            ()-> new SolarArmorItem(ArmorItem.Type.LEGGINGS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(30))));
+    public static final DeferredItem<ArmorItem> SOLAR_BOOTS = ITEMS.register("solar_boots",
+            ()-> new SolarArmorItem(ArmorItem.Type.BOOTS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(30))));
+
+    //Vortex Armor
+    public static final DeferredItem<ArmorItem> VORTEX_HELMET = ITEMS.register("vortex_helmet",
+            ()-> new VortexArmorItem(ArmorItem.Type.HELMET, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(30))));
+    public static final DeferredItem<ArmorItem> VORTEX_CHESTPLATE = ITEMS.register("vortex_chestplate",
+            ()-> new VortexArmorItem(ArmorItem.Type.CHESTPLATE, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(30))));
+    public static final DeferredItem<ArmorItem> VORTEX_LEGGINGS = ITEMS.register("vortex_leggings",
+            ()-> new VortexArmorItem(ArmorItem.Type.LEGGINGS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(30))));
+    public static final DeferredItem<ArmorItem> VORTEX_BOOTS = ITEMS.register("vortex_boots",
+            ()-> new VortexArmorItem(ArmorItem.Type.BOOTS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(30))));
 
     //Empty Priest Armor
     public static final DeferredItem<ArmorItem> EMPTYPRIESTHELMET = ITEMS.register("empty_priest_helmet",

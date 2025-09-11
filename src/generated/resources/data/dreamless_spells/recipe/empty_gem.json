@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dreamless_spells:arcane_gem"
+    },
+    {
+      "item": "dreamless_spells:pavarium_nugget"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:empty_gem"
+  }
+}

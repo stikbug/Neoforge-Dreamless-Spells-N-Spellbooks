@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-23T19:19:02.468849	Item Models: dreamless_spells
+// 1.21.1	2025-09-09T10:56:26.354876	Item Models: dreamless_spells
 574d0f35871baa363444c8d0a74161248902c892 assets/dreamless_spells/models/item/absurd_ring.json
 6b1345ff7d91e1bed96c11a6b1363bf537078b99 assets/dreamless_spells/models/item/amethyst_boots.json
 657dc10580ffa1bf8a3d420372fb5b1d98b2f0f9 assets/dreamless_spells/models/item/arcane_cloth_boots.json
@@ -66,6 +66,10 @@ c487f7522055556f7c1c91e9b425ed40dbbacca7 assets/dreamless_spells/models/item/raw
 949cf7b95511c6646903007f43fab01d3ea9fde0 assets/dreamless_spells/models/item/sale_star.json
 a80152c07f2206f3dfbad5ef5f558b22f67f446a assets/dreamless_spells/models/item/scrapped_boots.json
 245d2c086eee9714a93d8c7987b8462e1d2600b5 assets/dreamless_spells/models/item/slaughterers_mask.json
+fdcc0f2adb43d818a3c34dc7b01e3f072146c771 assets/dreamless_spells/models/item/solar_boots.json
+04c35e764e4523c98cce50553ee7a6903c2fc99c assets/dreamless_spells/models/item/solar_chestplate.json
+69dff73f0aff7bcb2ac7bec9f2d72ab7f00d409c assets/dreamless_spells/models/item/solar_helmet.json
+8e6b2c25690045e1217f4ccb2b087f046f79c404 assets/dreamless_spells/models/item/solar_leggings.json
 6439388cdbf7c571d1a3eca96267d53ba705c51a assets/dreamless_spells/models/item/tank_boots.json
 58f0208d59e3052adcdc8d5a904f89204a8c65b4 assets/dreamless_spells/models/item/tempered_glass_boots.json
 17cc3fefd577234c0ad60cf11bd5572b477ad499 assets/dreamless_spells/models/item/tungsten_boots.json
@@ -76,4 +80,8 @@ ed7188af9a534f4cbf62ea60e71ec154a237790c assets/dreamless_spells/models/item/tun
 eaa71bbaa04e9dc5b29dab260c1af87a1ce7bef7 assets/dreamless_spells/models/item/vampire_baron_boots.json
 0dc6fc7a1bbd4018c0b767c48fa740c5f7eaec94 assets/dreamless_spells/models/item/vampire_earl_boots.json
 276503f5c45a1beaf9ec41e6dda9e913e41e7112 assets/dreamless_spells/models/item/vampire_king_boots.json
+a2172e570d711832a00f492f23ec9f998cd1f6bb assets/dreamless_spells/models/item/vortex_boots.json
+b012de851bb9264eba18a5b152620d138021248e assets/dreamless_spells/models/item/vortex_chestplate.json
+a757d563491695b1e4804eb2a6fe9f95c08795f4 assets/dreamless_spells/models/item/vortex_helmet.json
+15848760569b5686b12fdc9617a9dcc6fbcb7a97 assets/dreamless_spells/models/item/vortex_leggings.json
 78734ecd15c0964d656c8d42598d815cb8816449 assets/dreamless_spells/models/item/wax_quail.json

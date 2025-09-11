@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:bow"
+  },
+  "base": {
+    "item": "irons_spellbooks:electromancer_boots"
+  },
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:vortex_boots"
+  },
+  "template": {
+    "item": "irons_spellbooks:lightning_rune"
+  }
+}

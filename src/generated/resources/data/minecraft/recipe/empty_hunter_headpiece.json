@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:bow"
+  },
+  "base": {
+    "item": "dreamless_spells:empty_priest_helmet"
+  },
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:empty_hunter_helmet"
+  },
+  "template": {
+    "item": "dreamless_spells:empty_rune"
+  }
+}

@@ -36,6 +36,16 @@
   "item.dreamless_spells.empty_hunter_leggings": "Empty Hunter Shorts",
   "item.dreamless_spells.empty_hunter_boots": "Empty Hunter Shoes",
 
+  "item.dreamless_spells.vortex_helmet": "Vortex Helmet",
+  "item.dreamless_spells.vortex_chestplate": "Vortex Space Suit",
+  "item.dreamless_spells.vortex_leggings": "Vortex Leggings",
+  "item.dreamless_spells.vortex_boots": "Vortex Moon Walkers",
+
+  "item.dreamless_spells.solar_helmet": "Solar Helmet",
+  "item.dreamless_spells.solar_chestplate": "Solar Chestplate",
+  "item.dreamless_spells.solar_leggings": "Solar Leggings",
+  "item.dreamless_spells.solar_boots": "Solar Greaves",
+
   "curios.identifier.feet": "Feet",
   "curios.modifiers.feet": "When in the Feet Slot:",
 
@@ -112,9 +122,18 @@
   "effect.dreamless_spells.drained": "Drained",
   "spell.dreamless_spells.drained": "Drained",
 
+  "effect.dreamless_spells.doorway_effect": "Doorway Effect",
+  "spell.dreamless_spells.doorway_effect": "Doorway Effect",
+
   "attribute.dreamless_spells.empty_spell_power": "Empty Spell Power",
   "attribute.dreamless_spells.empty_spell_resist": "Empty Spell Resist",
   "school.dreamless_spells.empty": "Empty",
+
+  "item.dreamless_spells.empty_broadsword": "Empty Broadsword",
+
+  "spell.dreamless_spells.drained.guide": "Reduces the target's mana by 10% per level",
+  "spell.dreamless_spells.jadeskin.guide": "Increase your ice spell power, attack speed, and attack damage by a hefty amount!",
+  "spell.dreamless_spells.doorway_effect.guide": "Make the target forget what they were going to cast for a split second.",
 
   "tooltip.dreamless_spells.empty_priest.tooltip": "§5Seems pretty full to me...§5",
   "display.dreamless_spells.doorway_effect_spell_forgotten": "What spell was I casting again?",

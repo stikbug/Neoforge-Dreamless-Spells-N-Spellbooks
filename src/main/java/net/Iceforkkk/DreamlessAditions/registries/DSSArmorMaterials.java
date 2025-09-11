@@ -1,5 +1,6 @@
 package net.Iceforkkk.DreamlessAditions.registries;
 
+import io.redspace.ironsspellbooks.registries.ItemRegistry;
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
 import net.minecraft.Util;
 import net.minecraft.core.Holder;
@@ -21,8 +22,24 @@ import java.util.function.Supplier;
 public class DSSArmorMaterials {
     private static final DeferredRegister<ArmorMaterial> ARMOR_MATERIALS = DeferredRegister.create(Registries.ARMOR_MATERIAL, Dreamless_Spells.MOD_ID);
 
+    public static DeferredHolder<ArmorMaterial, ArmorMaterial> SOLAR_MATERIAL = register("solar",
+            AdvancedArmorMap(),
+            20,
+            SoundEvents.ARMOR_EQUIP_NETHERITE,
+            () -> Ingredient.of(ItemRegistry.MITHRIL_INGOT.get()),
+            0,
+            0F);
+
+    public static DeferredHolder<ArmorMaterial, ArmorMaterial> VORTEX_MATERIAL = register("vortex",
+            AdvancedArmorMap(),
+            20,
+            SoundEvents.ARMOR_EQUIP_NETHERITE,
+            () -> Ingredient.of(ItemRegistry.MITHRIL_INGOT.get()),
+            0,
+            0F);
+
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> EMPTY_PRIEST_MATERIAL = register("empty_priest",
-            emptyArmorMap(),
+            RegularArmorMap(),
             20,
             SoundEvents.ARMOR_EQUIP_NETHERITE,
             () -> Ingredient.of(DSSItems.TUNGSTENINGOT.get()),
@@ -30,7 +47,7 @@ public class DSSArmorMaterials {
             0F);
 
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> EMPTY_BRAWLER_MATERIAL = register("empty_brawler",
-            emptyAdvancedArmorMap(),
+            AdvancedArmorMap(),
             20,
             SoundEvents.ARMOR_EQUIP_NETHERITE,
             () -> Ingredient.of(DSSItems.TUNGSTENINGOT.get()),
@@ -38,7 +55,7 @@ public class DSSArmorMaterials {
             0.1F);
 
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> EMPTY_HUNTER_MATERIAL = register("empty_hunter",
-            emptyAdvancedArmorMap(),
+            AdvancedArmorMap(),
             20,
             SoundEvents.ARMOR_EQUIP_NETHERITE,
             () -> Ingredient.of(DSSItems.TUNGSTENINGOT.get()),
@@ -69,8 +86,8 @@ public class DSSArmorMaterials {
         });
     }
 
-    public static EnumMap<ArmorItem.Type, Integer> emptyAdvancedArmorMap(){return makeArmorMap(5, 11, 9, 5);}
-    public static EnumMap<ArmorItem.Type, Integer> emptyArmorMap(){return makeArmorMap(3, 8, 6, 3);}
+    public static EnumMap<ArmorItem.Type, Integer> AdvancedArmorMap(){return makeArmorMap(5, 11, 9, 5);}
+    public static EnumMap<ArmorItem.Type, Integer> RegularArmorMap(){return makeArmorMap(3, 8, 6, 3);}
 
     public static void register(IEventBus eventBus) {
         ARMOR_MATERIALS.register(eventBus);

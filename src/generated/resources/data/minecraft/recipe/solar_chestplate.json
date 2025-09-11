@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:iron_sword"
+  },
+  "base": {
+    "item": "irons_spellbooks:pyromancer_chestplate"
+  },
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:solar_chestplate"
+  },
+  "template": {
+    "item": "irons_spellbooks:fire_rune"
+  }
+}

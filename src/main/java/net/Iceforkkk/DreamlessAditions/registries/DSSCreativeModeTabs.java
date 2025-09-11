@@ -52,6 +52,16 @@ public class DSSCreativeModeTabs {
                         output.accept(DSSItems.EMPTYHUNTERCHESTPLATE);
                         output.accept(DSSItems.EMPTYHUNTERLEGGINGS);
                         output.accept(DSSItems.EMPTYHUNTERBOOTS);
+                        //Solar Armor
+                        output.accept(DSSItems.SOLAR_HELMET);
+                        output.accept(DSSItems.SOLAR_CHESTPLATE);
+                        output.accept(DSSItems.SOLAR_LEGGINGS);
+                        output.accept(DSSItems.SOLAR_BOOTS);
+                        //Vortex Armor
+                        output.accept(DSSItems.VORTEX_HELMET);
+                        output.accept(DSSItems.VORTEX_CHESTPLATE);
+                        output.accept(DSSItems.VORTEX_LEGGINGS);
+                        output.accept(DSSItems.VORTEX_BOOTS);
                         //Boot Curios
                         output.accept(DSSItems.OLD_BOOTS);
                         output.accept(DSSItems.IRON_SOCKS);

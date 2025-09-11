@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:iron_sword"
+  },
+  "base": {
+    "item": "irons_spellbooks:pyromancer_boots"
+  },
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:solar_boots"
+  },
+  "template": {
+    "item": "irons_spellbooks:fire_rune"
+  }
+}

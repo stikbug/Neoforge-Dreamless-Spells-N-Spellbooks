@@ -101,6 +101,16 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(DSSItems.WAX_QUAIL.get());
 
         //Armor
+        //Solar Armor
+        basicItem(DSSItems.SOLAR_HELMET.get());
+        basicItem(DSSItems.SOLAR_CHESTPLATE.get());
+        basicItem(DSSItems.SOLAR_LEGGINGS.get());
+        basicItem(DSSItems.SOLAR_BOOTS.get());
+        //Vortex Armor
+        basicItem(DSSItems.VORTEX_HELMET.get());
+        basicItem(DSSItems.VORTEX_CHESTPLATE.get());
+        basicItem(DSSItems.VORTEX_LEGGINGS.get());
+        basicItem(DSSItems.VORTEX_BOOTS.get());
         //Empty Priest Armor
         basicItem(DSSItems.EMPTYPRIESTHELMET.get());
         basicItem(DSSItems.EMPTYPRIESTCHESTPLATE.get());
