@@ -54,6 +54,14 @@ public class DSSEffects {
                             AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
     );
 
+    //Drained
+    public static final Holder<MobEffect> DULLARD_EFFECT = MOB_EFFECTS.register("dullard",
+            () -> new JadeskinEffect(MobEffectCategory.HARMFUL, 0xfbb741)
+                    .addAttributeModifier(AttributeRegistry.SPELL_POWER,
+                            ResourceLocation.fromNamespaceAndPath(Dreamless_Spells.MOD_ID, "dullard"), -0.1f,
+                            AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
+    );
+
     public static final Holder<MobEffect> DOORWAY_EFFECT_EFFECT = MOB_EFFECTS.register("doorway_effect",
             () -> new DoorwayEffectEfftect()
     );

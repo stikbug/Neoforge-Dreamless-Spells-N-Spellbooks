@@ -5,10 +5,7 @@ import io.redspace.ironsspellbooks.api.magic.MagicData;
 import io.redspace.ironsspellbooks.api.spells.*;
 import io.redspace.ironsspellbooks.api.util.AnimationHolder;
 import io.redspace.ironsspellbooks.api.util.Utils;
-import io.redspace.ironsspellbooks.capabilities.magic.MagicManager;
 import io.redspace.ironsspellbooks.capabilities.magic.TargetEntityCastData;
-import io.redspace.ironsspellbooks.damage.DamageSources;
-import io.redspace.ironsspellbooks.entity.spells.ray_of_frost.RayOfFrostVisualEntity;
 import io.redspace.ironsspellbooks.entity.spells.target_area.TargetedAreaEntity;
 import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
 import io.redspace.ironsspellbooks.registries.SoundRegistry;
@@ -16,9 +13,7 @@ import io.redspace.ironsspellbooks.spells.TargetedTargetAreaCastData;
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
 import net.Iceforkkk.DreamlessAditions.effect.DSSEffects;
 import net.Iceforkkk.DreamlessAditions.registries.DSSSchoolRegistry;
-import net.Iceforkkk.DreamlessAditions.registries.SpellRegistries;
 import net.minecraft.ChatFormatting;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.protocol.game.ClientboundSetActionBarTextPacket;
@@ -30,35 +25,34 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.phys.EntityHitResult;
-import net.minecraft.world.phys.HitResult;
 
 import java.util.List;
 import java.util.Optional;
 
 @AutoSpellConfig
-public class DoorwayEffectSpell extends AbstractSpell {
-    private final ResourceLocation spellId = ResourceLocation.fromNamespaceAndPath(Dreamless_Spells.MOD_ID, "doorway_effect");
+public class DullardSpell extends AbstractSpell {
+    private final ResourceLocation spellId = ResourceLocation.fromNamespaceAndPath(Dreamless_Spells.MOD_ID, "dullard");
+    private Entity caster;
 
     @Override
     public List<MutableComponent> getUniqueInfo(int spellLevel, LivingEntity caster) {
         return List.of(
-                Component.translatable("ui.irons_spellbooks.effect_length", Utils.timeFromTicks(getSpellPower(spellLevel, caster) * 5, 1)));
+                Component.translatable("ui.irons_spellbooks.effect_length", Utils.timeFromTicks(getSpellPower(spellLevel, caster) * 10, 1)));
     }
 
     private final DefaultConfig defaultConfig = new DefaultConfig()
             .setMinRarity(SpellRarity.LEGENDARY)
             .setSchoolResource(DSSSchoolRegistry.EMPTY_RESOURCE)
-            .setMaxLevel(5)
-            .setCooldownSeconds(10)
+            .setMaxLevel(3)
+            .setCooldownSeconds(180)
             .build();
 
-    public DoorwayEffectSpell()
+    public DullardSpell()
     {
         this.manaCostPerLevel = 0;
         this.baseSpellPower = 5;
         this.spellPowerPerLevel = 5;
-        this.castTime = 60;
+        this.castTime = 30;
         this.baseManaCost = 0;
     }
 
@@ -126,10 +120,10 @@ public class DoorwayEffectSpell extends AbstractSpell {
             }
 
 
-        } else {
-            if (entity instanceof ServerPlayer serverPlayer) {
-                serverPlayer.connection.send(new ClientboundSetActionBarTextPacket(Component.translatable("ui.dreamless_spells.unforsaken_status", this.getDisplayName(serverPlayer)).withStyle(ChatFormatting.RED)));
-            }
+                } else {
+                    if (entity instanceof ServerPlayer serverPlayer) {
+                        serverPlayer.connection.send(new ClientboundSetActionBarTextPacket(Component.translatable("ui.dreamless_spells.unforsaken_status", this.getDisplayName(serverPlayer)).withStyle(ChatFormatting.RED)));
+                    }
         }
     }
 

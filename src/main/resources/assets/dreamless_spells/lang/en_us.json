@@ -119,6 +119,9 @@
   "effect.dreamless_spells.jadeskin": "Jadeskin",
   "spell.dreamless_spells.jadeskin": "Jadeskin",
 
+  "effect.dreamless_spells.dullard": "Dullard",
+  "spell.dreamless_spells.dullard": "Dullard",
+
   "effect.dreamless_spells.drained": "Drained",
   "spell.dreamless_spells.drained": "Drained",
 
@@ -134,6 +137,7 @@
   "spell.dreamless_spells.drained.guide": "Reduces the target's mana by 10% per level",
   "spell.dreamless_spells.jadeskin.guide": "Increase your ice spell power, attack speed, and attack damage by a hefty amount!",
   "spell.dreamless_spells.doorway_effect.guide": "Make the target forget what they were going to cast for a split second.",
+  "spell.dreamless_spells.dullard.guide": "Reduces the target's spell power by 10% per level",
 
   "tooltip.dreamless_spells.empty_priest.tooltip": "§5Seems pretty full to me...§5",
   "display.dreamless_spells.doorway_effect_spell_forgotten": "What spell was I casting again?",

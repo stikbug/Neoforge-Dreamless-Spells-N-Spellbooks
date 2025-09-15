@@ -4,6 +4,7 @@ import io.redspace.ironsspellbooks.api.spells.AbstractSpell;
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
 import net.Iceforkkk.DreamlessAditions.spells.empty.DoorwayEffectSpell;
 import net.Iceforkkk.DreamlessAditions.spells.empty.DrainedSpell;
+import net.Iceforkkk.DreamlessAditions.spells.empty.DullardSpell;
 import net.Iceforkkk.DreamlessAditions.spells.ice.JadeskinSpell;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -22,6 +23,7 @@ public class SpellRegistries {
 
     public static final Supplier<AbstractSpell> JADESKIN = registerSpell(new JadeskinSpell());
     public static final Supplier<AbstractSpell> DRAINED = registerSpell(new DrainedSpell());
+    public static final Supplier<AbstractSpell> DULLARD = registerSpell(new DullardSpell());
     public static final Supplier<AbstractSpell> DOORWAY_EFFECT = registerSpell(new DoorwayEffectSpell());
 
 
