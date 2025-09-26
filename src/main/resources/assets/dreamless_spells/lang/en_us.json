@@ -142,5 +142,7 @@
   "tooltip.dreamless_spells.empty_priest.tooltip": "§5Seems pretty full to me...§5",
   "display.dreamless_spells.doorway_effect_spell_forgotten": "What spell was I casting again?",
   "ui.dreamless_spells.unforsaken_status": "Your Mana is not truly empty...",
-  "ui.dreamless_spells.forsaken_status": "Your Mana is Truly Empty!"
+  "ui.dreamless_spells.forsaken_status": "Your Mana is Truly Empty!",
+
+  "entity.dreamless_spells.wulfrum_drone": "Wulfrum Drone"
 }

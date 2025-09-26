@@ -3,6 +3,7 @@ plugins {
     id 'java-library'
     id 'maven-publish'
     id 'net.neoforged.moddev' version '2.0.78'
+    id 'org.jetbrains.kotlin.jvm'
 }
 
 tasks.named('wrapper', Wrapper).configure {
@@ -19,6 +20,7 @@ group = mod_group_id
 
 repositories {
     mavenLocal()
+    mavenCentral()
 }
 
 
@@ -162,6 +164,7 @@ dependencies {
     // APOTHIC ATTRIBUTES
     implementation "curse.maven:apothic-attributes-898963:6302334"
     implementation "curse.maven:placebo-283644:6337156"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 
     //ADDITIONAL ATTRIBUTES - NOT WORKING AT THE MOMENT, WILL INVESTIGATE LATER
     //implementation "curse.maven:additional-attributes-986624:6782138"
@@ -221,4 +224,7 @@ idea {
         downloadSources = true
         downloadJavadoc = true
     }
+}
+kotlin {
+    jvmToolchain(21)
 }

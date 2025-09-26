@@ -48,6 +48,8 @@ public class Dreamless_Spells
 
         DSSEffects.register(modEventBus);
 
+        DSSEntityRegistry.register(modEventBus);
+
         SpellRegistries.register(modEventBus);
         DSSAttributeRegistry.register(modEventBus);
         DSSSchoolRegistry.register(modEventBus);
