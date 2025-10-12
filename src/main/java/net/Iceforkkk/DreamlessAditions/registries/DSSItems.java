@@ -225,6 +225,8 @@ public class DSSItems {
     //Charm Curios
     public static final DeferredItem<BustlingFungusCurio> BUSTLING_FUNGUS = ITEMS.register("bustling_fungus", BustlingFungusCurio::new);
     public static final DeferredItem<SaleStarCurio> SALE_STAR = ITEMS.register("sale_star", SaleStarCurio::new);
+    public static final DeferredItem<MinersCharmCurio> MINERS_CHARM = ITEMS.register("miners_charm", MinersCharmCurio::new);
+
 
     //Bracelet Curios
     public static final DeferredItem<KyrosBandCurio> KYROS_BAND = ITEMS.register("kyros_band", KyrosBandCurio::new);
@@ -233,6 +235,13 @@ public class DSSItems {
     //Belt Curios
     public static final DeferredItem<HopooFeatherCurio> HOPOO_FEATHER = ITEMS.register("hopoo_feather", HopooFeatherCurio::new);
     public static final DeferredItem<WaxQuailCurio> WAX_QUAIL = ITEMS.register("wax_quail", WaxQuailCurio::new);
+    public static final DeferredItem<PutridScentCurio> PUTRID_SCENT = ITEMS.register("putrid_scent", PutridScentCurio::new);
+
+
+    //Back Curios
+    public static final DeferredItem<IchorWingCurio> ICHOR_WING = ITEMS.register("ichor_wing", IchorWingCurio::new);
+
+
 
     //Upgrade Orbs
 

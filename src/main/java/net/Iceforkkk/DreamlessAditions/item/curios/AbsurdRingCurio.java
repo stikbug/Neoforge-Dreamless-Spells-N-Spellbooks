@@ -5,6 +5,7 @@ import com.google.common.collect.Multimap;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import io.redspace.ironsspellbooks.item.curios.CurioBaseItem;
 import io.redspace.ironsspellbooks.util.ItemPropertiesHelper;
+import net.Iceforkkk.DreamlessAditions.registries.DSSAttributeRegistry;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.ai.attributes.Attribute;
@@ -24,6 +25,7 @@ public class AbsurdRingCurio extends CurioBaseItem {
         attr.put(AttributeRegistry.MANA_REGEN, new AttributeModifier(id, 10, AttributeModifier.Operation.ADD_VALUE));
         attr.put(AttributeRegistry.COOLDOWN_REDUCTION, new AttributeModifier(id, 0.75, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         attr.put(AttributeRegistry.MAX_MANA, new AttributeModifier(id, -0.97, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+        attr.put(DSSAttributeRegistry.SUMMON_HEALTH, new AttributeModifier(id, 5, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
         return attr;
     }

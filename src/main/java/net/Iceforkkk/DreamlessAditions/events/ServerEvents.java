@@ -54,34 +54,13 @@ public class ServerEvents {
     }
 
 
-    //commented out rn because im a fucking idiot and don't know how to make this work
-//    @SubscribeEvent
-//    public static void summonHealthEvent(SpellSummonEvent event) {
-//        LivingEntity summoner = event.getCaster();
-//        if (summoner == null) return;
+    @SubscribeEvent
+    public static void summonEvent(SpellSummonEvent event)
+    {
+        LivingEntity entity = event.getCaster();
+        LivingEntity summon = event.getCreature();
 
-        // Use .get() to obtain the actual Attribute object from DeferredHolder
-//        AttributeInstance summonHealthAttrInstance = summoner.getAttribute(DSSAttributeRegistry.SUMMON_HEALTH.get());
-//        if (summonHealthAttrInstance == null) return;
-
-//        double summonHealthValue = summonHealthAttrInstance.getValue();
-//        if (summonHealthValue <= 0) return;
-
-        // Unique UUID for this modifier
-//        UUID SUMMON_HEALTH_MODIFIER_UUID = UUID.fromString("c16a5320-a4b9-4aeb-8ad5-f53c9c4d1c97");
-
-        // If your attribute is meant to be a percentage (e.g., +0.2 for +20% health), use ADD_MULTIPLIED_BASE
-        // If meant to be a flat increase, use ADDITION
-//        AttributeModifier summonHealthModifier = new AttributeModifier(
-//                SUMMON_HEALTH_MODIFIER_UUID,
-//                summonHealthValue,
-//                AttributeModifier.Operation.ADD_MULTIPLIED_BASE // Use ADDITION if you want a flat number
-//        );
-//
-//        AttributeInstance maxHealth = summoner.getAttribute(Attributes.MAX_HEALTH);
-//        if (maxHealth != null) {
-//            maxHealth.removeModifier(summonHealthModifier); // Prevent stacking
-//            maxHealth.addPermanentModifier(summonHealthModifier);
-//        }
-//    }
+        summon.getAttributes().getInstance(Attributes.MAX_HEALTH).setBaseValue(entity.getAttributeBaseValue(DSSAttributeRegistry.SUMMON_HEALTH));
+        summon.setHealth(summon.getMaxHealth());
+    }
 }

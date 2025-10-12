@@ -238,5 +238,6 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(DSSItems.EMPTYHUNTERBOOTS.get())
                 .add(DSSItems.EMPTYBRAWLERBOOTS.get())
                 .add(DSSItems.EMPTYPRIESTBOOTS.get());
+
     }
 }
