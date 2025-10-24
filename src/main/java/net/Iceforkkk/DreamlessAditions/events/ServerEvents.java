@@ -60,7 +60,7 @@ public class ServerEvents {
         LivingEntity entity = event.getCaster();
         LivingEntity summon = event.getCreature();
 
-        summon.getAttributes().getInstance(Attributes.MAX_HEALTH).setBaseValue(entity.getAttributeBaseValue(DSSAttributeRegistry.SUMMON_HEALTH));
+        summon.getAttributes().getInstance(Attributes.MAX_HEALTH).setBaseValue(entity.getAttributeValue(DSSAttributeRegistry.SUMMON_HEALTH));
         summon.setHealth(summon.getMaxHealth());
     }
 }

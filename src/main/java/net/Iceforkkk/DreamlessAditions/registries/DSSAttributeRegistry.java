@@ -17,7 +17,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class DSSAttributeRegistry {
     private static final DeferredRegister<Attribute> ATTRIBUTES = DeferredRegister.create(Registries.ATTRIBUTE, Dreamless_Spells.MOD_ID);
 
-    public static final DeferredHolder<Attribute, Attribute> SUMMON_HEALTH = registerMagicPercentageAttribute("summon_health", 0.0D, -100, 100.0D);
+    public static final DeferredHolder<Attribute, Attribute> SUMMON_HEALTH = registerMagicPercentageAttribute("summon_health", 0.0f, -100f, 100.0f);
     public static final DeferredHolder<Attribute, Attribute> EMPTY_SPELL_POWER = registerPowerAttribute("empty");
     public static final DeferredHolder<Attribute, Attribute> EMPTY_SPELL_RESIST = registerResistanceAttribute("empty");
 
