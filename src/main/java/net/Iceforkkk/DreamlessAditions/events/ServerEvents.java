@@ -2,6 +2,8 @@ package net.Iceforkkk.DreamlessAditions.events;
 
 import io.redspace.ironsspellbooks.api.events.SpellSummonEvent;
 import io.redspace.ironsspellbooks.api.registry.SpellRegistry;
+import io.redspace.ironsspellbooks.config.ServerConfigs;
+import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
 import net.Iceforkkk.DreamlessAditions.effect.DSSEffects;
 import net.Iceforkkk.DreamlessAditions.registries.DSSAttributeRegistry;
 import net.minecraft.network.chat.Component;
@@ -12,16 +14,41 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import io.redspace.ironsspellbooks.api.events.SpellPreCastEvent;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 
-import java.util.UUID;
+import javax.annotation.Nullable;
 
 @EventBusSubscriber
 public class ServerEvents {
+    public float getSummonHealth(int @Nullable Entity sourceEntity) {
+
+        double entitySummonHealthModifier = 1;
+
+        float configPowerModifier = (float) ServerConfigs.getSpellConfig(this).powerMultiplier();
+        //int level = getLevel(spellLevel, null);
+        if (sourceEntity instanceof LivingEntity livingEntity) {
+            //level = getLevel(spellLevel, livingEntity);
+            entitySummonHealthModifier = (float) livingEntity.getAttributeValue(DSSAttributeRegistry.SUMMON_HEALTH);
+        }
+
+        return (float) ((baseSpellPower + spellPowerPerLevel * (spellLevel - 1)) * entitySummonHealthModifier * entitySchoolPowerModifier * configPowerModifier);
+    }
+
+    public double getSummonHealthBonus(int spellLevel, LivingEntity caster) {
+        // 10% extra health for every extra spell power
+        return (getSpellPower(spellLevel, caster) - 1);
+    }
+
+    public double getSummonDamageBonus(int spellLevel, LivingEntity caster) {
+        // 5% extra damage for every extra spell power
+        return (getSpellPower(spellLevel, caster) - 1) * .05;
+    }
+
+
+
     // Silence effect preventing spell casting on player
     @net.neoforged.bus.api.SubscribeEvent
     public static void onPlayerCastEvent(SpellPreCastEvent event)
@@ -59,8 +86,10 @@ public class ServerEvents {
     {
         LivingEntity entity = event.getCaster();
         LivingEntity summon = event.getCreature();
+        AttributeModifier summonHealthModifier = new AttributeModifier(Dreamless_Spells.id("summon_health_bonus"), getSummonHealthBonus(entity), AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL);
+        AttributeModifier summonDamageModifier = new AttributeModifier(Dreamless_Spells.id("summon_damage_bonus"), getSummonDamageBonus(entity), AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL);
 
-        summon.getAttributes().getInstance(Attributes.MAX_HEALTH).setBaseValue(entity.getAttributeValue(DSSAttributeRegistry.SUMMON_HEALTH));
+        summon.getAttributes().getInstance(Attributes.MAX_HEALTH).addPermanentModifier(summonHealthModifier);
         summon.setHealth(summon.getMaxHealth());
     }
 }
