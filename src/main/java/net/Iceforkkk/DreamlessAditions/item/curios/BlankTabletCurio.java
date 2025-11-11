@@ -22,7 +22,7 @@ public class BlankTabletCurio extends CurioBaseItem {
     @Override
     public Multimap<Holder<Attribute>, AttributeModifier> getAttributeModifiers(SlotContext slotContext, ResourceLocation id, ItemStack stack) {
         Multimap<Holder<Attribute>, AttributeModifier> attr = LinkedHashMultimap.create();
-        attr.put(Attributes.MOVEMENT_SPEED, new AttributeModifier(id, -0.5, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        attr.put(Attributes.MOVEMENT_SPEED, new AttributeModifier(id, -0.35, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         attr.put(AttributeRegistry.SPELL_RESIST, new AttributeModifier(id, 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
 
         return attr;

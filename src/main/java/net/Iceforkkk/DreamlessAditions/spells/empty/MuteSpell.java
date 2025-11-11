@@ -29,7 +29,7 @@ import java.util.List;
 import java.util.Optional;
 
 @AutoSpellConfig
-public class DoorwayEffectSpell extends AbstractSpell {
+public class MuteSpell extends AbstractSpell {
     private final ResourceLocation spellId = ResourceLocation.fromNamespaceAndPath(Dreamless_Spells.MOD_ID, "doorway_effect");
 
     @Override
@@ -45,7 +45,7 @@ public class DoorwayEffectSpell extends AbstractSpell {
             .setCooldownSeconds(10)
             .build();
 
-    public DoorwayEffectSpell()
+    public MuteSpell()
     {
         this.manaCostPerLevel = 0;
         this.baseSpellPower = 5;
@@ -110,7 +110,7 @@ public class DoorwayEffectSpell extends AbstractSpell {
                 if (playerMagicData.getAdditionalCastData() instanceof TargetEntityCastData targetData) {
                     var targetEntity = targetData.getTarget((ServerLevel) world);
                     if (targetEntity != null) {
-                        targetEntity.addEffect(new MobEffectInstance(DSSEffects.DOORWAY_EFFECT_EFFECT, getDuration(spellLevel, entity), getAmplifier(spellLevel, entity)));
+                        targetEntity.addEffect(new MobEffectInstance(DSSEffects.MUTE_EFFECT, getDuration(spellLevel, entity), getAmplifier(spellLevel, entity)));
                     }
                 }
 

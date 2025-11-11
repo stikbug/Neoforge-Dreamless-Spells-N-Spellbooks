@@ -22,10 +22,10 @@ public class SlaughterersMaskCurio extends CurioBaseItem {
     @Override
     public Multimap<Holder<Attribute>, AttributeModifier> getAttributeModifiers(SlotContext slotContext, ResourceLocation id, ItemStack stack) {
         Multimap<Holder<Attribute>, AttributeModifier> attr = LinkedHashMultimap.create();
-        attr.put(AttributeRegistry.ELDRITCH_SPELL_POWER, new AttributeModifier(id, 0.7, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
-        attr.put(Attributes.ARMOR, new AttributeModifier(id, -5, AttributeModifier.Operation.ADD_VALUE));
-        attr.put(Attributes.MAX_HEALTH, new AttributeModifier(id, -0.1, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
-        attr.put(AttributeRegistry.SPELL_RESIST, new AttributeModifier(id, -0.3, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        attr.put(AttributeRegistry.ELDRITCH_SPELL_POWER, new AttributeModifier(id, 0.4, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        attr.put(Attributes.ARMOR, new AttributeModifier(id, -2, AttributeModifier.Operation.ADD_VALUE));
+        attr.put(Attributes.MAX_HEALTH, new AttributeModifier(id, -0.15, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        attr.put(AttributeRegistry.SPELL_RESIST, new AttributeModifier(id, -0.2, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
 
         return attr;
     }

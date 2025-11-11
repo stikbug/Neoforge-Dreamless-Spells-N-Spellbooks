@@ -4,9 +4,7 @@ import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
 import net.Iceforkkk.DreamlessAditions.block.DSSBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.bus.api.IEventBus;
@@ -24,9 +22,6 @@ public class DSSCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         //Basic items
                         output.accept(DSSItems.ARCANEGEM);
-                        output.accept(DSSItems.NITROCORE);
-                        output.accept(DSSItems.NITROGLAND);
-                        output.accept(DSSItems.MYSTERIOUSCIRCUITRY);
                         output.accept(DSSItems.JADE);
                         output.accept(DSSItems.TUNGSTENINGOT);
                         output.accept(DSSItems.RAWTUNGSTEN);

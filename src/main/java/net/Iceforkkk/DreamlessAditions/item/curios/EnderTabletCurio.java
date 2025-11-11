@@ -25,7 +25,7 @@ public class EnderTabletCurio extends CurioBaseItem {
         attr.put(AttributeRegistry.ENDER_SPELL_POWER, new AttributeModifier(id, 0.3, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         attr.put(AttributeRegistry.EVOCATION_MAGIC_RESIST, new AttributeModifier(id, -0.3, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         attr.put(AttributeRegistry.HOLY_MAGIC_RESIST, new AttributeModifier(id, -0.3, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
-        attr.put(Attributes.MOVEMENT_SPEED, new AttributeModifier(id, -0.3, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        attr.put(Attributes.MOVEMENT_SPEED, new AttributeModifier(id, -0.2, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
 
         return attr;
     }

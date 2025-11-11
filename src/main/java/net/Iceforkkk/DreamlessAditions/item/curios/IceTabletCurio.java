@@ -25,7 +25,7 @@ public class IceTabletCurio extends CurioBaseItem {
         attr.put(AttributeRegistry.ICE_SPELL_POWER, new AttributeModifier(id, 0.3, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         attr.put(AttributeRegistry.FIRE_MAGIC_RESIST, new AttributeModifier(id, -0.3, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         attr.put(AttributeRegistry.LIGHTNING_MAGIC_RESIST, new AttributeModifier(id, -0.3, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
-        attr.put(Attributes.MOVEMENT_SPEED, new AttributeModifier(id, -0.3, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        attr.put(Attributes.MOVEMENT_SPEED, new AttributeModifier(id, -0.2, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
 
         return attr;
     }

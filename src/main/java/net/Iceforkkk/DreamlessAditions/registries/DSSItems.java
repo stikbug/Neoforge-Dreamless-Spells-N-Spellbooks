@@ -20,12 +20,6 @@ import java.util.List;
 public class DSSItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Dreamless_Spells.MOD_ID);
     //Normal Materials
-    public static final DeferredItem<Item> NITROGLAND = ITEMS.register("nitro_gland",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> NITROCORE = ITEMS.register("nitro_core",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> MYSTERIOUSCIRCUITRY = ITEMS.register("mysterious_circuitry",
-            ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> EMPTY_GEM = ITEMS.register("empty_gem",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PAVARIUM_NUGGET = ITEMS.register("pavarium_nugget",

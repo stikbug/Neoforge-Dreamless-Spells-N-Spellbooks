@@ -36,14 +36,14 @@ public class ServerEvents extends SummonAttrHelper {
         var spell = SpellRegistry.getSpell(event.getSpellId());
 
         // Doorway Effect
-        boolean hasDoorwayEffectEffect = entity.hasEffect(DSSEffects.DOORWAY_EFFECT_EFFECT);
+        boolean hasDoorwayEffectEffect = entity.hasEffect(DSSEffects.MUTE_EFFECT);
         if (entity instanceof ServerPlayer player && !player.level().isClientSide())
         {
             if (hasDoorwayEffectEffect)
             {
                 event.setCanceled(true);
                 // Effect Duration
-                int time = player.getEffect(DSSEffects.DOORWAY_EFFECT_EFFECT).getDuration();
+                int time = player.getEffect(DSSEffects.MUTE_EFFECT).getDuration();
                 // convert duration to time format using the method convertTicksToTime
                 //String formattedTime = ASUtils.convertTicksToTime(time);
 

@@ -4,9 +4,6 @@
   "item.dreamless_spells.empty_rune": "Empty Rune",
   "item.dreamless_spells.empty_upgrade_orb": "Empty Upgrade Orb (?)",
 
-  "item.dreamless_spells.nitro_core": "Nitro Core",
-  "item.dreamless_spells.nitro_gland": "Nitro Gland",
-  "item.dreamless_spells.mysterious_circuitry": "Mysterious Circuitry",
   "item.dreamless_spells.jade": "Jade",
   "item.dreamless_spells.arcane_gem": "Arcane Gem",
   "item.dreamless_spells.tungsten_ingot": "Tungsten Ingot",
@@ -125,8 +122,8 @@
   "effect.dreamless_spells.drained": "Drained",
   "spell.dreamless_spells.drained": "Drained",
 
-  "effect.dreamless_spells.doorway_effect": "Doorway Effect",
-  "spell.dreamless_spells.doorway_effect": "Doorway Effect",
+  "effect.dreamless_spells.mute": "Mute",
+  "spell.dreamless_spells.mute": "Mute",
 
   "attribute.dreamless_spells.empty_spell_power": "Empty Spell Power",
   "attribute.dreamless_spells.empty_spell_resist": "Empty Spell Resist",
@@ -140,7 +137,7 @@
   "spell.dreamless_spells.dullard.guide": "Reduces the target's spell power by 10% per level",
 
   "tooltip.dreamless_spells.empty_priest.tooltip": "§5Seems pretty full to me...§5",
-  "display.dreamless_spells.doorway_effect_spell_forgotten": "What spell was I casting again?",
+  "display.dreamless_spells.doorway_effect_spell_forgotten": "I can't seem to cast this",
   "ui.dreamless_spells.unforsaken_status": "Your Mana is not truly empty...",
   "ui.dreamless_spells.forsaken_status": "Your Mana is Truly Empty!",
 

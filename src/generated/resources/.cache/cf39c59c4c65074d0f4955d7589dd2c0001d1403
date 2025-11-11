@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-09T10:56:26.354876	Item Models: dreamless_spells
+// 1.21.1	2025-11-11T12:38:30.497641	Item Models: dreamless_spells
 574d0f35871baa363444c8d0a74161248902c892 assets/dreamless_spells/models/item/absurd_ring.json
 6b1345ff7d91e1bed96c11a6b1363bf537078b99 assets/dreamless_spells/models/item/amethyst_boots.json
 657dc10580ffa1bf8a3d420372fb5b1d98b2f0f9 assets/dreamless_spells/models/item/arcane_cloth_boots.json
@@ -50,11 +50,8 @@ bb48689948194bf15b50b1b63793cd90d17ec4c9 assets/dreamless_spells/models/item/jad
 014f5b44912c625b2bcb4836646e9ac2b903940b assets/dreamless_spells/models/item/lightning_tablet.json
 b4cde137d9fb865e68c62c966087f983bbfbfc6e assets/dreamless_spells/models/item/mage_boots.json
 08cc05fce7de2812d530b40bea231a6f7d3ebf5a assets/dreamless_spells/models/item/magi_boots.json
-374d7596536b1ac86c51216cf1c2638c1a596e57 assets/dreamless_spells/models/item/mysterious_circuitry.json
 4bb45babea3c2b119ca56ee8edcdf5ae4a32e353 assets/dreamless_spells/models/item/nature_tablet.json
 34a526b1ab3f50bfc184a031e880797783aaeb78 assets/dreamless_spells/models/item/netherite_greaves.json
-3d99fbf8cfde6d484a03ba690af228f32adeb1b5 assets/dreamless_spells/models/item/nitro_core.json
-159c76a93a4ebd90ed00730548b4544ce90d604a assets/dreamless_spells/models/item/nitro_gland.json
 f43aaaad400d61519563c765d828638db435c98a assets/dreamless_spells/models/item/old_boots.json
 54eca4dbb3b1e1a384eca62ee7b6badc4ce82259 assets/dreamless_spells/models/item/pagmas_boots.json
 3cd1ecfed73bddbcf9d4035771af2d9d01de1e54 assets/dreamless_spells/models/item/pavarium.json

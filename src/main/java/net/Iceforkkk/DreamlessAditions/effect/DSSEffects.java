@@ -62,8 +62,8 @@ public class DSSEffects {
                             AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
     );
 
-    public static final Holder<MobEffect> DOORWAY_EFFECT_EFFECT = MOB_EFFECTS.register("doorway_effect",
-            () -> new DoorwayEffectEfftect()
+    public static final Holder<MobEffect> MUTE_EFFECT = MOB_EFFECTS.register("mute",
+            () -> new MuteEfftect()
     );
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);

@@ -3,7 +3,6 @@ package net.Iceforkkk.DreamlessAditions.datagen;
 import net.Iceforkkk.DreamlessAditions.Dreamless_Spells;
 import net.Iceforkkk.DreamlessAditions.registries.DSSItems;
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.item.ArmorItem;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
@@ -15,9 +14,6 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         //Normal Items
-        basicItem(DSSItems.NITROGLAND.get());
-        basicItem(DSSItems.NITROCORE.get());
-        basicItem(DSSItems.MYSTERIOUSCIRCUITRY.get());
         basicItem(DSSItems.JADE.get());
         basicItem(DSSItems.ARCANEGEM.get());
         basicItem(DSSItems.TUNGSTENINGOT.get());

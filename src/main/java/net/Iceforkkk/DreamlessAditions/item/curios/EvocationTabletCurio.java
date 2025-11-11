@@ -25,7 +25,7 @@ public class EvocationTabletCurio extends CurioBaseItem {
         attr.put(AttributeRegistry.EVOCATION_SPELL_POWER, new AttributeModifier(id, 0.3, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         attr.put(AttributeRegistry.BLOOD_MAGIC_RESIST, new AttributeModifier(id, -0.3, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         attr.put(AttributeRegistry.NATURE_MAGIC_RESIST, new AttributeModifier(id, -0.3, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
-        attr.put(Attributes.MOVEMENT_SPEED, new AttributeModifier(id, -0.3, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        attr.put(Attributes.MOVEMENT_SPEED, new AttributeModifier(id, -0.2, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
 
         return attr;
     }

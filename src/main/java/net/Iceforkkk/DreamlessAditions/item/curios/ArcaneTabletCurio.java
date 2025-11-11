@@ -25,7 +25,7 @@ public class ArcaneTabletCurio extends CurioBaseItem {
         attr.put(AttributeRegistry.MAX_MANA, new AttributeModifier(id, 0.15, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         attr.put(AttributeRegistry.MANA_REGEN, new AttributeModifier(id, 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         attr.put(AttributeRegistry.COOLDOWN_REDUCTION, new AttributeModifier(id, -0.2, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
-        attr.put(Attributes.MOVEMENT_SPEED, new AttributeModifier(id, -0.3, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        attr.put(Attributes.MOVEMENT_SPEED, new AttributeModifier(id, -0.2, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
 
         return attr;
     }
