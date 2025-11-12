@@ -57,6 +57,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(DSSItems.VAMPIRE_KING_BOOTS.get());
         basicItem(DSSItems.UNDEFEATED_BOOTS.get());
         basicItem(DSSItems.LEGEND_BOOTS.get());
+        basicItem(DSSItems.GOAT_HOOF.get());
         basicItem(DSSItems.TUNGSTEN_BOOTS.get());
 
         //Tablet Curios
@@ -87,6 +88,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         //Charm Curios
         basicItem(DSSItems.BUSTLING_FUNGUS.get());
         basicItem(DSSItems.SALE_STAR.get());
+        basicItem(DSSItems.MINERS_CHARM.get());
+        basicItem(DSSItems.PUTRID_SCENT.get());
 
         //Bracelet Curios
         basicItem(DSSItems.KYROS_BAND.get());
@@ -95,6 +98,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         //Belt Curios
         basicItem(DSSItems.HOPOO_FEATHER.get());
         basicItem(DSSItems.WAX_QUAIL.get());
+        basicItem(DSSItems.ICHOR_WING.get());
 
         //Armor
         //Solar Armor

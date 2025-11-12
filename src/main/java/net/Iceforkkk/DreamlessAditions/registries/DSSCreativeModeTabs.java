@@ -32,31 +32,37 @@ public class DSSCreativeModeTabs {
                         output.accept(DSSItems.EMPTY_GEM);
                         output.accept(DSSItems.EMPTY_RUNE);
                         output.accept((ItemLike) DSSItems.EMPTY_UPGRADE_ORB);
+
                         //Empty Priest Armor
                         output.accept(DSSItems.EMPTYPRIESTHELMET);
                         output.accept(DSSItems.EMPTYPRIESTCHESTPLATE);
                         output.accept(DSSItems.EMPTYPRIESTLEGGINGS);
                         output.accept(DSSItems.EMPTYPRIESTBOOTS);
+
                         //Empty Brawler Armor
                         output.accept(DSSItems.EMPTYBRAWLERHELMET);
                         output.accept(DSSItems.EMPTYBRAWLERCHESTPLATE);
                         output.accept(DSSItems.EMPTYBRAWLERLEGGINGS);
                         output.accept(DSSItems.EMPTYBRAWLERBOOTS);
+
                         //Empty Hunter Armor
                         output.accept(DSSItems.EMPTYHUNTERHELMET);
                         output.accept(DSSItems.EMPTYHUNTERCHESTPLATE);
                         output.accept(DSSItems.EMPTYHUNTERLEGGINGS);
                         output.accept(DSSItems.EMPTYHUNTERBOOTS);
+
                         //Solar Armor
                         output.accept(DSSItems.SOLAR_HELMET);
                         output.accept(DSSItems.SOLAR_CHESTPLATE);
                         output.accept(DSSItems.SOLAR_LEGGINGS);
                         output.accept(DSSItems.SOLAR_BOOTS);
+
                         //Vortex Armor
                         output.accept(DSSItems.VORTEX_HELMET);
                         output.accept(DSSItems.VORTEX_CHESTPLATE);
                         output.accept(DSSItems.VORTEX_LEGGINGS);
                         output.accept(DSSItems.VORTEX_BOOTS);
+
                         //Boot Curios
                         output.accept(DSSItems.OLD_BOOTS);
                         output.accept(DSSItems.IRON_SOCKS);
@@ -86,7 +92,9 @@ public class DSSCreativeModeTabs {
                         output.accept(DSSItems.BRAHAMS_BOOTS);
                         output.accept(DSSItems.LEGEND_BOOTS);
                         output.accept(DSSItems.SCRAPPED_BOOTS);
+                        output.accept(DSSItems.GOAT_HOOF);
                         output.accept(DSSItems.TUNGSTEN_BOOTS);
+
                         //Tablet Curios
                         output.accept(DSSItems.ARCANE_TABLET);
                         output.accept(DSSItems.ICE_TABLET);
@@ -100,29 +108,41 @@ public class DSSCreativeModeTabs {
                         output.accept(DSSItems.LIGHTNING_TABLET);
                         output.accept(DSSItems.NATURE_TABLET);
                         output.accept(DSSItems.PROTECTION_TABLET);
+
                         //Ring Curios
                         output.accept(DSSItems.ABSURD_RING);
                         output.accept(DSSItems.DORANS_RING);
                         output.accept(DSSItems.ELFIN_RING);
+
                         //Mask Curios
                         output.accept(DSSItems.SLAUGHTERERS_MASK);
+
                         //Necklace Curios
                         output.accept(DSSItems.HEARTY_NECKLACE);
+
                         //Bracelet Curios
                         output.accept(DSSItems.KYROS_BAND);
                         output.accept(DSSItems.ROLANDS_BAND);
+
                         //Charm Curios
                         output.accept(DSSItems.BUSTLING_FUNGUS);
                         output.accept(DSSItems.SALE_STAR);
+                        output.accept(DSSItems.MINERS_CHARM);
+
                         //Belt Curios
                         output.accept(DSSItems.HOPOO_FEATHER);
                         output.accept(DSSItems.WAX_QUAIL);
+                        output.accept(DSSItems.ICHOR_WING);
+                        output.accept(DSSItems.PUTRID_SCENT);
+
                         //Weapons
                         output.accept(DSSItems.EMPTY_BROADSWORD.get());
+
                         //Blocks
                         output.accept(DSSBlocks.TUNGSTENORE);
                         output.accept(DSSBlocks.TUNGSTENBLOCK);
                         output.accept(DSSBlocks.JADEORE);
+
                     }).build());
 
     public static void register(IEventBus eventBus) {

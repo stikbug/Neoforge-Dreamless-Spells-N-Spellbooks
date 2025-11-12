@@ -81,6 +81,7 @@
   "item.dreamless_spells.brahams_boots": "Brahams Boots",
   "item.dreamless_spells.archmage_boots": "Archmage Boots",
   "item.dreamless_spells.tungsten_boots": "Tungsten Boots",
+  "item.dreamless_spells.goat_hoof": "Paul's Goat Hoof",
 
   "item.dreamless_spells.blank_tablet": "Blank Tablet",
   "item.dreamless_spells.protection_tablet": "Protection Tablet",
@@ -99,17 +100,21 @@
 
   "item.dreamless_spells.bustling_fungus": "Bustling Fungus",
   "item.dreamless_spells.sale_star": "Sale Star",
+  "item.dreamless_spells.miners_charm": "Miner's Charm",
 
   "item.dreamless_spells.kyros_band": "Kyro's Band",
   "item.dreamless_spells.rolands_band": "Roland's Band",
 
   "item.dreamless_spells.hopoo_feather": "Hopoo Feather",
   "item.dreamless_spells.wax_quail": "Wax Quail",
+  "item.dreamless_spells.putrid_scent": "Putrid Scent",
 
   "item.dreamless_spells.absurd_ring": "Ring of Absurdity",
   "item.dreamless_spells.dorans_ring": "Doran's Ring",
   "item.dreamless_spells.elfin_ring": "Elfin Stone's Ring",
   "item.dreamless_spells.slaughterers_mask": "Mask of the Slaughterer",
+
+  "item.dreamless_spells.ichor_wing": "Ichor Wing",
 
   "effect.dreamless_spells.emptied": "Emptied",
 
