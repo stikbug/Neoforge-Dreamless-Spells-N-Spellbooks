@@ -20,10 +20,10 @@ import net.neoforged.fml.common.EventBusSubscriber;
 
 @EventBusSubscriber
 public class ServerEvents extends SummonAttrHelper {
-    public static double getSummonHealthBonus(LivingEntity caster) {
-        // 10% extra health for every extra spell power
-        return (getSummonHealth(caster) - 1);
-    }
+    //public static double getSummonHealthBonus(LivingEntity caster) {
+         //10% extra health for every extra spell power
+    //    return (getSummonHealth(caster) - 1);
+    //}
 
 
 
@@ -60,15 +60,15 @@ public class ServerEvents extends SummonAttrHelper {
     }
 
 
-    @SubscribeEvent
-    public static void summonEvent(SpellSummonEvent event)
-    {
-        LivingEntity entity = event.getCaster();
-        LivingEntity summon = event.getCreature();
-        AttributeModifier summonHealthModifier = new AttributeModifier(Dreamless_Spells.id("summon_health_bonus"), getSummonHealthBonus(entity), AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL);
+    //@SubscribeEvent
+    //public static void summonEvent(SpellSummonEvent event)
+    //{
+    //    LivingEntity entity = event.getCaster();
+    //    LivingEntity summon = event.getCreature();
+    //    AttributeModifier summonHealthModifier = new AttributeModifier(Dreamless_Spells.id("summon_health_bonus"), getSummonHealthBonus(entity), AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL);
         //AttributeModifier summonDamageModifier = new AttributeModifier(Dreamless_Spells.id("summon_damage_bonus"), getDamageBonus(entity), AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL);
 
-        summon.getAttributes().getInstance(Attributes.MAX_HEALTH).addPermanentModifier(summonHealthModifier);
-        summon.setHealth(summon.getMaxHealth());
-    }
+    //    summon.getAttributes().getInstance(Attributes.MAX_HEALTH).addPermanentModifier(summonHealthModifier);
+    //    summon.setHealth(summon.getMaxHealth());
+    //}
 }

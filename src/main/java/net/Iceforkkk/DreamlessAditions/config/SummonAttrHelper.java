@@ -7,14 +7,14 @@ import net.minecraft.world.entity.LivingEntity;
 import javax.annotation.Nullable;
 
 public class SummonAttrHelper {
-    public static float getSummonHealth(@Nullable Entity sourceEntity) {
+    //public static float getSummonHealth(@Nullable Entity sourceEntity) {
 
-        double entitySummonHealthModifier = 1;
+    //    double entitySummonHealthModifier = 1;
 
-        if (sourceEntity instanceof LivingEntity livingEntity) {
-            //level = getLevel(spellLevel, livingEntity);
-            entitySummonHealthModifier = (float) livingEntity.getAttributeValue(DSSAttributeRegistry.SUMMON_HEALTH);
-        }
-        return (float) (entitySummonHealthModifier);
-    }
+    //    if (sourceEntity instanceof LivingEntity livingEntity) {
+    //        //level = getLevel(spellLevel, livingEntity);
+    //        entitySummonHealthModifier = (float) livingEntity.getAttributeValue(DSSAttributeRegistry.SUMMON_HEALTH);
+    //    }
+    //    return (float) (entitySummonHealthModifier);
+    //}
 }

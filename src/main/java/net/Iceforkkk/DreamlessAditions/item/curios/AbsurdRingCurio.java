@@ -25,7 +25,6 @@ public class AbsurdRingCurio extends CurioBaseItem {
         attr.put(AttributeRegistry.MANA_REGEN, new AttributeModifier(id, 10, AttributeModifier.Operation.ADD_VALUE));
         attr.put(AttributeRegistry.COOLDOWN_REDUCTION, new AttributeModifier(id, 0.75, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         attr.put(AttributeRegistry.MAX_MANA, new AttributeModifier(id, -0.97, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
-        attr.put(DSSAttributeRegistry.SUMMON_HEALTH, new AttributeModifier(id, 50, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
         return attr;
     }
