@@ -7,10 +7,8 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.crafting.SmithingTransformRecipe;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
@@ -308,7 +306,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("RPR")
                 .define('R', ItemRegistry.BLANK_RUNE.get())
                 .define('M', ItemRegistry.MITHRIL_INGOT.get())
-                .define('P', ItemRegistry.PYRIUM_INGOT.get())
+                .define('P', Items.STONE)
                 .define('D', ItemRegistry.DIVINE_SOULSHARD.get())
                 .unlockedBy("has_divine_soulshard", has(ItemRegistry.DIVINE_SOULSHARD.get())).save(recipeOutput);
 
@@ -318,8 +316,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("RPR")
                 .define('R', ItemRegistry.MANA_RUNE.get())
                 .define('M', ItemRegistry.MITHRIL_INGOT.get())
-                .define('P', ItemRegistry.PYRIUM_INGOT.get())
-                .define('D', ItemRegistry.DIVINE_SOULSHARD.get())
+                .define('P', ItemRegistry.ARCANE_ESSENCE.get())
+                .define('D', DSSItems.BLANK_TABLET.get())
                 .unlockedBy("has_divine_soulshard", has(ItemRegistry.DIVINE_SOULSHARD.get())).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.BLOOD_TABLET.get())
@@ -328,8 +326,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("RPR")
                 .define('R', ItemRegistry.BLOOD_RUNE.get())
                 .define('M', ItemRegistry.MITHRIL_INGOT.get())
-                .define('P', ItemRegistry.PYRIUM_INGOT.get())
-                .define('D', ItemRegistry.DIVINE_SOULSHARD.get())
+                .define('P', ItemRegistry.BLOOD_VIAL.get())
+                .define('D', DSSItems.BLANK_TABLET.get())
                 .unlockedBy("has_divine_soulshard", has(ItemRegistry.DIVINE_SOULSHARD.get())).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.COOLDOWN_TABLET.get())
@@ -338,8 +336,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("RPR")
                 .define('R', ItemRegistry.COOLDOWN_RUNE.get())
                 .define('M', ItemRegistry.MITHRIL_INGOT.get())
-                .define('P', ItemRegistry.PYRIUM_INGOT.get())
-                .define('D', ItemRegistry.DIVINE_SOULSHARD.get())
+                .define('P', Items.PHANTOM_MEMBRANE)
+                .define('D', DSSItems.BLANK_TABLET.get())
                 .unlockedBy("has_divine_soulshard", has(ItemRegistry.DIVINE_SOULSHARD.get())).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.ENDER_TABLET.get())
@@ -348,8 +346,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("RPR")
                 .define('R', ItemRegistry.ENDER_RUNE.get())
                 .define('M', ItemRegistry.MITHRIL_INGOT.get())
-                .define('P', ItemRegistry.PYRIUM_INGOT.get())
-                .define('D', ItemRegistry.DIVINE_SOULSHARD.get())
+                .define('P', Items.ENDER_PEARL)
+                .define('D', DSSItems.BLANK_TABLET.get())
                 .unlockedBy("has_divine_soulshard", has(ItemRegistry.DIVINE_SOULSHARD.get())).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.EVOCATION_TABLET.get())
@@ -358,8 +356,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("RPR")
                 .define('R', ItemRegistry.EVOCATION_RUNE.get())
                 .define('M', ItemRegistry.MITHRIL_INGOT.get())
-                .define('P', ItemRegistry.PYRIUM_INGOT.get())
-                .define('D', ItemRegistry.DIVINE_SOULSHARD.get())
+                .define('P', Items.EMERALD)
+                .define('D', DSSItems.BLANK_TABLET.get())
                 .unlockedBy("has_divine_soulshard", has(ItemRegistry.DIVINE_SOULSHARD.get())).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.FIRE_TABLET.get())
@@ -368,8 +366,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("RPR")
                 .define('R', ItemRegistry.FIRE_RUNE.get())
                 .define('M', ItemRegistry.MITHRIL_INGOT.get())
-                .define('P', ItemRegistry.PYRIUM_INGOT.get())
-                .define('D', ItemRegistry.DIVINE_SOULSHARD.get())
+                .define('P', Items.BLAZE_ROD)
+                .define('D', DSSItems.BLANK_TABLET.get())
                 .unlockedBy("has_divine_soulshard", has(ItemRegistry.DIVINE_SOULSHARD.get())).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.HOLY_TABLET.get())
@@ -378,8 +376,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("RPR")
                 .define('R', ItemRegistry.HOLY_RUNE.get())
                 .define('M', ItemRegistry.MITHRIL_INGOT.get())
-                .define('P', ItemRegistry.PYRIUM_INGOT.get())
-                .define('D', ItemRegistry.DIVINE_SOULSHARD.get())
+                .define('P', ItemRegistry.DIVINE_PEARL.get())
+                .define('D', DSSItems.BLANK_TABLET.get())
                 .unlockedBy("has_divine_soulshard", has(ItemRegistry.DIVINE_SOULSHARD.get())).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.ICE_TABLET.get())
@@ -388,8 +386,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("RPR")
                 .define('R', ItemRegistry.ICE_RUNE.get())
                 .define('M', ItemRegistry.MITHRIL_INGOT.get())
-                .define('P', ItemRegistry.PYRIUM_INGOT.get())
-                .define('D', ItemRegistry.DIVINE_SOULSHARD.get())
+                .define('P', ItemRegistry.FROZEN_BONE_SHARD.get())
+                .define('D', DSSItems.BLANK_TABLET.get())
                 .unlockedBy("has_divine_soulshard", has(ItemRegistry.DIVINE_SOULSHARD.get())).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.LIGHTNING_TABLET.get())
@@ -398,8 +396,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("RPR")
                 .define('R', ItemRegistry.LIGHTNING_RUNE.get())
                 .define('M', ItemRegistry.MITHRIL_INGOT.get())
-                .define('P', ItemRegistry.PYRIUM_INGOT.get())
-                .define('D', ItemRegistry.DIVINE_SOULSHARD.get())
+                .define('P', ItemRegistry.LIGHTNING_BOTTLE.get())
+                .define('D', DSSItems.BLANK_TABLET.get())
                 .unlockedBy("has_divine_soulshard", has(ItemRegistry.DIVINE_SOULSHARD.get())).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.NATURE_TABLET.get())
@@ -408,8 +406,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("RPR")
                 .define('R', ItemRegistry.NATURE_RUNE.get())
                 .define('M', ItemRegistry.MITHRIL_INGOT.get())
-                .define('P', ItemRegistry.PYRIUM_INGOT.get())
-                .define('D', ItemRegistry.DIVINE_SOULSHARD.get())
+                .define('P', Items.POISONOUS_POTATO)
+                .define('D', DSSItems.BLANK_TABLET.get())
                 .unlockedBy("has_divine_soulshard", has(ItemRegistry.DIVINE_SOULSHARD.get())).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.PROTECTION_TABLET.get())
@@ -418,8 +416,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("RPR")
                 .define('R', ItemRegistry.PROTECTION_RUNE.get())
                 .define('M', ItemRegistry.MITHRIL_INGOT.get())
-                .define('P', ItemRegistry.PYRIUM_INGOT.get())
-                .define('D', ItemRegistry.DIVINE_SOULSHARD.get())
+                .define('P', Items.PUFFERFISH)
+                .define('D', DSSItems.BLANK_TABLET.get())
                 .unlockedBy("has_divine_soulshard", has(ItemRegistry.DIVINE_SOULSHARD.get())).save(recipeOutput);
 
         //Ring recipes -------------------------------------------------------------------------------------------------------------------------------------------+

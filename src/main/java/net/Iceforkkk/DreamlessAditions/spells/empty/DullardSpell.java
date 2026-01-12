@@ -107,7 +107,7 @@ public class DullardSpell extends AbstractSpell {
 
         if (entity.hasEffect(DSSEffects.EMPTIED_EFFECT)) {
             if (entity instanceof ServerPlayer serverPlayer) {
-                serverPlayer.connection.send(new ClientboundSetActionBarTextPacket(Component.translatable("ui.dreamless_spells.forsaken_status", this.getDisplayName(serverPlayer)).withStyle(ChatFormatting.RED)));
+                serverPlayer.connection.send(new ClientboundSetActionBarTextPacket(Component.translatable("ui.dreamless_spells.forsaken_status", this.getDisplayName(serverPlayer)).withStyle(ChatFormatting.DARK_PURPLE)));
 
                 if (playerMagicData.getAdditionalCastData() instanceof TargetEntityCastData targetData) {
                     var targetEntity = targetData.getTarget((ServerLevel) world);
