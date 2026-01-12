@@ -25,8 +25,7 @@ public class EmptyBrawlerArmorItem extends DSSArmorItem {
     public EmptyBrawlerArmorItem(ArmorItem.Type type, Properties settings) {
         super(DSSArmorMaterials.EMPTY_BRAWLER_MATERIAL.getDelegate(), type, settings,
                 new AttributeContainer(DSSAttributeRegistry.EMPTY_SPELL_POWER, 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                new AttributeContainer(Attributes.ATTACK_DAMAGE, 0.1, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                new AttributeContainer(AttributeRegistry.MAX_MANA, -0.25, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                new AttributeContainer(Attributes.ATTACK_DAMAGE, 0.1, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
         );
     }
 

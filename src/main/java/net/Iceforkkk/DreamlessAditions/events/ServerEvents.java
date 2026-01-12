@@ -35,11 +35,11 @@ public class ServerEvents extends SummonAttrHelper {
         var entity = event.getEntity();
         var spell = SpellRegistry.getSpell(event.getSpellId());
 
-        // Doorway Effect
-        boolean hasDoorwayEffectEffect = entity.hasEffect(DSSEffects.MUTE_EFFECT);
+        // Mute Effect
+        boolean hasMuteEffect = entity.hasEffect(DSSEffects.MUTE_EFFECT);
         if (entity instanceof ServerPlayer player && !player.level().isClientSide())
         {
-            if (hasDoorwayEffectEffect)
+            if (hasMuteEffect)
             {
                 event.setCanceled(true);
                 // Effect Duration
