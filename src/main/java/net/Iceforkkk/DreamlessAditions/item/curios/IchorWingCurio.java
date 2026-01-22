@@ -23,7 +23,7 @@ public class IchorWingCurio extends CurioBaseItem {
     @Override
     public Multimap<Holder<Attribute>, AttributeModifier> getAttributeModifiers(SlotContext slotContext, ResourceLocation id, ItemStack stack) {
         Multimap<Holder<Attribute>, AttributeModifier> attr = LinkedHashMultimap.create();
-        attr.put(ALObjects.Attributes.ELYTRA_FLIGHT, new AttributeModifier(id, 1, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+        attr.put(ALObjects.Attributes.ELYTRA_FLIGHT, new AttributeModifier(id, 1, AttributeModifier.Operation.ADD_VALUE));
         attr.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(id, -0.75, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
         attr.put(ALObjects.Attributes.ARROW_DAMAGE, new AttributeModifier(id, -0.75, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
         attr.put(AttributeRegistry.SPELL_POWER, new AttributeModifier(id, -0.75, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));

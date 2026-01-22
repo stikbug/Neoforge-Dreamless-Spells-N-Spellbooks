@@ -49,6 +49,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(DSSItems.ARCANEGEM.get());
 
         tag(Tags.Items.ENCHANTABLES)
+                //Mining Armor T1
+                .add(DSSItems.MINING_HELMET_T1.get())
+                .add(DSSItems.MINING_CHESTPLATE_T1.get())
+                .add(DSSItems.MINING_LEGGINGS_T1.get())
+                .add(DSSItems.MINING_BOOTS_T1.get())
                 //Solar Armor
                 .add(DSSItems.SOLAR_HELMET.get())
                 .add(DSSItems.SOLAR_CHESTPLATE.get())
@@ -76,6 +81,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(DSSItems.EMPTYPRIESTHELMET.get());
         //Armor Tags
         tag(Tags.Items.ARMORS)
+                //Mining Armor T1
+                .add(DSSItems.MINING_HELMET_T1.get())
+                .add(DSSItems.MINING_CHESTPLATE_T1.get())
+                .add(DSSItems.MINING_LEGGINGS_T1.get())
+                .add(DSSItems.MINING_BOOTS_T1.get())
                 //Solar Armor
                 .add(DSSItems.SOLAR_HELMET.get())
                 .add(DSSItems.SOLAR_CHESTPLATE.get())
@@ -103,6 +113,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(DSSItems.EMPTYPRIESTHELMET.get());
 
         tag(ItemTags.ARMOR_ENCHANTABLE)
+                //Mining Armor T1
+                .add(DSSItems.MINING_HELMET_T1.get())
+                .add(DSSItems.MINING_CHESTPLATE_T1.get())
+                .add(DSSItems.MINING_LEGGINGS_T1.get())
+                .add(DSSItems.MINING_BOOTS_T1.get())
                 //Solar Armor
                 .add(DSSItems.SOLAR_HELMET.get())
                 .add(DSSItems.SOLAR_CHESTPLATE.get())
@@ -130,6 +145,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(DSSItems.EMPTYPRIESTHELMET.get());
 
         tag(ItemTags.EQUIPPABLE_ENCHANTABLE)
+                //Mining Armor T1
+                .add(DSSItems.MINING_HELMET_T1.get())
+                .add(DSSItems.MINING_CHESTPLATE_T1.get())
+                .add(DSSItems.MINING_LEGGINGS_T1.get())
+                .add(DSSItems.MINING_BOOTS_T1.get())
                 //Solar Armor
                 .add(DSSItems.SOLAR_HELMET.get())
                 .add(DSSItems.SOLAR_CHESTPLATE.get())
@@ -157,6 +177,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(DSSItems.EMPTYPRIESTHELMET.get());
 
         tag(ItemTags.DURABILITY_ENCHANTABLE)
+                //Mining Armor T1
+                .add(DSSItems.MINING_HELMET_T1.get())
+                .add(DSSItems.MINING_CHESTPLATE_T1.get())
+                .add(DSSItems.MINING_LEGGINGS_T1.get())
+                .add(DSSItems.MINING_BOOTS_T1.get())
                 //Solar Armor
                 .add(DSSItems.SOLAR_HELMET.get())
                 .add(DSSItems.SOLAR_CHESTPLATE.get())
@@ -184,6 +209,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(DSSItems.EMPTYPRIESTHELMET.get());
 
         tag(ItemTags.HEAD_ARMOR_ENCHANTABLE)
+                .add(DSSItems.MINING_HELMET_T1.get())
                 .add(DSSItems.VORTEX_HELMET.get())
                 .add(DSSItems.SOLAR_HELMET.get())
                 .add(DSSItems.EMPTYHUNTERHELMET.get())
@@ -191,6 +217,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(DSSItems.EMPTYPRIESTHELMET.get());
 
         tag(ItemTags.CHEST_ARMOR_ENCHANTABLE)
+                .add(DSSItems.MINING_CHESTPLATE_T1.get())
                 .add(DSSItems.VORTEX_CHESTPLATE.get())
                 .add(DSSItems.SOLAR_CHESTPLATE.get())
                 .add(DSSItems.EMPTYHUNTERCHESTPLATE.get())
@@ -198,6 +225,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(DSSItems.EMPTYPRIESTCHESTPLATE.get());
 
         tag(ItemTags.LEG_ARMOR_ENCHANTABLE)
+                .add(DSSItems.MINING_LEGGINGS_T1.get())
                 .add(DSSItems.VORTEX_LEGGINGS.get())
                 .add(DSSItems.SOLAR_LEGGINGS.get())
                 .add(DSSItems.EMPTYHUNTERLEGGINGS.get())
@@ -205,6 +233,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(DSSItems.EMPTYPRIESTLEGGINGS.get());
 
         tag(ItemTags.FOOT_ARMOR_ENCHANTABLE)
+                .add(DSSItems.MINING_BOOTS_T1.get())
                 .add(DSSItems.VORTEX_BOOTS.get())
                 .add(DSSItems.SOLAR_BOOTS.get())
                 .add(DSSItems.EMPTYHUNTERBOOTS.get())
@@ -212,6 +241,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(DSSItems.EMPTYPRIESTBOOTS.get());
 
         tag(ItemTags.HEAD_ARMOR)
+                .add(DSSItems.MINING_HELMET_T1.get())
                 .add(DSSItems.VORTEX_HELMET.get())
                 .add(DSSItems.SOLAR_HELMET.get())
                 .add(DSSItems.EMPTYHUNTERHELMET.get())
@@ -219,6 +249,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(DSSItems.EMPTYPRIESTHELMET.get());
 
         tag(ItemTags.CHEST_ARMOR)
+                .add(DSSItems.MINING_CHESTPLATE_T1.get())
                 .add(DSSItems.VORTEX_CHESTPLATE.get())
                 .add(DSSItems.SOLAR_CHESTPLATE.get())
                 .add(DSSItems.EMPTYHUNTERCHESTPLATE.get())
@@ -226,6 +257,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(DSSItems.EMPTYPRIESTCHESTPLATE.get());
 
         tag(ItemTags.LEG_ARMOR)
+                .add(DSSItems.MINING_LEGGINGS_T1.get())
                 .add(DSSItems.VORTEX_LEGGINGS.get())
                 .add(DSSItems.SOLAR_LEGGINGS.get())
                 .add(DSSItems.EMPTYHUNTERLEGGINGS.get())
@@ -233,6 +265,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(DSSItems.EMPTYPRIESTLEGGINGS.get());
 
         tag(ItemTags.FOOT_ARMOR)
+                .add(DSSItems.MINING_BOOTS_T1.get())
                 .add(DSSItems.VORTEX_BOOTS.get())
                 .add(DSSItems.SOLAR_BOOTS.get())
                 .add(DSSItems.EMPTYHUNTERBOOTS.get())

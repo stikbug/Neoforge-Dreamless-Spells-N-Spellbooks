@@ -1,20 +1,20 @@
-// 1.21.1	2025-09-09T10:53:13.611607	Tags for minecraft:item mod id dreamless_spells
-8fdfc942f23cb976af4120d8349127403baf06b8 data/c/tags/item/armors.json
-8fdfc942f23cb976af4120d8349127403baf06b8 data/c/tags/item/enchantables.json
+// 1.21.1	2026-01-15T13:21:03.752666	Tags for minecraft:item mod id dreamless_spells
+8e8c264f3c4e8987c35384da46b19adc8a1b1d8f data/c/tags/item/armors.json
+8e8c264f3c4e8987c35384da46b19adc8a1b1d8f data/c/tags/item/enchantables.json
 647b7007e698065dc61b1af50de719c2691e2fe8 data/c/tags/item/gems.json
 ed82c35920e35426a070c029546b2fce2a6e6359 data/c/tags/item/ingots.json
 3b378669369d96f6f0e7949c63d0737e1fa51439 data/c/tags/item/nuggets.json
 a43714732915c9438fe52baaf5482222796d226d data/dreamless_spells/tags/item/empty_focus.json
 71c74dff72e513d185944ae105ea2ed7b002b904 data/irons_spellbooks/tags/item/inscribed_rune.json
 a43714732915c9438fe52baaf5482222796d226d data/irons_spellbooks/tags/item/school_focus.json
-857ef96607a5977c4ae0b0ca2ede0e5dcb4af9fe data/minecraft/tags/item/chest_armor.json
-8fdfc942f23cb976af4120d8349127403baf06b8 data/minecraft/tags/item/enchantable/armor.json
-857ef96607a5977c4ae0b0ca2ede0e5dcb4af9fe data/minecraft/tags/item/enchantable/chest_armor.json
-8fdfc942f23cb976af4120d8349127403baf06b8 data/minecraft/tags/item/enchantable/durability.json
-8fdfc942f23cb976af4120d8349127403baf06b8 data/minecraft/tags/item/enchantable/equippable.json
-cd37a78ea3cd261be0fb76f0d5261ce29b528bad data/minecraft/tags/item/enchantable/foot_armor.json
-fa8240960b5466cdaeb6822c84980ef1c11c8472 data/minecraft/tags/item/enchantable/head_armor.json
-c1a0752ee5e932093bb5b973a68eb97146660e0b data/minecraft/tags/item/enchantable/leg_armor.json
-cd37a78ea3cd261be0fb76f0d5261ce29b528bad data/minecraft/tags/item/foot_armor.json
-fa8240960b5466cdaeb6822c84980ef1c11c8472 data/minecraft/tags/item/head_armor.json
-c1a0752ee5e932093bb5b973a68eb97146660e0b data/minecraft/tags/item/leg_armor.json
+477d120debdab4a307bf49d464cbeb78bc981e01 data/minecraft/tags/item/chest_armor.json
+8e8c264f3c4e8987c35384da46b19adc8a1b1d8f data/minecraft/tags/item/enchantable/armor.json
+477d120debdab4a307bf49d464cbeb78bc981e01 data/minecraft/tags/item/enchantable/chest_armor.json
+8e8c264f3c4e8987c35384da46b19adc8a1b1d8f data/minecraft/tags/item/enchantable/durability.json
+8e8c264f3c4e8987c35384da46b19adc8a1b1d8f data/minecraft/tags/item/enchantable/equippable.json
+fa6b0c44e2e4a242c70694747e6d68d7228112c1 data/minecraft/tags/item/enchantable/foot_armor.json
+877a1b923abbfd484de0de8efe1262d3e668c1d9 data/minecraft/tags/item/enchantable/head_armor.json
+f896992b9a8bfb229e4a42ff8c985645d90ab44d data/minecraft/tags/item/enchantable/leg_armor.json
+fa6b0c44e2e4a242c70694747e6d68d7228112c1 data/minecraft/tags/item/foot_armor.json
+877a1b923abbfd484de0de8efe1262d3e668c1d9 data/minecraft/tags/item/head_armor.json
+f896992b9a8bfb229e4a42ff8c985645d90ab44d data/minecraft/tags/item/leg_armor.json

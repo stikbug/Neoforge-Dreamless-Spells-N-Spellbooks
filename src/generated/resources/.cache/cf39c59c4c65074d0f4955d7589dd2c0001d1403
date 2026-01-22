@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-12T07:58:03.928269	Item Models: dreamless_spells
+// 1.21.1	2026-01-15T13:21:03.754863	Item Models: dreamless_spells
 574d0f35871baa363444c8d0a74161248902c892 assets/dreamless_spells/models/item/absurd_ring.json
 6b1345ff7d91e1bed96c11a6b1363bf537078b99 assets/dreamless_spells/models/item/amethyst_boots.json
 657dc10580ffa1bf8a3d420372fb5b1d98b2f0f9 assets/dreamless_spells/models/item/arcane_cloth_boots.json
@@ -53,6 +53,10 @@ bb48689948194bf15b50b1b63793cd90d17ec4c9 assets/dreamless_spells/models/item/jad
 b4cde137d9fb865e68c62c966087f983bbfbfc6e assets/dreamless_spells/models/item/mage_boots.json
 08cc05fce7de2812d530b40bea231a6f7d3ebf5a assets/dreamless_spells/models/item/magi_boots.json
 492073d5a62ddf396d130762b610351ec96927b0 assets/dreamless_spells/models/item/miners_charm.json
+68089e6d26769555cd6d90b8ffa1046938ae485e assets/dreamless_spells/models/item/mining_boots_t1.json
+869938f54ceec1de1da3aa64a42fdf2726ca19ba assets/dreamless_spells/models/item/mining_chestplate_t1.json
+c8403742ee021dd9a4b5ecddd491f3a66aea6c4e assets/dreamless_spells/models/item/mining_helmet_t1.json
+5c1f5e1deb4271c12b48c4960de99ea647d82087 assets/dreamless_spells/models/item/mining_leggings_t1.json
 4bb45babea3c2b119ca56ee8edcdf5ae4a32e353 assets/dreamless_spells/models/item/nature_tablet.json
 34a526b1ab3f50bfc184a031e880797783aaeb78 assets/dreamless_spells/models/item/netherite_greaves.json
 f43aaaad400d61519563c765d828638db435c98a assets/dreamless_spells/models/item/old_boots.json

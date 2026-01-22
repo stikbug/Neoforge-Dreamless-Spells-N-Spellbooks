@@ -573,16 +573,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         SmithingTransformRecipeBuilder.smithing(Ingredient.of(DSSItems.EMPTY_RUNE.get()), Ingredient.of(DSSItems.EMPTYPRIESTLEGGINGS.get()), Ingredient.of(Items.BOW), RecipeCategory.COMBAT, DSSItems.EMPTYHUNTERLEGGINGS.get()).unlocks("has_rune", has(DSSItems.EMPTY_RUNE.get())).save(recipeOutput, "empty_hunter_skirt");
         SmithingTransformRecipeBuilder.smithing(Ingredient.of(DSSItems.EMPTY_RUNE.get()), Ingredient.of(DSSItems.EMPTYPRIESTBOOTS.get()), Ingredient.of(Items.BOW), RecipeCategory.COMBAT, DSSItems.EMPTYHUNTERBOOTS.get()).unlocks("has_rune", has(DSSItems.EMPTY_RUNE.get())).save(recipeOutput, "empty_hunter_boots");
 
-        //Vortex Armor
+        //Solar Armor
         SmithingTransformRecipeBuilder.smithing(Ingredient.of(ItemRegistry.FIRE_RUNE.get()), Ingredient.of(ItemRegistry.PYROMANCER_HELMET.get()), Ingredient.of(Items.IRON_SWORD), RecipeCategory.COMBAT, DSSItems.SOLAR_HELMET.get()).unlocks("has_rune", has(ItemRegistry.FIRE_RUNE.get())).save(recipeOutput, "solar_helmet");
         SmithingTransformRecipeBuilder.smithing(Ingredient.of(ItemRegistry.FIRE_RUNE.get()), Ingredient.of(ItemRegistry.PYROMANCER_CHESTPLATE.get()), Ingredient.of(Items.IRON_SWORD), RecipeCategory.COMBAT, DSSItems.SOLAR_CHESTPLATE.get()).unlocks("has_rune", has(ItemRegistry.FIRE_RUNE.get())).save(recipeOutput, "solar_chestplate");
         SmithingTransformRecipeBuilder.smithing(Ingredient.of(ItemRegistry.FIRE_RUNE.get()), Ingredient.of(ItemRegistry.PYROMANCER_LEGGINGS.get()), Ingredient.of(Items.IRON_SWORD), RecipeCategory.COMBAT, DSSItems.SOLAR_LEGGINGS.get()).unlocks("has_rune", has(ItemRegistry.FIRE_RUNE.get())).save(recipeOutput, "solar_leggings");
         SmithingTransformRecipeBuilder.smithing(Ingredient.of(ItemRegistry.FIRE_RUNE.get()), Ingredient.of(ItemRegistry.PYROMANCER_BOOTS.get()), Ingredient.of(Items.IRON_SWORD), RecipeCategory.COMBAT, DSSItems.SOLAR_BOOTS.get()).unlocks("has_rune", has(ItemRegistry.FIRE_RUNE.get())).save(recipeOutput, "solar_boots");
 
-        //Solar Armor
+        //Vortex Armor
         SmithingTransformRecipeBuilder.smithing(Ingredient.of(ItemRegistry.LIGHTNING_RUNE.get()), Ingredient.of(ItemRegistry.ELECTROMANCER_HELMET.get()), Ingredient.of(Items.BOW), RecipeCategory.COMBAT, DSSItems.VORTEX_HELMET.get()).unlocks("has_rune", has(ItemRegistry.LIGHTNING_RUNE.get())).save(recipeOutput, "vortex_helmet");
         SmithingTransformRecipeBuilder.smithing(Ingredient.of(ItemRegistry.LIGHTNING_RUNE.get()), Ingredient.of(ItemRegistry.ELECTROMANCER_CHESTPLATE.get()), Ingredient.of(Items.BOW), RecipeCategory.COMBAT, DSSItems.VORTEX_CHESTPLATE.get()).unlocks("has_rune", has(ItemRegistry.LIGHTNING_RUNE.get())).save(recipeOutput, "vortex_chestplate");
         SmithingTransformRecipeBuilder.smithing(Ingredient.of(ItemRegistry.LIGHTNING_RUNE.get()), Ingredient.of(ItemRegistry.ELECTROMANCER_LEGGINGS.get()), Ingredient.of(Items.BOW), RecipeCategory.COMBAT, DSSItems.VORTEX_LEGGINGS.get()).unlocks("has_rune", has(ItemRegistry.LIGHTNING_RUNE.get())).save(recipeOutput, "vortex_leggings");
         SmithingTransformRecipeBuilder.smithing(Ingredient.of(ItemRegistry.LIGHTNING_RUNE.get()), Ingredient.of(ItemRegistry.ELECTROMANCER_BOOTS.get()), Ingredient.of(Items.BOW), RecipeCategory.COMBAT, DSSItems.VORTEX_BOOTS.get()).unlocks("has_rune", has(ItemRegistry.LIGHTNING_RUNE.get())).save(recipeOutput, "vortex_boots");
+
+        //Mining Armor T1
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(Items.IRON_PICKAXE), Ingredient.of(Items.LEATHER_HELMET), Ingredient.of(Items.GOLD_INGOT), RecipeCategory.COMBAT, DSSItems.MINING_HELMET_T1.get()).unlocks("has_leather", has(Items.LEATHER)).save(recipeOutput, "mining_helmet_t1");
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(Items.IRON_PICKAXE), Ingredient.of(Items.LEATHER_CHESTPLATE), Ingredient.of(Items.GOLD_INGOT), RecipeCategory.COMBAT, DSSItems.MINING_CHESTPLATE_T1.get()).unlocks("has_leather", has(Items.LEATHER)).save(recipeOutput, "mining_chestplate_t1");
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(Items.IRON_PICKAXE), Ingredient.of(Items.LEATHER_LEGGINGS), Ingredient.of(Items.GOLD_INGOT), RecipeCategory.COMBAT, DSSItems.MINING_LEGGINGS_T1.get()).unlocks("has_leather", has(Items.LEATHER)).save(recipeOutput, "mining_leggings_t1");
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(Items.IRON_PICKAXE), Ingredient.of(Items.LEATHER_BOOTS), Ingredient.of(Items.GOLD_INGOT), RecipeCategory.COMBAT, DSSItems.MINING_BOOTS_T1.get()).unlocks("has_leather", has(Items.LEATHER)).save(recipeOutput, "mining_boots_t1");
     }
 }

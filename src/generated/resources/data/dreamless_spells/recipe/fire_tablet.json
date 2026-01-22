@@ -3,13 +3,13 @@
   "category": "misc",
   "key": {
     "D": {
-      "item": "irons_spellbooks:divine_soulshard"
+      "item": "dreamless_spells:blank_tablet"
     },
     "M": {
       "item": "irons_spellbooks:mithril_ingot"
     },
     "P": {
-      "item": "irons_spellbooks:pyrium_ingot"
+      "item": "minecraft:blaze_rod"
     },
     "R": {
       "item": "irons_spellbooks:fire_rune"

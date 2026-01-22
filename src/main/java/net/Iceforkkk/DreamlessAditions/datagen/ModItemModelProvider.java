@@ -101,6 +101,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(DSSItems.ICHOR_WING.get());
 
         //Armor
+        //Mining Armor T1
+        basicItem(DSSItems.MINING_HELMET_T1.get());
+        basicItem(DSSItems.MINING_CHESTPLATE_T1.get());
+        basicItem(DSSItems.MINING_LEGGINGS_T1.get());
+        basicItem(DSSItems.MINING_BOOTS_T1.get());
         //Solar Armor
         basicItem(DSSItems.SOLAR_HELMET.get());
         basicItem(DSSItems.SOLAR_CHESTPLATE.get());

@@ -41,6 +41,16 @@ public class DSSItems {
     public static final DeferredItem<Item> EMPTY_RUNE = ITEMS.register("empty_rune",
             ()-> new Item(new Item.Properties()));
 
+    //Mining Armor T1
+    public static final DeferredItem<ArmorItem> MINING_HELMET_T1 = ITEMS.register("mining_helmet_t1",
+            ()-> new MinerT1ArmorItem(ArmorItem.Type.HELMET, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(10))));
+    public static final DeferredItem<ArmorItem> MINING_CHESTPLATE_T1 = ITEMS.register("mining_chestplate_t1",
+            ()-> new MinerT1ArmorItem(ArmorItem.Type.CHESTPLATE, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(10))));
+    public static final DeferredItem<ArmorItem> MINING_LEGGINGS_T1 = ITEMS.register("mining_leggings_t1",
+            ()-> new MinerT1ArmorItem(ArmorItem.Type.LEGGINGS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(10))));
+    public static final DeferredItem<ArmorItem> MINING_BOOTS_T1 = ITEMS.register("mining_boots_t1",
+            ()-> new MinerT1ArmorItem(ArmorItem.Type.BOOTS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(10))));
+
     //Solar Armor
     public static final DeferredItem<ArmorItem> SOLAR_HELMET = ITEMS.register("solar_helmet",
             ()-> new SolarArmorItem(ArmorItem.Type.HELMET, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(30))));

@@ -9,6 +9,7 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -21,6 +22,14 @@ import java.util.function.Supplier;
 
 public class DSSArmorMaterials {
     private static final DeferredRegister<ArmorMaterial> ARMOR_MATERIALS = DeferredRegister.create(Registries.ARMOR_MATERIAL, Dreamless_Spells.MOD_ID);
+
+    public static DeferredHolder<ArmorMaterial, ArmorMaterial> MINING_T1_MATERIAL = register("mining_t1",
+            MiningT1ArmorMap(),
+            20,
+            SoundEvents.ARMOR_EQUIP_NETHERITE,
+            () -> Ingredient.of(Items.GOLD_INGOT),
+            0,
+            0F);
 
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> SOLAR_MATERIAL = register("solar",
             AdvancedArmorMap(),
@@ -88,6 +97,8 @@ public class DSSArmorMaterials {
 
     public static EnumMap<ArmorItem.Type, Integer> AdvancedArmorMap(){return makeArmorMap(5, 11, 9, 5);}
     public static EnumMap<ArmorItem.Type, Integer> RegularArmorMap(){return makeArmorMap(3, 8, 6, 3);}
+    public static EnumMap<ArmorItem.Type, Integer> MiningT1ArmorMap(){return makeArmorMap(1, 4, 3, 1);}
+
 
     public static void register(IEventBus eventBus) {
         ARMOR_MATERIALS.register(eventBus);

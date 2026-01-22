@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:gold_ingot"
+  },
+  "base": {
+    "item": "minecraft:leather_helmet"
+  },
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:mining_helmet_t1"
+  },
+  "template": {
+    "item": "minecraft:iron_pickaxe"
+  }
+}

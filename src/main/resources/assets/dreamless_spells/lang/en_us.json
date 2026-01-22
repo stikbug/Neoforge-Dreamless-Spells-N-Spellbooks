@@ -43,6 +43,11 @@
   "item.dreamless_spells.solar_leggings": "Solar Leggings",
   "item.dreamless_spells.solar_boots": "Solar Greaves",
 
+  "item.dreamless_spells.mining_helmet_t1": "Mining Helmet",
+  "item.dreamless_spells.mining_chestplate_t1": "Mining Overalls",
+  "item.dreamless_spells.mining_leggings_t1": "Mining Cargos",
+  "item.dreamless_spells.mining_boots_t1": "Mining Shoes",
+
   "curios.identifier.feet": "Feet",
   "curios.modifiers.feet": "When in the Feet Slot:",
 

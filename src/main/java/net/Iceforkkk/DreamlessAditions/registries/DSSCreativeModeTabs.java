@@ -33,6 +33,12 @@ public class DSSCreativeModeTabs {
                         output.accept(DSSItems.EMPTY_RUNE);
                         output.accept((ItemLike) DSSItems.EMPTY_UPGRADE_ORB);
 
+                        //Mining Armor T1
+                        output.accept(DSSItems.MINING_HELMET_T1);
+                        output.accept(DSSItems.MINING_CHESTPLATE_T1);
+                        output.accept(DSSItems.MINING_LEGGINGS_T1);
+                        output.accept(DSSItems.MINING_BOOTS_T1);
+
                         //Empty Priest Armor
                         output.accept(DSSItems.EMPTYPRIESTHELMET);
                         output.accept(DSSItems.EMPTYPRIESTCHESTPLATE);
