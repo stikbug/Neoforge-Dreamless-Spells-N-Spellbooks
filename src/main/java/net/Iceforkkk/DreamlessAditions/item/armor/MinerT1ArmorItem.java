@@ -28,11 +28,11 @@ public class MinerT1ArmorItem extends DSSArmorItem {
     @Override
     public void inventoryTick(@NotNull ItemStack stack,@NotNull Level level,@NotNull Entity entity, int slotId, boolean isSelected) {
         if (entity instanceof Player player && !level.isClientSide() && isWearingFullSet(player)) {
-            evaluateArmorEffects(player);
+            evaluateFullArmorEffects(player);
         }
     }
 
-    private void evaluateArmorEffects(Player player) {
+    private void evaluateFullArmorEffects(Player player) {
         if (!player.hasEffect(MobEffects.NIGHT_VISION)) {
             player.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 12000, 0, false, false, false));
         }
