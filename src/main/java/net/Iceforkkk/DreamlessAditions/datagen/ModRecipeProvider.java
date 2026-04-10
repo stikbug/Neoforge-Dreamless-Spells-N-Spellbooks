@@ -299,6 +299,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('L', Tags.Items.LEATHERS)
                 .unlockedBy("has_leather", has(Items.LEATHER)).save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.GOAT_HOOF.get())
+                .pattern(" B ")
+                .pattern(" G ")
+                .pattern(" N ")
+                .define('B', Tags.Items.STORAGE_BLOCKS_IRON)
+                .define('G', Items.GOAT_HORN)
+                .define('N', Tags.Items.INGOTS_NETHERITE)
+                .unlockedBy("has_leather", has(Items.LEATHER)).save(recipeOutput);
+
         //Tablet Recipes ----------------------------------------------------------------------------------------------------------------------------------------------
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.BLANK_TABLET.get())
                 .pattern("RPR")
@@ -426,7 +435,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("NMN")
                 .pattern("PTP")
                 .define('M', ItemRegistry.MANA_RING.get())
-                .define('D', ItemRegistry.DIVINE_SOULSHARD.get())
+                .define('D', DSSItems.BUSTLING_FUNGUS.get())
                 .define('N', ItemRegistry.MITHRIL_INGOT.get())
                 .define('T', DSSItems.TUNGSTENINGOT.get())
                 .define('P', DSSItems.PAVARIUM.get())
@@ -486,6 +495,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('P', DSSItems.PAVARIUM.get())
                 .unlockedBy("has_pavarium", has(DSSItems.PAVARIUM.get())).save(recipeOutput);
 
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.MINERS_CHARM.get())
+                .pattern("LDL")
+                .pattern("DPD")
+                .pattern("LDL")
+                .define('P', Items.NETHERITE_PICKAXE)
+                .define('L', Items.LEATHER)
+                .define('D', Items.DIAMOND)
+                .unlockedBy("has_diamond", has(Items.DIAMOND)).save(recipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.SALE_STAR.get())
                 .pattern("MPC")
                 .pattern("PDP")
@@ -520,7 +539,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_tungsten_ingot", has(DSSItems.TUNGSTENINGOT.get())).save(recipeOutput);
 
         //Belt recipes -------------------------------------------------------------------------------------------------------------------------------------------+
-
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSSItems.PUTRID_SCENT.get())
+                .pattern(" B ")
+                .pattern("BHB")
+                .pattern("BBB")
+                .define('B', ItemRegistry.BLOODY_VELLUM.get())
+                .define('H', ItemRegistry.INVISIBILITY_RING.get())
+                .unlockedBy("has_hogskin", has(ItemRegistry.HOGSKIN.get())).save(recipeOutput);
 
         //Shapeless recipes -------------------------------------------------------------------------------------------------------------------------------------------+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DSSItems.TUNGSTENINGOT.get(), 9)

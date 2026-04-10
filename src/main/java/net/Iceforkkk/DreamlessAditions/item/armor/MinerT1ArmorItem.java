@@ -27,11 +27,6 @@ public class MinerT1ArmorItem extends DSSArmorItem {
 
     @Override
     public void inventoryTick(@NotNull ItemStack stack,@NotNull Level level,@NotNull Entity entity, int slotId, boolean isSelected) {
-        /*
-        * To do more armor effects (for if you want a certain piece to give a specific effect)
-        * Duplicate the below code block and change the names slightly
-        * Ex: isWearingFullSet -> isWearingHelmet, evaluateArmorEffects -> evaluateHelmetEffects
-        */
         if (entity instanceof Player player && !level.isClientSide() && isWearingFullSet(player)) {
             evaluateArmorEffects(player);
         }

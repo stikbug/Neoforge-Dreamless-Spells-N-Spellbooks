@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "P": {
+      "item": "minecraft:netherite_pickaxe"
+    }
+  },
+  "pattern": [
+    "LDL",
+    "DPD",
+    "LDL"
+  ],
+  "result": {
+    "count": 1,
+    "id": "dreamless_spells:miners_charm"
+  }
+}
